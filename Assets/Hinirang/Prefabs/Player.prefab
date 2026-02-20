@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2699165293095766246}
   - component: {fileID: 5436312991198205256}
-  - component: {fileID: 3666701039378639794}
   - component: {fileID: 7216379091067961771}
   - component: {fileID: 7664646163781186516}
+  - component: {fileID: 2351648159945080924}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -84,38 +84,16 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -467307283419413426, guid: 605b601cc1928d14a89c71fbddd13910, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20609d7c578efdf48b751153f7be9af9, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &3666701039378639794
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3359345649099398307}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8a247d45746036847ba7b0f20bbbc6cf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &7216379091067961771
 Rigidbody2D:
   serializedVersion: 5
@@ -181,11 +159,23 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.92}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.16, y: 0.2}
+    newSize: {x: 0.16, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 1.289488, y: 1.7647436}
   m_EdgeRadius: 0
+--- !u!114 &2351648159945080924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3359345649099398307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce4c710f230b7414290e4ced11992e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Capsule

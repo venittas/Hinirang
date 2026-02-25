@@ -7,8 +7,8 @@ public class Capsule : MonoBehaviour
     private float moveSpeed = 5f;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();            
-        animator = GetComponent<Animator>();            
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
@@ -19,8 +19,7 @@ public class Capsule : MonoBehaviour
         animator.SetBool("isUp", vaxis > 0);
         animator.SetBool("isLeft", haxis < 0);
         animator.SetBool("isRight", haxis > 0);
-        
     }
 
-    
+
 }

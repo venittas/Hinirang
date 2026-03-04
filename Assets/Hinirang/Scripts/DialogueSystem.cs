@@ -72,7 +72,7 @@ public class DialogueSystem : MonoBehaviour
         }
 
         dialoguePanel.gameObject.SetActive(false);
-        Player.Instance.currentState = Player.PlayerState.Idle;
+        Player.Instance.currentState = Player.PlayerState.Moving;
     }
 
     private void PlayTextBlip()

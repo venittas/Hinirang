@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
     public static Player Instance;
 
-    public PlayerState currentState = PlayerState.Idle;
+    public PlayerState currentState = PlayerState.Moving;
 
     [SerializeField] private float moveSpeed = 5f;
 
@@ -47,9 +47,24 @@ public class Player : MonoBehaviour
     {
         float haxis = Input.GetAxisRaw("Horizontal");
         float vaxis = Input.GetAxisRaw("Vertical");
+        if (currentState == PlayerState.Moving)
+        {
+            rb.linearVelocity = new Vector2(haxis * moveSpeed, vaxis * moveSpeed);
+            DirectionAnimation(haxis, vaxis);
+            DetectInteraction();
+        }
 
-        rb.linearVelocity = new Vector2(haxis * moveSpeed, vaxis * moveSpeed);
 
+        
+        if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null && currentState != PlayerState.Interacting)
+        {
+            currentInteractable.Interact();
+            currentState = PlayerState.Interacting;
+        }
+    }
+
+    private void DirectionAnimation(float haxis, float vaxis)
+    {
         if (haxis != 0 || vaxis != 0)
         {
             lastLookDirection = new Vector2(haxis, vaxis).normalized;
@@ -79,20 +94,17 @@ public class Player : MonoBehaviour
         {
             SetAnimationBools(false, false, false, false);
         }
-        DetectInteraction();
-        if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null && currentState != PlayerState.Interacting)
-        {
-            currentInteractable.Interact();
-            currentState = PlayerState.Interacting;
-        }
     }
 
     void SetAnimationBools(bool down, bool up, bool left, bool right)
     {
-        animator.SetBool("isDown", down);
-        animator.SetBool("isUp", up);
-        animator.SetBool("isLeft", left);
-        animator.SetBool("isRight", right);
+        if (currentState == PlayerState.Moving)
+        {
+            animator.SetBool("isDown", down);
+            animator.SetBool("isUp", up);
+            animator.SetBool("isLeft", left);
+            animator.SetBool("isRight", right);
+        }
     }
 
     private void DetectInteraction()

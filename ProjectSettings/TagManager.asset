@@ -42,5 +42,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Water
+    uniqueID: 4085423433
+    locked: 0
+  - name: Sand
+    uniqueID: 1287110215
+    locked: 0
+  - name: Land
+    uniqueID: 1071632645
+    locked: 0
+  - name: Trees
+    uniqueID: 2930188321
+    locked: 0
+  - name: House
+    uniqueID: 1227760807
+    locked: 0
+  - name: Player
+    uniqueID: 2759577145
+    locked: 0
+  - name: Upper
+    uniqueID: 4027206991
+    locked: 0
   m_RenderingLayers:
   - Default

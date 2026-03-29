@@ -1,101 +1,38 @@
 using NUnit.Framework.Constraints;
 using System.Collections;
 using UnityEngine;
-using static Player;
 
-public class MangJuan : MonoBehaviour
+public class MangJuan : NPCScript
 {
-    private Rigidbody2D rb;
-    private Animator animator;
-    [SerializeField] private float moveSpeed = 5f;
-    public enum MangJuanDirection
-    {
-        Left,
-        Right,
-        Up,
-        Down
-    }
 
+    [SerializeField] private Boat Boat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        StartCoroutine(Scene3());
+        base.Start();
+        Scene3();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Scene3()
     {
+        StartCoroutine(Scene3Routine());
+    }
+
+    private IEnumerator Scene3Routine()
+    {
+        yield return StartCoroutine(Move(0));
+        yield return StartCoroutine(Move(1));
+        yield return StartCoroutine(Move(2));
+        StopMovement();
+        Debug.Log("Scene 3");
+        yield return StartCoroutine(MoveWithBoat());
         
     }
 
-    private IEnumerator Scene3()
+    private IEnumerator MoveWithBoat()
     {
-        MoveWithAnimation(MangJuanDirection.Down);
-        yield return new WaitForSeconds(2f);
-        MoveWithAnimation(MangJuanDirection.Left);
-        yield return new WaitForSeconds(2f);
-        StopMovement();
+        Boat.MoveBoat();
+        yield return StartCoroutine(MoveNoAnim(3));
     }
 
-    private void DirectionHelper(MangJuanDirection direction, bool hasAnimation)
-    {
-        if(direction == MangJuanDirection.Left)
-        {
-            rb.linearVelocity = new Vector2(-moveSpeed * 1f, 0);
-            if (hasAnimation)
-            {
-                SetAnimationBools(false, false, true, false);
-            }
-        }
-        else if(direction == MangJuanDirection.Right)
-        {
-            rb.linearVelocity = new Vector2(moveSpeed * 1f, 0);
-            if (hasAnimation)
-            {
-                SetAnimationBools(false, false, false, true);
-            }
-        }
-        else if(direction == MangJuanDirection.Up)
-        {
-            rb.linearVelocity = new Vector2(0, moveSpeed * 1f);
-            if (hasAnimation)
-            {
-                SetAnimationBools(false, true, false, false);
-            }
-        }
-        else if(direction == MangJuanDirection.Down)
-        {
-            rb.linearVelocity = new Vector2(0, -moveSpeed * 1f);
-            if (hasAnimation)
-            {
-                SetAnimationBools(true, false, false, false);
-            }
-        }
-    }
-
-    void SetAnimationBools(bool down, bool up, bool left, bool right)
-    {
-        animator.SetBool("isDown", down);
-        animator.SetBool("isUp", up);
-        animator.SetBool("isLeft", left);
-        animator.SetBool("isRight", right);
-    }
-
-    public void MoveWithAnimation(MangJuanDirection direction)
-    {
-        DirectionHelper(direction, true);
-    }
-
-    public void MoveWithoutAnimation(MangJuanDirection direction)
-    {
-        DirectionHelper(direction, false);
-    }
-
-    public void StopMovement()
-    {
-        rb.linearVelocity = Vector2.zero;
-        SetAnimationBools(false, false, false, false);
-    }
 }

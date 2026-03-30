@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: e6142625935dee44b8d941f9697b8ec7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1243384509891080444
+    second: Mang_Enko_Sprite-Sheet_0
+  - first:
+      213: -1773733107859240146
+    second: Mang_Enko_Sprite-Sheet_1
+  - first:
+      213: -2820889962395298491
+    second: Mang_Enko_Sprite-Sheet_2
+  - first:
+      213: 6598821909862788736
+    second: Mang_Enko_Sprite-Sheet_3
+  - first:
+      213: 640888645619473870
+    second: Mang_Enko_Sprite-Sheet_4
+  - first:
+      213: 1715224149252583953
+    second: Mang_Enko_Sprite-Sheet_5
+  - first:
+      213: 5282104322342343850
+    second: Mang_Enko_Sprite-Sheet_6
+  - first:
+      213: -2934757256695240508
+    second: Mang_Enko_Sprite-Sheet_7
+  - first:
+      213: -9006319860542203058
+    second: Mang_Enko_Sprite-Sheet_8
+  - first:
+      213: -5605636287013283000
+    second: Mang_Enko_Sprite-Sheet_9
+  - first:
+      213: 1771101891165532364
+    second: Mang_Enko_Sprite-Sheet_10
+  - first:
+      213: -2471330442727407248
+    second: Mang_Enko_Sprite-Sheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 151
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0f74fbf93614110800000000000000
+      internalID: 1243384509891080444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 9
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b43b3d22f6267e0800000000000000
+      internalID: -1773733107859240146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54596f0668f2ad8d0800000000000000
+      internalID: -2820889962395298491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 0
+        width: 142
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08eaf61a099b39b50800000000000000
+      internalID: 6598821909862788736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 9
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecddabed3d4e4e800800000000000000
+      internalID: 640888645619473870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 0
+        width: 142
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1123f5ea643bdc710800000000000000
+      internalID: 1715224149252583953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 0
+        width: 142
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa455c735edcd4940800000000000000
+      internalID: 5282104322342343850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 9
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c82ea4f2d5a547d0800000000000000
+      internalID: -2934757256695240508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 0
+        width: 142
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b16daedcf130380800000000000000
+      internalID: -9006319860542203058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 0
+        width: 142
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b98843f77c432b0800000000000000
+      internalID: -5605636287013283000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 9
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0b1fb49c7349810800000000000000
+      internalID: 1771101891165532364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang_Enko_Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 0
+        width: 142
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071cf965e0214bdd0800000000000000
+      internalID: -2471330442727407248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mang_Enko_Sprite-Sheet_0: 1243384509891080444
+      Mang_Enko_Sprite-Sheet_1: -1773733107859240146
+      Mang_Enko_Sprite-Sheet_10: 1771101891165532364
+      Mang_Enko_Sprite-Sheet_11: -2471330442727407248
+      Mang_Enko_Sprite-Sheet_2: -2820889962395298491
+      Mang_Enko_Sprite-Sheet_3: 6598821909862788736
+      Mang_Enko_Sprite-Sheet_4: 640888645619473870
+      Mang_Enko_Sprite-Sheet_5: 1715224149252583953
+      Mang_Enko_Sprite-Sheet_6: 5282104322342343850
+      Mang_Enko_Sprite-Sheet_7: -2934757256695240508
+      Mang_Enko_Sprite-Sheet_8: -9006319860542203058
+      Mang_Enko_Sprite-Sheet_9: -5605636287013283000
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

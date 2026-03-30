@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 43de1c9144fc12d45924e4ef266cedeb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4098786234414869649
+    second: Childhood_Friend_Sprite-Sheet_0
+  - first:
+      213: -5161029819631959967
+    second: Childhood_Friend_Sprite-Sheet_1
+  - first:
+      213: -6628422291750006569
+    second: Childhood_Friend_Sprite-Sheet_2
+  - first:
+      213: -7677490754410219439
+    second: Childhood_Friend_Sprite-Sheet_3
+  - first:
+      213: -3558844991443237682
+    second: Childhood_Friend_Sprite-Sheet_4
+  - first:
+      213: 1330321180934081884
+    second: Childhood_Friend_Sprite-Sheet_5
+  - first:
+      213: 6907881807620217842
+    second: Childhood_Friend_Sprite-Sheet_6
+  - first:
+      213: 1123130534372786753
+    second: Childhood_Friend_Sprite-Sheet_7
+  - first:
+      213: 7070115755474483195
+    second: Childhood_Friend_Sprite-Sheet_8
+  - first:
+      213: 8222064636602374181
+    second: Childhood_Friend_Sprite-Sheet_9
+  - first:
+      213: -3592707412256152337
+    second: Childhood_Friend_Sprite-Sheet_10
+  - first:
+      213: 8934388934328082163
+    second: Childhood_Friend_Sprite-Sheet_11
+  - first:
+      213: 8909902812987220774
+    second: Childhood_Friend_Sprite-Sheet_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 151
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c2f882d50d1e830800000000000000
+      internalID: 4098786234414869649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 9
+        width: 142
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16083ad29b65068b0800000000000000
+      internalID: -5161029819631959967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 152
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0d5f66b0d1304a0800000000000000
+      internalID: -6628422291750006569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 122
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158780106d2147590800000000000000
+      internalID: -7677490754410219439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 9
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4095af5517c9ec0800000000000000
+      internalID: -3558844991443237682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 0
+        width: 122
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d01c2d010467210800000000000000
+      internalID: 1330321180934081884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 0
+        width: 122
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb169d87e9bddf50800000000000000
+      internalID: 6907881807620217842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 0
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1424fa93549269f00800000000000000
+      internalID: 1123130534372786753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 9
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7f2fd02d81e1260800000000000000
+      internalID: 7070115755474483195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 0
+        width: 122
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5285cf08934aa1270800000000000000
+      internalID: 8222064636602374181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 0
+        width: 142
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe42f8eb4a3242ec0800000000000000
+      internalID: -3592707412256152337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 9
+        width: 142
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe5ecb36635dfb70800000000000000
+      internalID: 8934388934328082163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Childhood_Friend_Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 0
+        width: 142
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6236b57d66556ab70800000000000000
+      internalID: 8909902812987220774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Childhood_Friend_Sprite-Sheet_0: 4098786234414869649
+      Childhood_Friend_Sprite-Sheet_1: -5161029819631959967
+      Childhood_Friend_Sprite-Sheet_10: -3592707412256152337
+      Childhood_Friend_Sprite-Sheet_11: 8934388934328082163
+      Childhood_Friend_Sprite-Sheet_12: 8909902812987220774
+      Childhood_Friend_Sprite-Sheet_2: -6628422291750006569
+      Childhood_Friend_Sprite-Sheet_3: -7677490754410219439
+      Childhood_Friend_Sprite-Sheet_4: -3558844991443237682
+      Childhood_Friend_Sprite-Sheet_5: 1330321180934081884
+      Childhood_Friend_Sprite-Sheet_6: 6907881807620217842
+      Childhood_Friend_Sprite-Sheet_7: 1123130534372786753
+      Childhood_Friend_Sprite-Sheet_8: 7070115755474483195
+      Childhood_Friend_Sprite-Sheet_9: 8222064636602374181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 919658421}
   - component: {fileID: 919658422}
   m_Layer: 6
-  m_Name: Aling-Nena_0
+  m_Name: Aling Nena
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -666,7 +666,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
 --- !u!1 &965399281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1200,10 @@ PrefabInstance:
       propertyPath: currentState
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2351648159945080924, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
+      propertyPath: interactableLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.37
@@ -1510,6 +1514,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1d0f7248ac792a49bffaf60677fb6b9, type: 3}
+--- !u!1001 &4937695616446037096
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4526166340022347833, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_Name
+      value: Narrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.47699
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.14568
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
 --- !u!1001 &6442958145214851956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1571,6 +1632,228 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 979172f618e6cc9419221227cc92c53d, type: 3}
+--- !u!1001 &6766993984497276873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3746627962188140688, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_Name
+      value: Game Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.92472
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47405
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+--- !u!1001 &8421256587615702948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4693810774597266783, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_Name
+      value: QuestSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.28509
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00568
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772629632877467672, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questTitle
+      value: Ang Simula ng Bangungot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questTitle
+      value: Ang Kasunod ng Bangungot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questDescription
+      value: 'Intindihin ang misteryo '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questDescription
+      value: 'Intindihin ang misteryo '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[0].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[1].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[0].targetName
+      value: Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[1].targetName
+      value: Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].targetName
+      value: Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].targetName
+      value: Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[0].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[1].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].targetAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[0].objectiveTitle
+      value: Kausapin si Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[1].objectiveTitle
+      value: Kausapin ulet si Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].objectiveTitle
+      value: Testing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].objectiveTitle
+      value: Kausapin ulet si Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[0].objectiveDescription
+      value: Kausapin si Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[1].objectiveDescription
+      value: Kausapin ulet si Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].objectiveDescription
+      value: Testing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].objectiveDescription
+      value: Kausapin ulet si Aling Nena
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1587,3 +1870,6 @@ SceneRoots:
   - {fileID: 1911688230}
   - {fileID: 1122098476}
   - {fileID: 1540854378}
+  - {fileID: 4937695616446037096}
+  - {fileID: 6766993984497276873}
+  - {fileID: 8421256587615702948}

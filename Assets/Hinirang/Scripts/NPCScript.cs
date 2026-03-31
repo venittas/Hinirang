@@ -26,6 +26,7 @@ public class NPCScript : Interactable
         if(dialogueLines != null && dialogueLines.Length > 0)
         {
             DialogueSystem.Instance.StartDialogue(dialogueLines);
+            QuestSystem.Instance.CheckObjective(gameObject.name);
         }
     }
 

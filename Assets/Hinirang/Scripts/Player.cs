@@ -117,7 +117,6 @@ public class Player : MonoBehaviour
         if (hit.collider != null)
         {
             newInteractable = hit.collider.GetComponent<Interactable>();
-            //Debug.Log("Hit: " + hit.collider.name);
 
         }
         if (newInteractable != currentInteractable)

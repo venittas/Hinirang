@@ -232,6 +232,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &368735175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4526166340022347833, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+  m_PrefabInstance: {fileID: 4937695616446037096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &368735176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368735175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3931ac6aa2fa049938b736ae2ee3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  dialogueLines:
+  - characterName: 
+    line: "Tahimik ang baryo. Pero hindi ito ang payapang katahimikan\u2014ito ay
+      ang katahimikan ng mga natatakot."
+  moves: []
+  moveSpeed: 5
 --- !u!1001 &418081416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1569,7 +1594,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4526166340022347833, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 368735176}
   m_SourcePrefab: {fileID: 100100000, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
 --- !u!1001 &6442958145214851956
 PrefabInstance:
@@ -1683,6 +1711,10 @@ PrefabInstance:
     - target: {fileID: 7147554677867196588, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320347175344568238, guid: 579a348e73cfdb44887c38a088821cb3, type: 3}
+      propertyPath: IsNewGame
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1858,6 +1890,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 6766993984497276873}
   - {fileID: 919658420}
   - {fileID: 1779697042810520422}
   - {fileID: 1943684418}
@@ -1871,5 +1904,4 @@ SceneRoots:
   - {fileID: 1122098476}
   - {fileID: 1540854378}
   - {fileID: 4937695616446037096}
-  - {fileID: 6766993984497276873}
   - {fileID: 8421256587615702948}

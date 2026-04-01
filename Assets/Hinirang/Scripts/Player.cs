@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public static Player Instance;
 
     public PlayerState currentState = PlayerState.Moving;
+    private Vector2 input;
 
     [SerializeField] private float moveSpeed = 5f;
 
@@ -49,13 +50,29 @@ public class Player : MonoBehaviour
         float vaxis = Input.GetAxisRaw("Vertical");
         if (currentState == PlayerState.Moving)
         {
-            rb.linearVelocity = new Vector2(haxis * moveSpeed, vaxis * moveSpeed);
-            DirectionAnimation(haxis, vaxis);
+            if (haxis != 0)
+            {
+                input = new Vector2(haxis, 0);
+            }
+
+            if (vaxis != 0)
+            {
+                input = new Vector2(0, vaxis);
+            }
+
+            if (haxis == 0 && vaxis == 0)
+            {
+                input = Vector2.zero;
+            }
+
+            rb.linearVelocity = input * moveSpeed;
+
+            DirectionAnimation(input.x, input.y);
             DetectInteraction();
         }
 
 
-        
+
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null && currentState != PlayerState.Interacting)
         {
             currentInteractable.Interact();

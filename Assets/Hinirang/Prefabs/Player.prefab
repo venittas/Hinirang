@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce4c710f230b7414290e4ced11992e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Capsule
-  currentState: 0
+  currentState: 1
   moveSpeed: 5
   interactionRange: 1.5
   interactableLayer:

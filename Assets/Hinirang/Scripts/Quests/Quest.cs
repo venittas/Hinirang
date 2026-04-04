@@ -22,6 +22,20 @@ public class Quest
         return true;
     }
 
+    public bool CheckActiveObjective(string targetName)
+    {
+        QuestObjective currentObjective = questObjectives[currentObjectiveIndex];
+        if (currentObjective.targetName == targetName)
+        {
+            CheckObjective(targetName);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void CheckObjective(string targetName)
     {
         if (currentObjectiveIndex < 0 || currentObjectiveIndex >= questObjectives.Count)
@@ -35,6 +49,10 @@ public class Quest
             currentObjective.UpdateProgress(targetName);
             if (currentObjective.IsComplete())
             {
+                if ((currentObjectiveIndex+1) >= questObjectives.Count)
+                {
+                    return;
+                }
                 currentObjectiveIndex++;
                 if (currentObjectiveIndex >= questObjectives.Count)
                 {

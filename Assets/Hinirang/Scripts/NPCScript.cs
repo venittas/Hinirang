@@ -1,9 +1,12 @@
+using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCScript : Interactable
 {
-    [SerializeField] private DialogueLine[] dialogueLines;
+    [SerializeField] private Dialogue[] dialogues;
+    [SerializeField] private int dialogueIndex = 0;
     [SerializeField] private NPCMove[] moves;
     [SerializeField] private float moveSpeed = 5f;
     public enum Direction
@@ -23,11 +26,15 @@ public class NPCScript : Interactable
 
     public override void Interact()
     {
-        if(dialogueLines != null && dialogueLines.Length > 0)
+        if(dialogues != null && dialogues.Length > 0)
         {
-            DialogueSystem.Instance.StartDialogue(dialogueLines);
+            DialogueSystem.Instance.StartDialogue(dialogues[dialogueIndex].dialogueLines);
             Debug.Log("Interacted with " + gameObject.name);
-            QuestSystem.Instance.CheckObjective(gameObject.name);
+            DialogueSystem.Instance.SetInteractingTarget(gameObject.name);
+            if (dialogueIndex+1 < dialogues.Length)
+            {
+                dialogueIndex++;
+            }
         }
     }
 

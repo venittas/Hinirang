@@ -13,6 +13,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private float typingSpeed = 0.1f;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip textBlipSFX;
+    [SerializeField] private string InteractingTarget;
 
     private void Awake()
     {
@@ -27,6 +28,7 @@ public class DialogueSystem : MonoBehaviour
     }
     public void StartDialogue(DialogueLine[] dialogueLines)
     {
+        Player.Instance.currentState = Player.PlayerState.Interacting;
         dialoguePanel.gameObject.SetActive(true);
         StopAllCoroutines();
         StartCoroutine(TypeDialogue(dialogueLines));
@@ -73,6 +75,12 @@ public class DialogueSystem : MonoBehaviour
 
         dialoguePanel.gameObject.SetActive(false);
         Player.Instance.currentState = Player.PlayerState.Moving;
+
+        yield return new WaitForSeconds(1f);
+        if (QuestSystem.Instance.CheckActiveObjective(InteractingTarget))
+        {
+            QuestSystem.Instance.UpdateQuestUI();
+        }
     }
 
     private void PlayTextBlip()
@@ -81,6 +89,11 @@ public class DialogueSystem : MonoBehaviour
         {
             audioSource.PlayOneShot(textBlipSFX);
         }
+    }
+
+    public void SetInteractingTarget(string targetName)
+    {
+        InteractingTarget = targetName;
     }
 
 }

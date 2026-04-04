@@ -27,10 +27,12 @@ public class QuestObjective
             currentAmount = targetAmount; // Ensure it doesn't exceed the target
             Debug.Log($"Objective '{objectiveTitle}' completed!");
             questState = QuestState.Completed;
+            return;
         }
         else
         {
             questState = QuestState.InProgress;
+            return;
         }
     }
     public bool IsComplete()

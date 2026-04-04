@@ -130,6 +130,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0f37a4a280a2c4bbd6fe9484789d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &239518374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6015666228277350550, guid: b0a32c6aff2e55f49899a100f3e195c3, type: 3}
+  m_PrefabInstance: {fileID: 1943684418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &261943876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8598409355729138586, guid: 463fa0c39bb578d4e84560ffbf64281b, type: 3}
@@ -1111,6 +1122,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1424290069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4660043944833608837, guid: b0a32c6aff2e55f49899a100f3e195c3, type: 3}
+  m_PrefabInstance: {fileID: 1943684418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a7e1a5980c8f74a9ae777143e5f466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1540854376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,6 +1795,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: QuestBG
+      value: 
+      objectReference: {fileID: 1424290069}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: QuestTitle
+      value: 
+      objectReference: {fileID: 239518374}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.size
       value: 2

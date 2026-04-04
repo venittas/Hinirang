@@ -38,6 +38,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Playing intro...");
         Narrator.Instance.Interact();
         IsNewGame = false;
+        Invoke("UpdateQuestUI", 2f); // Delay to ensure dialogue starts before updating quest UI)
+    }
+
+    private void UpdateQuestUI()
+    {
+        QuestSystem.Instance.UpdateQuestUI();
     }
 
 

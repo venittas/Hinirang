@@ -14,6 +14,8 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip textBlipSFX;
     [SerializeField] private string InteractingTarget;
+    private bool skipRequested = false;
+    private bool isTyping = false;
 
     private void Awake()
     {
@@ -24,6 +26,11 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+        Button dialoguUIButton = dialoguePanel.GetComponent<Button>();
+        if (dialoguUIButton != null)
+        {
+            dialoguUIButton.onClick.AddListener(OnDialogueClicked);
         }
     }
     public void StartDialogue(DialogueLine[] dialogueLines)
@@ -40,37 +47,29 @@ public class DialogueSystem : MonoBehaviour
         //hahahahha hula-hula nalang
         foreach (DialogueLine line in dialogueLines)
         {
-            yield return null; 
             characterNameUI.text = line.characterName;
             lineUI.text = "";
-            bool skipped = false;
+            skipRequested = false;
+            isTyping = true;
 
             foreach (char letter in line.line)
             {
-                float timer = 0f;
-                while (timer < typingSpeed)
+                if (skipRequested)
                 {
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        lineUI.text = line.line;
-                        skipped = true;
-                        break;
-                    }
-                    timer += Time.deltaTime;
-                    yield return null;
+                    lineUI.text = line.line;
+                    break;
                 }
-
-                if (skipped) break;
 
                 lineUI.text += letter;
                 PlayTextBlip();
+                yield return new WaitForSeconds(typingSpeed);
             }
 
-            if (skipped)
-            {
-                yield return null;
-            }
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+            isTyping = false;
+            skipRequested = false;
+
+            // Wait for click instead of key
+            yield return new WaitUntil(() => skipRequested);
         }
 
         dialoguePanel.gameObject.SetActive(false);
@@ -82,6 +81,7 @@ public class DialogueSystem : MonoBehaviour
             QuestSystem.Instance.UpdateQuestUI();
         }
     }
+    
 
     private void PlayTextBlip()
     {
@@ -89,6 +89,11 @@ public class DialogueSystem : MonoBehaviour
         {
             audioSource.PlayOneShot(textBlipSFX);
         }
+    }
+
+    public void OnDialogueClicked()
+    {
+        skipRequested = true;
     }
 
     public void SetInteractingTarget(string targetName)

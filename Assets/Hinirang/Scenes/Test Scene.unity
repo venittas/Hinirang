@@ -130,6 +130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0f37a4a280a2c4bbd6fe9484789d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!4 &53728152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+  m_PrefabInstance: {fileID: 926157389}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &239518374 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6015666228277350550, guid: b0a32c6aff2e55f49899a100f3e195c3, type: 3}
@@ -262,10 +267,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 0}
   animator: {fileID: 0}
-  dialogueLines:
-  - characterName: 
-    line: "Tahimik ang baryo. Pero hindi ito ang payapang katahimikan\u2014ito ay
-      ang katahimikan ng mga natatakot."
+  dialogues:
+  - DialogueName: 
+    dialogueLines:
+    - characterName: 
+      line: "Tahimik ang baryo. Pero hindi ito ang payapang katahimikan\u2014ito
+        ay ang katahimikan ng mga natatakot."
+  dialogueIndex: 0
   moves: []
   moveSpeed: 5
 --- !u!1001 &418081416
@@ -546,13 +554,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCScript
   rb: {fileID: 0}
   animator: {fileID: 0}
-  dialogueLines:
-  - characterName: Aling Nena
-    line: Kamusta kana apo?
-  - characterName: Ikaw
-    line: Pogi parin po
-  - characterName: Ikaw
-    line: Paalam
+  dialogues:
+  - DialogueName: Quest 1
+    dialogueLines:
+    - characterName: Ikaw
+      line: Kamusta, maaari ko bang maitanong kung saan ba dito ang bahay ng albularyo?
+    - characterName: Aling Nena
+      line: Ang Albularyo? Huwag kang pupunta doon nang walang baon na dasal, nak.
+    - characterName: Aling Nena
+      line: Pero kung desidido ka, hanapin mo ang kubong may mga nakasabit na tuyong
+        bawang sa kakahuyan.
+  - DialogueName: Quest 2
+    dialogueLines:
+    - characterName: Ikaw
+      line: Good day panelists.
+    - characterName: Aling Nena
+      line: Who is the beneficiaries of your study and how will they benefit from
+        this?
+  dialogueIndex: 0
   moves: []
   moveSpeed: 5
 --- !u!212 &919658419
@@ -702,7 +721,68 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 7
+--- !u!1001 &926157389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1122098476}
+    m_Modifications:
+    - target: {fileID: 929966900182100242, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_Name
+      value: Indicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 929966900182100242, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
 --- !u!1 &965399281
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +935,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1122098476}
   - component: {fileID: 1122098475}
-  m_Layer: 0
+  - component: {fileID: 1122098478}
+  - component: {fileID: 1122098477}
+  - component: {fileID: 1122098479}
+  m_Layer: 6
   m_Name: Joba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -933,9 +1016,138 @@ Transform:
   m_LocalPosition: {x: -0.41, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 53728152}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1122098477
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122098474}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.0059512258, y: -0.017852902}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.42, y: 1.92}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.1224486, y: 1.717665}
+  m_EdgeRadius: 0
+--- !u!114 &1122098478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122098474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a06f3d9d7686c429eab5a0cac7c29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCScript
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  dialogues:
+  - DialogueName: 
+    dialogueLines:
+    - characterName: Ikaw
+      line: TAO POOOO!, TAO POOOO!.
+    - characterName: Mang Enko
+      line: 'Nandiyan ka na pala, inaabangan talaga kita, Alam ko kung bakit ka nandito. '
+    - characterName: Mang Enko
+      line: Ramdam ko ang bigat ng iyong puso, na kahit hindi mo sabihin saakin ay
+        alam ko ang kuwento mo.
+    - characterName: Ikaw
+      line: Ngunit paano mo nalaman? wala naman akong sinasabi sa iyo na tungkol
+        sa buhay ko.
+    - characterName: Mang Enko
+      line: Hindi mo na kailangan malaman kung paano ko nalalaman ang bawat detalye
+        sa islang ito, alam ko at ramdam ko ang bawat nangyayare sa lugar na ito.
+    - characterName: Ikaw
+      line: Hindi kona aalamin, ngunit may gusto akong malaman na alam kong sa iyo
+        ko lang pwedeng itanong.
+    - characterName: Ikaw
+      line: Alam kong alam mo ang mga pagkawala ng mga tao dito sa lugar natin kasama
+        na ang aking pamilya, ano ang nalalaman mo patungkol dito?
+    - characterName: Mang Enko
+      line: Hindi pa sapat ang oras, hindi pa sapat ang iyong nalalaman, hindi pa
+        sapat sa ngayon ang iyong lakas ng loob, ngunit isa lang ang maipapayo ko
+        sa ngayon, iyon ay ang lakasan mo ang loob mo sa bawat yugto na kakaharapin
+        mo.
+    - characterName: Ikaw
+      line: "Ngunit nais kong malaman dahil ako\u2019y naulila ng aking pamilya,
+        gusto kong bigyan ng hustisya ang kanilang pagkawala."
+    - characterName: Mang Enko
+      line: Hindi mo kailangan mag madali, nais kong maunawaan mo ito habang lumalaon,
+        hindi sa pamamagitan lang ng isang salita ko.
+    - characterName: Mang Enko
+      line: 'Osiya sige na, ngunit kunin mo itong sanga ng Kamagong at itong Anting-anting. '
+    - characterName: Mang Enko
+      line: "Hindi ito sapat para iligtas ka sa mga tatahakin mo, pero sapat na ito
+        para mabuhay ka ngayong gabi. Sige na umalis ka na bago pa lumalim ang gabi\u2026"
+  dialogueIndex: 0
+  moves: []
+  moveSpeed: 5
+--- !u!50 &1122098479
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122098474}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!4 &1129546218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
@@ -1324,6 +1536,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 46159226426011843, guid: b0a32c6aff2e55f49899a100f3e195c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 176981225979300174, guid: b0a32c6aff2e55f49899a100f3e195c3, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1825,7 +2041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[1].questObjectives.Array.size
@@ -1837,6 +2053,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[1].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[2].questType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
@@ -1853,7 +2073,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[1].targetName
-      value: Aling Nena
+      value: Mang Enko
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[2].targetName
+      value: Joba
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[1].questObjectives.Array.data[0].targetName
@@ -1872,6 +2096,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[2].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[1].questObjectives.Array.data[0].targetAmount
       value: 0
       objectReference: {fileID: 0}
@@ -1881,11 +2109,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[0].objectiveTitle
-      value: Kausapin si Aling Nena
+      value: Hanapin ang Albularyo
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[1].objectiveTitle
-      value: Kausapin ulet si Aling Nena
+      value: Kausapin ang Albularyo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[2].objectiveTitle
+      value: Umuwi at magpahinga
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[1].questObjectives.Array.data[0].objectiveTitle
@@ -1901,7 +2133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[1].objectiveDescription
-      value: Kausapin ulet si Aling Nena
+      value: Kausapin ang Albularyo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[2].objectiveDescription
+      value: Kausapin ang Albularyo
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[1].questObjectives.Array.data[0].objectiveDescription

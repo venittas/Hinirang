@@ -22,6 +22,18 @@ public class QuestSystem : MonoBehaviour
         Instance = this;
     }
 
+    public bool CheckActiveObjective(string targetName)
+    {
+        if (activeQuestIndex < 0 || activeQuestIndex >= quests.Count)
+        {
+            Debug.LogWarning("No active quest to check.");
+            return false;
+        }
+        Quest activeQuest = quests[activeQuestIndex];
+        Debug.Log("Checking objective: " + targetName + " for quest: " + activeQuest.questTitle);
+        return activeQuest.CheckActiveObjective(targetName); ;
+    }
+
     public void CheckObjective(string targetName)
     {
         if (activeQuestIndex < 0 || activeQuestIndex >= quests.Count)
@@ -30,7 +42,6 @@ public class QuestSystem : MonoBehaviour
             return;
         }
         Quest activeQuest = quests[activeQuestIndex];
-        activeQuest.CheckObjective(targetName);
         if (activeQuest.IsCompleted())
         {
             Debug.Log("Quest count " + activeQuestIndex);
@@ -55,7 +66,7 @@ public class QuestSystem : MonoBehaviour
         else
         {
             Quest activeQuest = quests[activeQuestIndex];
-            QuestTitle.text = activeQuest.questTitle;
+            QuestTitle.text = activeQuest.questObjectives[activeQuest.currentObjectiveIndex].objectiveTitle;
             Invoke("HideQuestUI", 3f);
         }
     }

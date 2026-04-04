@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 
     public PlayerState currentState = PlayerState.Moving;
     private Vector2 input;
+    private Vector2 touchInput;
 
     [SerializeField] private float moveSpeed = 5f;
 
@@ -50,30 +51,42 @@ public class Player : MonoBehaviour
         float vaxis = Input.GetAxisRaw("Vertical");
         if (currentState == PlayerState.Moving)
         {
-            if (haxis != 0)
+            Vector2 currentInput = touchInput;
+
+            if (currentInput == Vector2.zero)
             {
-                input = new Vector2(haxis, 0);
+                if (haxis != 0)
+                {
+                    currentInput = new Vector2(haxis, 0);
+                }
+
+                if (vaxis != 0)
+                {
+                    currentInput = new Vector2(0, vaxis);
+                }
+
+                if (haxis == 0 && vaxis == 0)
+                {
+                    currentInput = Vector2.zero;
+                }
             }
 
-            if (vaxis != 0)
-            {
-                input = new Vector2(0, vaxis);
-            }
-
-            if (haxis == 0 && vaxis == 0)
-            {
-                input = Vector2.zero;
-            }
-
-            rb.linearVelocity = input * moveSpeed;
-
-            DirectionAnimation(input.x, input.y);
+            rb.linearVelocity = currentInput * moveSpeed;
+            DirectionAnimation(currentInput.x, currentInput.y);
             DetectInteraction();
         }
 
 
 
-        if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null && currentState != PlayerState.Interacting)
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interact();
+        }
+    }
+
+    public void Interact()
+    {
+        if (currentInteractable != null && currentState != PlayerState.Interacting)
         {
             currentInteractable.Interact();
             currentState = PlayerState.Interacting;
@@ -159,4 +172,10 @@ public class Player : MonoBehaviour
         );
 
     }
+
+    public void MoveUp() => touchInput = new Vector2(0, 1);
+    public void MoveDown() => touchInput = new Vector2(0, -1);
+    public void MoveRight() => touchInput = new Vector2(1, 0);
+    public void MoveLeft() => touchInput = new Vector2(-1, 0);
+    public void StopMove() => touchInput = Vector2.zero;
 }

@@ -12,6 +12,8 @@ public class StartScreen : MonoBehaviour
     private Vector2 targetPosition;
     private bool isSlide = true;
     private const float  SLIDE_SPEED = 10f;
+    public GameObject FadeInCanvas;
+    public GameObject FadeOutCanvas;
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -20,11 +22,13 @@ public class StartScreen : MonoBehaviour
     {
         newGameButton.onClick.AddListener(() =>
         {
-            Debug.Log("Start Game button clicked");
+            Instantiate(FadeInCanvas);
+            SceneSystem.LoadScene(1);
         });
         continueButton.onClick.AddListener(() =>
         {
-            Debug.Log("Continue Game button clicked");
+            Instantiate(FadeInCanvas);
+            SceneSystem.LoadScene(1);
         });
         modeLeftButton.onClick.AddListener(() =>
         {

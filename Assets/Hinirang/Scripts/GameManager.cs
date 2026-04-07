@@ -3,7 +3,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    
+    public GameObject FadeInCanvas;
+    public GameObject FadeOutCanvas;
+
     public enum GameState
     {
         MainMenu,
@@ -26,10 +28,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        Instantiate(FadeOutCanvas);
         Debug.Log("GameManager started. IsNewGame: " + IsNewGame);
         if (IsNewGame)
         {
-            PlayIntro();
+            Invoke("PlayIntro", 1f);
         }
     }
 

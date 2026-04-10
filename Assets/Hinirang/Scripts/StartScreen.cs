@@ -43,7 +43,6 @@ public class StartScreen : MonoBehaviour
         rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 1000f);
 
     }
-
     void Update()
     {
         if (isSlide)
@@ -54,6 +53,10 @@ public class StartScreen : MonoBehaviour
             {
                 rectTransform.anchoredPosition = targetPosition;
                 isSlide = false;
+            }
+            else
+            {
+                isSlide = true;
             }
         }
     }

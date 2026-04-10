@@ -17,6 +17,16 @@ public class DialogueSystem : MonoBehaviour
     private bool skipRequested = false;
     private bool isTyping = false;
 
+    private void Start()
+    {
+        GameManager.Instance.IntroHelper1Finished += Instance_IntroHelper1Finished; ;
+    }
+
+    private void Instance_IntroHelper1Finished(object sender, System.EventArgs e)
+    {
+        GameManager.Instance.IntroHelper2();
+    }
+
     private void Awake()
     {
         if(Instance == null)
@@ -33,15 +43,16 @@ public class DialogueSystem : MonoBehaviour
             dialoguUIButton.onClick.AddListener(OnDialogueClicked);
         }
     }
-    public void StartDialogue(DialogueLine[] dialogueLines)
+    public void StartDialogue(DialogueLine[] dialogueLines, string eventName)
     {
         Player.Instance.currentState = Player.PlayerState.Interacting;
         dialoguePanel.gameObject.SetActive(true);
         StopAllCoroutines();
-        StartCoroutine(TypeDialogue(dialogueLines));
+        StartCoroutine(TypeDialogue(dialogueLines, eventName));
+        Debug.Log("Tapos na");
     }
 
-    private IEnumerator TypeDialogue(DialogueLine[] dialogueLines)
+    private IEnumerator TypeDialogue(DialogueLine[] dialogueLines, string eventName)
     {
         yield return null; //parang scanner.nextLine() sa java, para maghintay ng frame bago magstart si dialogue
         //hahahahha hula-hula nalang
@@ -79,6 +90,16 @@ public class DialogueSystem : MonoBehaviour
         if (QuestSystem.Instance.CheckActiveObjective(InteractingTarget))
         {
             QuestSystem.Instance.UpdateQuestUI();
+        }
+        EventChecker(eventName);
+    }
+
+    public void EventChecker(string eventName)
+    {
+        if (eventName == "IntroHelper1")
+        {
+            // Call a public method on GameManager to raise the event, since you cannot invoke it directly here.
+            GameManager.Instance.IntroHelper2();
         }
     }
     

@@ -24,11 +24,12 @@ public class NPCScript : Interactable
     }
     
 
-    public override void Interact()
+    public override void Interact(string eventName)
     {
+        
         if(dialogues != null && dialogues.Length > 0)
         {
-            DialogueSystem.Instance.StartDialogue(dialogues[dialogueIndex].dialogueLines);
+            DialogueSystem.Instance.StartDialogue(dialogues[dialogueIndex].dialogueLines, eventName);
             Debug.Log("Interacted with " + gameObject.name);
             DialogueSystem.Instance.SetInteractingTarget(gameObject.name);
             if (dialogueIndex+1 < dialogues.Length)

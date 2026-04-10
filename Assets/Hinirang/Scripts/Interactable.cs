@@ -34,5 +34,5 @@ public abstract class Interactable : MonoBehaviour
         indicator.SetActive(false);
     }
 
-    public abstract void Interact();
+    public abstract void Interact(string eventName);
 }

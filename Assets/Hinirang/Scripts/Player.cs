@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
     {
         if (currentInteractable != null && currentState != PlayerState.Interacting)
         {
-            currentInteractable.Interact();
+            currentInteractable.Interact(null);
             currentState = PlayerState.Interacting;
         }
     }
@@ -126,7 +126,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void SetAnimationBools(bool down, bool up, bool left, bool right)
+    public void SetAnimationBools(bool down, bool up, bool left, bool right)
     {
         if (currentState == PlayerState.Moving)
         {

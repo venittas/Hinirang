@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -5,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject FadeInCanvas;
     public GameObject FadeOutCanvas;
+    public event EventHandler IntroHelper1Finished;
 
     public enum GameState
     {
@@ -39,7 +41,24 @@ public class GameManager : MonoBehaviour
     private void PlayIntro()
     {
         Debug.Log("Playing intro...");
-        Narrator.Instance.Interact();
+        Player.Instance.SetAnimationBools(false, false, false, true);
+        Invoke("IntroHelper", 0.01f);
+
+    }
+
+    public void IntroHelper()
+    {
+        Player.Instance.SetAnimationBools(false, false, false, false);
+        MangJuan.Instance.MoveOne();
+        MangJuan.Instance.Interact("IntroHelper1");
+    }
+
+    public void IntroHelper2()
+    {
+        Player.Instance.SetAnimationBools(true, false, false, false);
+        Player.Instance.SetAnimationBools(false, false, false, false);
+        Debug.Log("Helper 2");
+        MangJuan.Instance.Scene3();
         IsNewGame = false;
     }
 

@@ -30,6 +30,12 @@ public class SampleWeapon : InventoryItem
         }
     }
 
+    public new void PickUp()
+    {
+        gameObject.transform.SetParent(Player.Instance.transform);
+        isPickedUp = true;
+    }
+
     private void UpdatePosition()
     {
         Vector2 playerDirection = Player.Instance.GetLastLookDirection();

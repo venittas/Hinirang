@@ -25,12 +25,12 @@ public abstract class Interactable : MonoBehaviour
 
     public void ShowIndicator()
     {
-        indicator.SetActive(true);
+        indicator?.SetActive(true);
     }
 
     public void HideIndicator()
     {
-        indicator.SetActive(false);
+        indicator?.SetActive(false);
     }
 
     public abstract void Interact(string eventName);

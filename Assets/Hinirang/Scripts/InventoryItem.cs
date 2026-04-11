@@ -17,5 +17,6 @@ public class InventoryItem : Interactable
     public override void Interact(string eventName)
     {
         InventorySystem.Instance.AddItem(this, 1);
+        Destroy(gameObject);
     }
 }

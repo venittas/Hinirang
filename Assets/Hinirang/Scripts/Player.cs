@@ -145,7 +145,7 @@ public class Player : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit: " + hit.collider.name);
+            //Debug.Log("Hit: " + hit.collider.name);
             newInteractable = hit.collider.GetComponent<Interactable>();
 
         }
@@ -161,6 +161,17 @@ public class Player : MonoBehaviour
             }
             currentInteractable = newInteractable;
         }
+    }
+
+    public void EquipItem(InventoryItem item)
+    {
+        // Implement item equipping logic here
+        // This could involve changing the player's sprite, enabling a weapon collider, etc.
+        // For example:
+        // SampleWeapon.Instance.isPickedUp = true;
+        // SampleWeapon.Instance.UpdatePosition();
+        Debug.Log("Equipped item");
+        item.isPickedUp = true;
     }
 
     private void OnDrawGizmosSelected()

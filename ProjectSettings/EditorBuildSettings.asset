@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Hinirang/Scenes/Start Screen.unity
     guid: 14955c9930d09fd46adc48425f07f429
   - enabled: 1
+    path: Assets/Hinirang/Scenes/Island.unity
+    guid: 5d8232c7313cc815aad91501d5bc9368
+  - enabled: 1
     path: Assets/Hinirang/Scenes/Test Scene.unity
     guid: 9ab826abe0487514ebad02a4563ede2f
   m_configObjects:

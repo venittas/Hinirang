@@ -173,7 +173,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: be0593b5b1640e330800000000000000
       internalID: 3738064774026055915
@@ -195,7 +195,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 689ad298ac3a78bc0800000000000000
       internalID: -3780873271874049658
@@ -217,7 +217,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: bf1368d6329506090800000000000000
       internalID: -8043330925787467269
@@ -239,7 +239,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: d37cef43dfcedeea0800000000000000
       internalID: -5841752569369671875
@@ -261,7 +261,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: b29895ea5a7b9ad30800000000000000
       internalID: 4443284429600295211
@@ -283,7 +283,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 1c98bd9ae23bb8ac0800000000000000
       internalID: -3851788043285722687
@@ -305,7 +305,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: f2dfc7b5876f55f40800000000000000
       internalID: 5716746298808139055
@@ -327,7 +327,7 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: cdd5661dd7bcde330800000000000000
       internalID: 3741870606659247580

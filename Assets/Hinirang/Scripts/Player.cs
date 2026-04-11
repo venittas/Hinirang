@@ -89,7 +89,6 @@ public class Player : MonoBehaviour
         if (currentInteractable != null && currentState != PlayerState.Interacting)
         {
             currentInteractable.Interact(null);
-            currentState = PlayerState.Interacting;
         }
     }
 
@@ -146,6 +145,7 @@ public class Player : MonoBehaviour
 
         if (hit.collider != null)
         {
+            Debug.Log("Hit: " + hit.collider.name);
             newInteractable = hit.collider.GetComponent<Interactable>();
 
         }

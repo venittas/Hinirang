@@ -14,8 +14,7 @@ public abstract class Interactable : MonoBehaviour
         }
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        Debug.Log("RB: " + rb);
-        Debug.Log("Animator: " + animator);
+        Debug.Log("Started " + gameObject.name);
     }
 
     // Update is called once per frame

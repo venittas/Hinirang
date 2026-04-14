@@ -3,19 +3,23 @@ using UnityEngine;
 public class SampleWeapon : InventoryItem
 {
     public static SampleWeapon Instance;
-    Collider2D stickCollider;
     Renderer weaponRenderer;
+
+    private void Start()
+    {
+        base.Start();   
+    }
     void Awake()
     {
+        base.Awake();
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
-        stickCollider = GetComponent<PolygonCollider2D>();
         weaponRenderer = GetComponent<Renderer>();
-        stickCollider.enabled = false;
+        base.stickCollider.enabled = false;
     }
 
     private void Update()
@@ -23,10 +27,11 @@ public class SampleWeapon : InventoryItem
         if (isPickedUp)
         {
             UpdatePosition();
+            base.stickCollider.enabled = false;
         }
         else
         {
-            stickCollider.enabled = true;
+            base.stickCollider.enabled = true;
         }
     }
 
@@ -34,6 +39,7 @@ public class SampleWeapon : InventoryItem
     {
         gameObject.transform.SetParent(Player.Instance.transform);
         isPickedUp = true;
+        base.stickCollider.enabled = false;
     }
 
     private void UpdatePosition()
@@ -85,14 +91,14 @@ public class SampleWeapon : InventoryItem
 
     public void Attack()
     {
-        stickCollider.enabled = true;
+        base.stickCollider.enabled = true;
         transform.localScale = new Vector3(1, 2, 1);
         Invoke(nameof(DisableCollider), 0.2f);
     }
 
     private void DisableCollider()
     {
-        stickCollider.enabled = false;
+        base.stickCollider.enabled = false;
         transform.localScale = new Vector3(1, 1, 1);
     }
 }

@@ -67,18 +67,5 @@ public class GameManager : MonoBehaviour
         QuestSystem.Instance.UpdateQuestUI();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
+    
+}

@@ -1,0 +1,976 @@
+fileFormatVersion: 2
+guid: ce973a96a9677694089bc83baba03893
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9202196206420987991
+    second: Gemini_Generated_Image_1txgft1txgft1txg_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e51ecd3396bcd045b45c2931256c172
+      internalID: -1503280099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a649a122ead0a83498127d68ab2b536c
+      internalID: 690906347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d667a0fe68da36c4fab0f050047e5125
+      internalID: 433982524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdccc3fa0ac1c804dab0db602e9a0b32
+      internalID: -1746465121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c02a2f0e31d88347b4f0fa42a1dd277
+      internalID: -780164486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4301cd61c87cc5e48b298b2b9c621bb9
+      internalID: -1479190215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aac581fbb85e154f97251aa37363506
+      internalID: -1149519079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d5267df0d08e149a4d818766563b70
+      internalID: -470338128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 1133
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1d0ab16eec5414f8ef23ae0d638d28
+      internalID: 801988063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3ff1e5a8067ba40bb52279a93c1fc7
+      internalID: -629907897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1de7874fef1f14998fc50be44f7e7a
+      internalID: 1491888420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856118a3698bb3c4bb313a8ac22b65f9
+      internalID: -1897655707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099785745e13c5e4bb7f2c91218ba3e3
+      internalID: 1209896336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bfb06725e6547438b18499b4255bb7
+      internalID: 509972569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb0f7050aa1f0c478c1455499ce802c
+      internalID: -286296940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d92693592e843149a5457322d80d009
+      internalID: 423381297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e775a5b1730dde644b4e2ff2aba3bc28
+      internalID: -1147723729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 833
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884852e74c53e554c91f3a0174d9d925
+      internalID: 602769255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed5428f90d3e8b40ab1f454d973c7e7
+      internalID: -408052089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db7cde41942d1a439f57e6ad800f340
+      internalID: 2116470694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc6ca821dc144c4cbf8fc7e428c7dd1
+      internalID: 636345062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd2488aac5f8cd47be2aa44a08fdee3
+      internalID: -879347811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1552727b9f3eaad4ca425cf6242db795
+      internalID: -1648214246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f383b37f93b2f564883b37c95e69d3c1
+      internalID: 990952423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f58bc178a6d294c91e7537fe3b434d
+      internalID: -654489914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46585830d4ce02041be9e4d81e2cbb0e
+      internalID: 2090396101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 533
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060f9fe3bc6a356469088fe0086113d0
+      internalID: -756223259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31a159f04688ad42ba7fd17cd6fa223
+      internalID: 1172384304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85ffb389bd9247458ec0baf7246bb11
+      internalID: 37706072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3006513ddbb5844fbc2137e470fca8f
+      internalID: -55224133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394cab7970c767249a003e129eb8c84e
+      internalID: 1749696428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4c0c38c94a77b46a46bbc7107fbff4
+      internalID: 1967575948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de481c3b5089da46aaa79f2f17e8a44
+      internalID: -1177946322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1b75e8cd8ae8e4189ff8a20afb71d6
+      internalID: 1346805323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_34
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be54568b004d5934ab0727ab2a0fdf5e
+      internalID: -1262277913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiyanak Sample Sprite_35
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 233
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0028bef3c4ac64a82407fb0f1e0b35
+      internalID: -1978315934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a044ed3dc346305439f8d5a257b6e219
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":300.0,"y":300.0},"gridSpriteOffset":{"x":99.0,"y":103.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Tiyanak Sample Sprite_0: -1503280099
+      Tiyanak Sample Sprite_1: 690906347
+      Tiyanak Sample Sprite_10: 1491888420
+      Tiyanak Sample Sprite_11: -1897655707
+      Tiyanak Sample Sprite_12: 1209896336
+      Tiyanak Sample Sprite_13: 509972569
+      Tiyanak Sample Sprite_14: -286296940
+      Tiyanak Sample Sprite_15: 423381297
+      Tiyanak Sample Sprite_16: -1147723729
+      Tiyanak Sample Sprite_17: 602769255
+      Tiyanak Sample Sprite_18: -408052089
+      Tiyanak Sample Sprite_19: 2116470694
+      Tiyanak Sample Sprite_2: 433982524
+      Tiyanak Sample Sprite_20: 636345062
+      Tiyanak Sample Sprite_21: -879347811
+      Tiyanak Sample Sprite_22: -1648214246
+      Tiyanak Sample Sprite_23: 990952423
+      Tiyanak Sample Sprite_24: -654489914
+      Tiyanak Sample Sprite_25: 2090396101
+      Tiyanak Sample Sprite_26: -756223259
+      Tiyanak Sample Sprite_27: 1172384304
+      Tiyanak Sample Sprite_28: 37706072
+      Tiyanak Sample Sprite_29: -55224133
+      Tiyanak Sample Sprite_3: -1746465121
+      Tiyanak Sample Sprite_30: 1749696428
+      Tiyanak Sample Sprite_31: 1967575948
+      Tiyanak Sample Sprite_32: -1177946322
+      Tiyanak Sample Sprite_33: 1346805323
+      Tiyanak Sample Sprite_34: -1262277913
+      Tiyanak Sample Sprite_35: -1978315934
+      Tiyanak Sample Sprite_4: -780164486
+      Tiyanak Sample Sprite_5: -1479190215
+      Tiyanak Sample Sprite_6: -1149519079
+      Tiyanak Sample Sprite_7: -470338128
+      Tiyanak Sample Sprite_8: 801988063
+      Tiyanak Sample Sprite_9: -629907897
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

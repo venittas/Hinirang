@@ -93,21 +93,13 @@ public class InventorySystem : MonoBehaviour
 
     public void SetEquippedItem(int index)
     {
-        if (index == 0)
-        {
-            Debug.LogError("WHY IS 0 BEING CALLED RIGHT NOW?");
-        }
-        Debug.Log("CLICKED INDEX: " + index + " | CURRENT: " + selectedSlotIndex);
-
         if (index < 0 || index >= slots.Count)
         {
-            Debug.LogWarning("Invalid inventory slot index: " + index);
             return;
         }
 
         if (index == selectedSlotIndex)
         {
-            Debug.Log("TOGGLING OFF index: " + index);
             slots[index].item.Unequip();
             selectedSlotIndex = -1;
             SelectedItemIndicator.SetActive(false);

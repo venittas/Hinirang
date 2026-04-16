@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -5,6 +7,7 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     public enum PlayerState
     {
@@ -25,8 +28,13 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask interactableLayer;
 
     private Vector2 lastLookDirection = Vector2.down;
+    
+    private float Health = 100f;
+    private bool isInvulnerable = false;
 
     Interactable currentInteractable = null;
+    private float invulnerabilityDuration = 1f;
+    private float flashInterval = 0.1f;
 
     public Vector2 GetLastLookDirection()
     {
@@ -43,6 +51,7 @@ public class Player : MonoBehaviour
         Instance = this;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -189,4 +198,39 @@ public class Player : MonoBehaviour
     public void MoveRight() => touchInput = new Vector2(1, 0);
     public void MoveLeft() => touchInput = new Vector2(-1, 0);
     public void StopMove() => touchInput = Vector2.zero;
+
+    public void TakeDamage(float damage)
+    {
+        if (isInvulnerable)
+        {
+            return;
+        }
+        else 
+        { 
+            Health -= damage;
+            StartCoroutine(BecomeInvulnerable());
+            if (Health <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private IEnumerator BecomeInvulnerable()
+    {
+        isInvulnerable = true; // Block further damage
+        float elapsed = 0;
+
+        // 3. Flash loop runs for the duration of invulnerability
+        while (elapsed < invulnerabilityDuration)
+        {
+            spriteRenderer.enabled = !spriteRenderer.enabled; // Visual effect
+            yield return new WaitForSeconds(flashInterval);
+            elapsed += flashInterval;
+        }
+
+        // 4. Reset states
+        spriteRenderer.enabled = true;
+        isInvulnerable = false;
+    }
 }

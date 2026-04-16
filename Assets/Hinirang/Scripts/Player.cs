@@ -174,11 +174,6 @@ public class Player : MonoBehaviour
 
     public void EquipItem(InventoryItem item)
     {
-        // Implement item equipping logic here
-        // This could involve changing the player's sprite, enabling a weapon collider, etc.
-        // For example:
-        // SampleWeapon.Instance.isPickedUp = true;
-        // SampleWeapon.Instance.UpdatePosition();
         Debug.Log("Equipped item");
         item.isPickedUp = true;
     }

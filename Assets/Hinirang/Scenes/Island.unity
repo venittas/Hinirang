@@ -227,11 +227,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.18
+      value: 24.9
       objectReference: {fileID: 0}
     - target: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7
+      value: 13.1
       objectReference: {fileID: 0}
     - target: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -339,6 +339,174 @@ Transform:
   - {fileID: 1017632851}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &167281812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 125.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361028110206237702, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_Name
+      value: Mang Engko
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[3].line
+      value: Hindi mo na kailangan malaman kung paano ko nalalaman ang bawat detalye
+        sa islang ito, alam ko at ramdam ko ang bawat nangyayare sa lugar na ito.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[11].line
+      value: "Hindi ito sapat para iligtas ka sa mga tatahakin mo, pero sapat na
+        ito para mabuhay ka ngayong gabi. Sige na umalis ka na bago pa lumalim ang
+        gabi\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[12].line
+      value: 'Osiya sige na, ngunit kunin mo itong sanga ng Kamagong at itong Anting-anting. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[3].characterName
+      value: Mang Enko
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7361028110206237702, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 200902816}
+  m_SourcePrefab: {fileID: 100100000, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+--- !u!1 &200902810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7361028110206237702, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
+  m_PrefabInstance: {fileID: 167281812}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &200902816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200902810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4edffe355c0a9ac4da070343061d2c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MangEnko
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  dialogues:
+  - DialogueName: 
+    dialogueLines:
+    - characterName: Ikaw
+      line: TAO POOOO!, TAO POOOO!.
+    - characterName: Mang Enko
+      line: 'Nandiyan ka na pala, inaabangan talaga kita, Alam ko kung bakit ka nandito. '
+    - characterName: Mang Enko
+      line: Ramdam ko ang bigat ng iyong puso, na kahit hindi mo sabihin saakin ay
+        alam ko ang kuwento mo.
+    - characterName: Ikaw
+      line: Ngunit paano mo nalaman? wala naman akong sinasabi sa iyo na tungkol
+        sa buhay ko.
+    - characterName: Mang Enko
+      line: Hindi mo na kailangan malaman kung paano ko nalalaman ang bawat detalye
+        sa islang ito, alam ko at ramdam ko ang bawat nangyayare sa lugar na ito.
+    - characterName: Ikaw
+      line: Hindi kona aalamin, ngunit may gusto akong malaman na alam kong sa iyo
+        ko lang pwedeng itanong.
+    - characterName: Ikaw
+      line: Alam kong alam mo ang mga pagkawala ng mga tao dito sa lugar natin kasama
+        na ang aking pamilya, ano ang nalalaman mo patungkol dito?
+    - characterName: Mang Enko
+      line: Hindi pa sapat ang oras, hindi pa sapat ang iyong nalalaman, hindi pa
+        sapat sa ngayon ang iyong lakas ng loob,
+    - characterName: Mang Enko
+      line: ngunit isa lang ang maipapayo ko sa ngayon, iyon ay ang lakasan mo ang
+        loob mo sa bawat yugto na kakaharapin mo.
+    - characterName: Ikaw
+      line: "Ngunit nais kong malaman dahil ako\u2019y naulila ng aking pamilya,
+        gusto kong bigyan ng hustisya ang kanilang pagkawala."
+    - characterName: Mang Enko
+      line: Hindi mo kailangan mag madali, nais kong maunawaan mo ito habang lumalaon,
+        hindi sa pamamagitan lang ng isang salita ko.
+    - characterName: Mang Enko
+      line: Osiya sige na, ngunit kunin mo itong sanga ng Kamagong at itong Anting-anting.
+    - characterName: Mang Enko
+      line: "Hindi ito sapat para iligtas ka sa mga tatahakin mo, pero sapat na ito
+        para mabuhay ka ngayong gabi. Sige na umalis ka na bago pa lumalim ang gabi\u2026"
+  dialogueIndex: 0
+  moves: []
+  moveSpeed: 5
 --- !u!1001 &355926541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,6 +804,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &499286805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499286806}
+  m_Layer: 0
+  m_Name: san ba to
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499286806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499286805}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.54, y: 3.95, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &575743196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,6 +3231,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1992195183145818945, guid: e63489e44d60f59419451f072ed50fc5, type: 3}
+      propertyPath: dialogues.Array.data[1].DialogueName
+      value: Quest 1 (Filler)
+      objectReference: {fileID: 0}
     - target: {fileID: 6071511038449189713, guid: e63489e44d60f59419451f072ed50fc5, type: 3}
       propertyPath: m_SortingLayer
       value: 6
@@ -3044,10 +3247,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Aling Nena
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1992195183145818945, guid: e63489e44d60f59419451f072ed50fc5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8070558070280765494, guid: e63489e44d60f59419451f072ed50fc5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1959843842}
   m_SourcePrefab: {fileID: 100100000, guid: e63489e44d60f59419451f072ed50fc5, type: 3}
 --- !u!1 &764041607
 GameObject:
@@ -5666,7 +5873,7 @@ Transform:
   m_GameObject: {fileID: 981028123}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.18, y: -0.7, z: -10}
+  m_LocalPosition: {x: 24.9, y: 13.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25349,7 +25556,7 @@ Transform:
   m_GameObject: {fileID: 1330288895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.18, y: -0.7, z: -10}
+  m_LocalPosition: {x: 24.9, y: 13.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -260850,6 +261057,46 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
+--- !u!1 &1959843836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8070558070280765494, guid: e63489e44d60f59419451f072ed50fc5, type: 3}
+  m_PrefabInstance: {fileID: 739412471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1959843842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959843836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e34961fe4532a3f489d5b403c26f48eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlingNena
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  dialogues:
+  - DialogueName: Quest 1
+    dialogueLines:
+    - characterName: Ikaw
+      line: Kamusta, maaari ko bang maitanong kung saan ba dito ang bahay ng albularyo?
+    - characterName: Aling Nena
+      line: Ang Albularyo? Huwag kang pupunta doon nang walang baon na dasal, nak.
+    - characterName: Aling Nena
+      line: Pero kung desidido ka, hanapin mo ang kubong may mga nakasabit na tuyong
+        bawang sa kakahuyan.
+  - DialogueName: Quest 1 (Filler)
+    dialogueLines:
+    - characterName: Aling Nena
+      line: Who is the beneficiaries of your study and how will they benefit from
+        this?
+    - characterName: Aling Nena
+      line: Pero kung desidido ka, hanapin mo ang kubong may mga nakasabit na tuyong
+        bawang sa kakahuyan.
+  dialogueIndex: 0
+  moves: []
+  moveSpeed: 5
 --- !u!114 &1982195649 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4660043944833608837, guid: 67e504577971e08439d7e50fa9bf65d3, type: 3}
@@ -301671,3 +301918,5 @@ SceneRoots:
   - {fileID: 1635877333}
   - {fileID: 355926541}
   - {fileID: 739412471}
+  - {fileID: 167281812}
+  - {fileID: 499286806}

@@ -40,11 +40,16 @@ public class Tiyanak : Enemy
 
         float distanceToPlayer = Vector2.Distance(transform.position, Player.Instance.transform.position);
 
-        if (distanceToPlayer <= attackRange && attackTimer <= 0)
+        if (distanceToPlayer <= attackRange)
         {
-            Attack();
+            if(attackTimer <= 0)
+            {
+                Attack();
+            }
         }
-        else if (distanceToPlayer <= chaseRange && jumpChaseTimer <= 0)
+        else if (distanceToPlayer <= chaseRange 
+            //&& jumpChaseTimer <= 0
+            )
         {
             Chase();
         }

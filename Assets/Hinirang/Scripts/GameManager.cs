@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject FadeInCanvas;
     public GameObject FadeOutCanvas;
+    public GameObject DeathCanvas;
     public event EventHandler IntroHelper1Finished;
 
     public enum GameState
@@ -67,5 +68,12 @@ public class GameManager : MonoBehaviour
         QuestSystem.Instance.UpdateQuestUI();
     }
 
-    
+    public void ShowDeathUI()
+    {
+        if (DeathCanvas != null)
+        {
+            DeathCanvas.SetActive(true);
+        }
+    }
+
 }

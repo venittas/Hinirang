@@ -508,6 +508,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2743250089810720446, guid: 979172f618e6cc9419221227cc92c53d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7485656495551354880, guid: 979172f618e6cc9419221227cc92c53d, type: 3}
       propertyPath: m_Name
       value: Mang Juan

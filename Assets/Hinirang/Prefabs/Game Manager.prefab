@@ -46,4 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   FadeInCanvas: {fileID: 8544538974375523985, guid: db1900bfdb0ce9547820a5f2c56cfca9, type: 3}
   FadeOutCanvas: {fileID: 9019983643490653696, guid: d5a64c21198808d46ac867fb138cdda9, type: 3}
+  DeathCanvas: {fileID: 8683755033968989348, guid: 68fba2299e5380944a0da272c69125f1, type: 3}
   IsNewGame: 1

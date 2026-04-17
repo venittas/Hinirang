@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Vector2 spawnPoint;
+    public string eventNameTrigger = string.Empty;
 
     public enum PlayerState
     {
@@ -99,7 +100,7 @@ public class Player : MonoBehaviour
     {
         if (currentInteractable != null && currentState != PlayerState.Interacting)
         {
-            currentInteractable.Interact(null);
+            currentInteractable.Interact(eventNameTrigger);
         }
     }
 

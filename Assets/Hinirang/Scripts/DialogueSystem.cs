@@ -24,6 +24,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void Instance_IntroHelper1Finished(object sender, System.EventArgs e)
     {
+        Player.Instance.currentState = Player.PlayerState.Interacting;
         GameManager.Instance.IntroHelper2();
     }
 
@@ -48,6 +49,7 @@ public class DialogueSystem : MonoBehaviour
         Player.Instance.currentState = Player.PlayerState.Interacting;
         dialoguePanel.gameObject.SetActive(true);
         StopAllCoroutines();
+        Debug.Log("CHECKERSSSSSSSSSSSSSSSSS: " + eventName);
         StartCoroutine(TypeDialogue(dialogueLines, eventName));
         Debug.Log("Tapos na");
     }
@@ -85,24 +87,40 @@ public class DialogueSystem : MonoBehaviour
 
         dialoguePanel.gameObject.SetActive(false);
         Player.Instance.currentState = Player.PlayerState.Moving;
+        Debug.Log("CHECKINGGGGGGGGGGGGGGG: " + eventName);
+        EventChecker(eventName);
 
         yield return new WaitForSeconds(1f);
         if (QuestSystem.Instance.CheckActiveObjective(InteractingTarget))
         {
             QuestSystem.Instance.UpdateQuestUI();
         }
-        EventChecker(eventName);
     }
 
-    public void EventChecker(string eventName)
+    public void EventChecker(string eventName) // O kaya gamitin ang string eventName
     {
-        if (eventName == "IntroHelper1")
+        // Pwede mong i-check pareho yung ipinasang eventName o yung laman ng Player
+        string currentEventName = eventName;
+
+        Debug.Log("EVENT NAME na pumasok: " + currentEventName);
+        Debug.Log("EVENT NAME ng Player: " + Player.Instance.eventNameTrigger);
+
+        if (currentEventName == "IntroHelper1")
         {
-            // Call a public method on GameManager to raise the event, since you cannot invoke it directly here.
+            Player.Instance.currentState = Player.PlayerState.Interacting;
             GameManager.Instance.IntroHelper2();
         }
+        // Kung gusto mo na pumasa basta Albularyo1Quest1 ang current na hawak ng Player:
+        else if (currentEventName == "EndOfDay1" || Player.Instance.eventNameTrigger == "EndOfDay1")
+        {
+            Player.Instance.currentState = Player.PlayerState.Interacting;
+            GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
+
+            // Optional: Palitan ang event name ng player para di mag-teleport paulit-ulit
+            // Player.Instance.eventNameTrigger = "NextEventKoNa"; 
+        }
     }
-    
+
 
     private void PlayTextBlip()
     {

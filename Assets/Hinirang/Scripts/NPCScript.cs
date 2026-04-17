@@ -37,6 +37,12 @@ public class NPCScript : Interactable
                 dialogueIndex++;
             }
         }
+        CheckEventTriggerName(eventName);
+    }
+
+    public virtual void CheckEventTriggerName(string eventName)
+    {
+
     }
 
     private void DirectionHelper(Direction direction, bool hasAnimation)

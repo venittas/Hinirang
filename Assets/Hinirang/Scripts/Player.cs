@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private Vector2 spawnPoint;
+    public string eventNameTrigger = string.Empty;
 
     public enum PlayerState
     {
@@ -52,6 +54,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        spawnPoint = transform.position;
     }
 
     void Update()
@@ -97,7 +100,7 @@ public class Player : MonoBehaviour
     {
         if (currentInteractable != null && currentState != PlayerState.Interacting)
         {
-            currentInteractable.Interact(null);
+            currentInteractable.Interact(eventNameTrigger);
         }
     }
 
@@ -206,17 +209,17 @@ public class Player : MonoBehaviour
             StartCoroutine(BecomeInvulnerable());
             if (Health <= 0)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
+                GameManager.Instance.ShowDeathUI();
             }
         }
     }
 
     private IEnumerator BecomeInvulnerable()
     {
-        isInvulnerable = true; // Block further damage
+        isInvulnerable = true; 
         float elapsed = 0;
 
-        // 3. Flash loop runs for the duration of invulnerability
         while (elapsed < invulnerabilityDuration)
         {
             spriteRenderer.enabled = !spriteRenderer.enabled; // Visual effect
@@ -224,8 +227,16 @@ public class Player : MonoBehaviour
             elapsed += flashInterval;
         }
 
-        // 4. Reset states
         spriteRenderer.enabled = true;
         isInvulnerable = false;
+    }
+
+    public void Respawn()
+    {
+        transform.position = spawnPoint;
+        Health = 100f;
+        isInvulnerable = false;
+        spriteRenderer.enabled = true;
+        gameObject.SetActive(true);
     }
 }

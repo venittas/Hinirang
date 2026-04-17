@@ -23,6 +23,15 @@ public class MangJuan : NPCScript
         //Scene3();
     }
 
+    public override void CheckEventTriggerName(string eventName)
+    {
+        string newEventName = eventName;
+        if (eventName == "IntroHelper1")
+        {
+            Player.Instance.eventNameTrigger = "AlingNena1Quest1";
+        }
+    }
+
     public void Scene3()
     {
         StartCoroutine(Scene3Routine());

@@ -6,7 +6,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject FadeInCanvas;
     public GameObject FadeOutCanvas;
+    public GameObject DeathCanvas;
     public event EventHandler IntroHelper1Finished;
+    GameObject tempFadeIn;
+    GameObject tempFadeOut;
+    Vector2 teleportPoint;
+
 
     public enum GameState
     {
@@ -55,11 +60,18 @@ public class GameManager : MonoBehaviour
 
     public void IntroHelper2()
     {
+        Player.Instance.currentState = Player.PlayerState.Interacting;
         Player.Instance.SetAnimationBools(true, false, false, false);
         Player.Instance.SetAnimationBools(false, false, false, false);
         Debug.Log("Helper 2");
         MangJuan.Instance.Scene3();
         IsNewGame = false;
+        Invoke("IntroFinished", 1f);
+    }
+
+    public void IntroFinished()
+    {
+        Player.Instance.currentState = Player.PlayerState.Moving;
     }
 
     public void UpdateQuestUI()
@@ -67,5 +79,32 @@ public class GameManager : MonoBehaviour
         QuestSystem.Instance.UpdateQuestUI();
     }
 
-    
+    public void ShowDeathUI()
+    {
+        if (DeathCanvas != null)
+        {
+            DeathCanvas.SetActive(true);
+        }
+    }
+
+    public void TeleportPlayer(float x, float y)
+    {
+        teleportPoint = new Vector2(x, y);
+        tempFadeIn = Instantiate(FadeInCanvas);
+        Invoke("TeleportPlayerHelper", 1f);
+        tempFadeOut = Instantiate(FadeOutCanvas);
+    }
+
+    private void TeleportPlayerHelper()
+    {
+        Destroy(tempFadeIn);
+        Player.Instance.transform.position = teleportPoint;
+        Invoke("TeleportPlayerHelper2", 1f);
+    }
+
+    private void TeleportPlayerHelper2()
+    {
+        Destroy(tempFadeOut);
+        Player.Instance.currentState = Player.PlayerState.Moving;
+    }
 }

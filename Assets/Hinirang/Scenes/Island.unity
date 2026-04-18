@@ -227,11 +227,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.9
+      value: 25.1
       objectReference: {fileID: 0}
     - target: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.1
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 2699165293095766246, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -349,15 +349,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.71
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.71
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.71
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 3594441111723599383, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -438,7 +438,8 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[3].characterName
       value: Mang Enko
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8946070191782132713, guid: ed8e2d54f72d44f42a56253d21a5cc3d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -504,6 +505,10 @@ MonoBehaviour:
     - characterName: Mang Enko
       line: "Hindi ito sapat para iligtas ka sa mga tatahakin mo, pero sapat na ito
         para mabuhay ka ngayong gabi. Sige na umalis ka na bago pa lumalim ang gabi\u2026"
+  - DialogueName: Ikatlong Araw (Filler)
+    dialogueLines:
+    - characterName: Mang Enko
+      line: Hanapin ang "MAN" na may pananagutan sa lahat ng ito
   dialogueIndex: 0
   moves: []
   moveSpeed: 5
@@ -569,15 +574,23 @@ PrefabInstance:
       objectReference: {fileID: 964163947}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questTitle
       value: Unang Araw
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questTitle
+      value: Ikatlong Araw
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[0].questType
@@ -589,6 +602,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[2].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].questType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[2].questType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
@@ -604,6 +629,18 @@ PrefabInstance:
       value: Aling Nena
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].targetName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].targetName
+      value: Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[2].targetName
+      value: Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[0].targetAmount
       value: 1
       objectReference: {fileID: 0}
@@ -616,6 +653,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].targetAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[2].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[1].objectiveTitle
       value: Kausapin Aling Nena
       objectReference: {fileID: 0}
@@ -624,11 +673,27 @@ PrefabInstance:
       value: Hanapin ang Albularyo
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].objectiveTitle
+      value: Kausapin Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[2].objectiveTitle
+      value: Hanapin ang Albularyo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[1].objectiveDescription
       value: Kausapin Aling Nena
       objectReference: {fileID: 0}
     - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
       propertyPath: quests.Array.data[0].questObjectives.Array.data[2].objectiveDescription
+      value: Hanapin ang Albularyo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[1].objectiveDescription
+      value: Kausapin Aling Nena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732452185411767004, guid: 2dbbaca88c2d7064abecc5f44312d6d1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[2].objectiveDescription
       value: Hanapin ang Albularyo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5873,7 +5938,7 @@ Transform:
   m_GameObject: {fileID: 981028123}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.9, y: 13.1, z: -10}
+  m_LocalPosition: {x: 25.1, y: 14.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25556,7 +25621,7 @@ Transform:
   m_GameObject: {fileID: 1330288895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.9, y: 13.1, z: -10}
+  m_LocalPosition: {x: 25.1, y: 14.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69561,6 +69626,443 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 438b09d6e1ecfeb449e9f2b75ed21301, type: 3}
+--- !u!1001 &1804341695
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 99.9363
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.26105
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740943831541533329, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[0].DialogueName
+      value: Unang Araw (Filler)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].DialogueName
+      value: Ikatlong Araw
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[0].line
+      value: Sino ka bang bata ka?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[1].line
+      value: Sino ka bang bata ka?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[0].line
+      value: Walang Hiya kaaaa!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[1].line
+      value: Huwag mong ituloy ang pag-atake, hindi mo ako kalaban at hindi kita
+        kayang labanan
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[2].line
+      value: Mahina na ako at naghihintay nalang ng aking kamatayan,
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[3].line
+      value: "Ngunit nais ko na bago ako mawala ay makatulong muna ako sa mismong
+        problema na kinaharap ko\u2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[4].line
+      value: Ha? Anong pinagsasasabi mo? Hindi bat ikaw ang ang halimaw na dahilan
+        ng mga kaguluhan at pagkawala dito?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[5].line
+      value: Malaki ang pagkakamali at intindi mo iho.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[6].line
+      value: Alam ko kung sino ka, alam ko rin na galing ka sa albularyo upang humingi
+        ng tulong, alam ko rin kung ano ang hinahanap mo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[7].line
+      value: Kung alam ninyo, bakit ayaw ninyon ipaalam na saakin, ayaw ba ninyo
+        akong matulungan?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[8].line
+      value: Hindi sa ganoon, ngunit malalaman mo sa iyong mga isip at kakaharapin
+        ng mas malinaw at detalyado.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[9].line
+      value: Papalapit na ang gabi iho, mukang kakailanganin mo ng umalis, ngunit
+        Iyang patpat mo ay panggatong lang sa impyernong kakaharapin mo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[10].line
+      value: Matapang ka, pero ang tapang ay walang silbi kung wala kang tamang sandata.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[11].line
+      value: Ang mga Tiyanak? Mga aso lang sila. May 'Ina' silang pinaglilingkuran.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[12].line
+      value: Kunin mo 'tong Buntot Pagi. Masakit ito, ngunit mahirap kontrolin at
+        mabagal. hindi lang sa balat, kundi pati sa kaluluwa ng mga demonyo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[13].line
+      value: Takbo na, bago pa mag-Takipsilim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[14].line
+      value: Ina? Anong ina? Sinong ina? May mas malaki pa kasya mga tiyanak?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[0].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[1].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[0].characterName
+      value: Ikaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[1].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[2].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[3].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[4].characterName
+      value: Ikaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[5].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[6].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[7].characterName
+      value: Ikaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[8].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[9].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[10].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[11].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[12].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[13].characterName
+      value: Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679090783053275251, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[14].characterName
+      value: Ikaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155377503327693792, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+      propertyPath: m_Name
+      value: Joba
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c2b7833d74e2284783c0e09179b164d, type: 3}
+--- !u!1001 &1810999655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].DialogueName
+      value: Unang Araw (Intro)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].DialogueName
+      value: Ikatlong Araw (Intro)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].DialogueName
+      value: Ikapitong Araw (Intro)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[3].DialogueName
+      value: Ikapitong Araw
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[0].line
+      value: "Sa gitna ng isang liblib na isla, ang katahimikan ay hindi kapayapaan\u2014ito
+        ay isang babala. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[1].line
+      value: Pag-uwi mo, bumungad sa iyo ang isang bakanteng tahanan.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[2].line
+      value: Wala na ang iyong pamilya, at ang hangin ay nangsicisikip sa lansa ng
+        basang lupa at nanunuyong dugo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[3].line
+      value: 'Ang tanging bakas na hawak mo? Isang pangalang ibinubulong sa takot:
+        ang Albularyo.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[4].line
+      value: Sabi nila, alam niya kung bakit nagsisimulang magutom ang mga anino.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[5].line
+      value: ' Sabi nila, alam niya ang katotohanan sa likod ng mga nawawala.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueLines.Array.data[6].line
+      value: Ngunit sa islang ito, ang katotohanan ay isang utang na binabayaran
+        ng dugo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[0].line
+      value: Ang unang pagpaslang ay patikim pa lamang ng bangungot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[1].line
+      value: Sa ikalawang araw, sinundan mo ang bakas ng mga alaala patungo sa lumang
+        pond.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[2].line
+      value: "Doon, nahanap mo ang ribbon ng iyong kapatid\u2014puno ng dugo\u2014at
+        isang sulat na tila isinulat sa gitna ng pagmamadali, na bumabanggit sa isang
+        pangalan: 'MAN'."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[3].line
+      value: Dahil sa pait ng iyong loob at paghahangad ng katarungan, itinuon mo
+        ang iyong galit sa misteryosong matandang naninirahan sa dulo ng kakahuyan.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[4].line
+      value: Hindi ka na lamang naghahanap ng sagot... naghahanap ka na ng mapaghihigantihan.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[5].line
+      value: ' Sabi nila, alam niya ang katotohanan sa likod ng mga nawawala.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueLines.Array.data[6].line
+      value: Ngunit sa islang ito, ang katotohanan ay isang utang na binabayaran
+        ng dugo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[0].line
+      value: Lumipas ang mga araw na tila isang masamang panaginip.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[1].line
+      value: 'Gamit ang Buntot Pagi na handog ng matanda, pinuntahan mo ang Albularyo
+        upang pandayin ang huling sandata: ang Spiked Kamagong.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[2].line
+      value: Ngunit habang lumalakas ka, lalo namang lumalalim ang dilim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[3].line
+      value: "Ang iyong kababata ay nananatili sa mga anino\u2014isang tahimik na
+        saksi sa iyong pakikipaglaban."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[4].line
+      value: Hanggang sa dumating ang huling dagok.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[5].line
+      value: "Nahanap mo ang Albularyong wala nang buhay\u2014pinaslang sa loob ng
+        sarili niyang tahanan."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[6].line
+      value: 'Sa kanyang huling testamento, nabunyag ang malupit na katotohanan:
+        ang ''MAN'' ay hindi kailanman naging tao.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[7].line
+      value: Ito ay ang Manananggal. Ang ina ng mga Tiyanak. Ang halimaw na lumapa
+        sa iyong pamilya.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[8].line
+      value: Ngayon, dito magtatapos ang bakas.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182095563714361694, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueLines.Array.data[9].line
+      value: Sa rurok ng bundok, kung saan ang hangin ay tumataghoy at ang buwan
+        ay kasing-pula ng dugo. Oras na para tapusin ang laban.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4526166340022347833, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_Name
+      value: Narrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.17253
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.57285
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687995109248127843, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ceaa872e8eae9a409fcf5f7dcfb0362, type: 3}
 --- !u!1 &1876340483
 GameObject:
   m_ObjectHideFlags: 0
@@ -261086,14 +261588,10 @@ MonoBehaviour:
     - characterName: Aling Nena
       line: Pero kung desidido ka, hanapin mo ang kubong may mga nakasabit na tuyong
         bawang sa kakahuyan.
-  - DialogueName: Quest 1 (Filler)
+  - DialogueName: Ikatlong Araw (Filler)
     dialogueLines:
-    - characterName: Aling Nena
-      line: Who is the beneficiaries of your study and how will they benefit from
-        this?
-    - characterName: Aling Nena
-      line: Pero kung desidido ka, hanapin mo ang kubong may mga nakasabit na tuyong
-        bawang sa kakahuyan.
+    - characterName: Ikaw
+      line: Mag-iingat ka apo.
   dialogueIndex: 0
   moves: []
   moveSpeed: 5
@@ -285098,17 +285596,19 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 873398215}
+  - {fileID: 144107378}
   - {fileID: 148228841}
   - {fileID: 1563335238}
   - {fileID: 417525452}
   - {fileID: 981028127}
-  - {fileID: 144107378}
   - {fileID: 1330288899}
   - {fileID: 1389407297}
   - {fileID: 99995042}
   - {fileID: 1637861430}
   - {fileID: 1635877333}
   - {fileID: 355926541}
-  - {fileID: 739412471}
-  - {fileID: 167281812}
   - {fileID: 499286806}
+  - {fileID: 167281812}
+  - {fileID: 739412471}
+  - {fileID: 1804341695}
+  - {fileID: 1810999655}

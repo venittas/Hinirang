@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -51,11 +52,26 @@ TagManager:
   - name: Land
     uniqueID: 1071632645
     locked: 0
-  - name: Trees
-    uniqueID: 2930188321
+  - name: Grass
+    uniqueID: 3811107527
+    locked: 0
+  - name: Upper Ground
+    uniqueID: 2582817859
+    locked: 0
+  - name: UpperGround2
+    uniqueID: 3423945953
+    locked: 0
+  - name: UpperGround3
+    uniqueID: 1414306783
+    locked: 0
+  - name: Decor
+    uniqueID: 1119988167
     locked: 0
   - name: House
     uniqueID: 1227760807
+    locked: 0
+  - name: Trees
+    uniqueID: 2930188321
     locked: 0
   - name: Player
     uniqueID: 2759577145

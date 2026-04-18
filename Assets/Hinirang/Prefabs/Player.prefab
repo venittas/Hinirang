@@ -180,12 +180,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce4c710f230b7414290e4ced11992e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Capsule
+  animator: {fileID: 0}
+  eventNameTrigger: 
   currentState: 1
   moveSpeed: 5
   interactionRange: 1.5
   interactableLayer:
     serializedVersion: 2
     m_Bits: 0
+  IsAttacking: 0
+  attackDuration: 2
+  defaultController: {fileID: 9100000, guid: 8a247d45746036847ba7b0f20bbbc6cf, type: 2}
+  stickController: {fileID: 9100000, guid: 4164a5ab29a46a44fa5d6534982936e9, type: 2}
 --- !u!95 &1606714686235228844
 Animator:
   serializedVersion: 7

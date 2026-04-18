@@ -1,0 +1,4517 @@
+fileFormatVersion: 2
+guid: 0154155673de48a089c2fb3bcaf18037
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6372985340370834545
+    second: Indoors_0
+  - first:
+      213: -832763516010563140
+    second: Indoors_1
+  - first:
+      213: 3866395804929560043
+    second: Indoors_2
+  - first:
+      213: -5506788866891540579
+    second: Indoors_3
+  - first:
+      213: -5761851529590138742
+    second: Indoors_4
+  - first:
+      213: -8605626158584878908
+    second: Indoors_5
+  - first:
+      213: -4370840415065613193
+    second: Indoors_6
+  - first:
+      213: 7702555485258600732
+    second: Indoors_7
+  - first:
+      213: 8178049038357335633
+    second: Indoors_8
+  - first:
+      213: 3625566725266652174
+    second: Indoors_9
+  - first:
+      213: -3073208625394752547
+    second: Indoors_10
+  - first:
+      213: -2642733438924789980
+    second: Indoors_11
+  - first:
+      213: -4032267764239665083
+    second: Indoors_12
+  - first:
+      213: 9013181047052204087
+    second: Indoors_13
+  - first:
+      213: 2232999789013378287
+    second: Indoors_14
+  - first:
+      213: -8414560899980014185
+    second: Indoors_15
+  - first:
+      213: 5942509060462150699
+    second: Indoors_16
+  - first:
+      213: -8323694876949707126
+    second: Indoors_17
+  - first:
+      213: 8982783358541425397
+    second: Indoors_18
+  - first:
+      213: 8876669964532587744
+    second: Indoors_19
+  - first:
+      213: 6525668556061870656
+    second: Indoors_20
+  - first:
+      213: 8738429353412732250
+    second: Indoors_21
+  - first:
+      213: -5132921316443266628
+    second: Indoors_22
+  - first:
+      213: 2939746107060336803
+    second: Indoors_23
+  - first:
+      213: -5343519859716519669
+    second: Indoors_24
+  - first:
+      213: -2862778037821202787
+    second: Indoors_25
+  - first:
+      213: -6033138809153862688
+    second: Indoors_26
+  - first:
+      213: -8791170780926448466
+    second: Indoors_27
+  - first:
+      213: 8269400679734021443
+    second: Indoors_28
+  - first:
+      213: 4800695177343200086
+    second: Indoors_29
+  - first:
+      213: 2123074166573077309
+    second: Indoors_30
+  - first:
+      213: 7772442812405271675
+    second: Indoors_31
+  - first:
+      213: 8010816215356563117
+    second: Indoors_32
+  - first:
+      213: 1940307673836613001
+    second: Indoors_33
+  - first:
+      213: -8075483390901032302
+    second: Indoors_34
+  - first:
+      213: -8818157440198065779
+    second: Indoors_35
+  - first:
+      213: -5039530225166621468
+    second: Indoors_36
+  - first:
+      213: -443330756609854415
+    second: Indoors_37
+  - first:
+      213: 1535728485986608773
+    second: Indoors_38
+  - first:
+      213: -3128825008593650114
+    second: Indoors_39
+  - first:
+      213: 4840542075599934705
+    second: Indoors_40
+  - first:
+      213: 2433991399024568740
+    second: Indoors_41
+  - first:
+      213: 9004134020970649215
+    second: Indoors_42
+  - first:
+      213: -4904447795232477741
+    second: Indoors_43
+  - first:
+      213: 8808487711926515565
+    second: Indoors_44
+  - first:
+      213: 1563669979997872566
+    second: Indoors_45
+  - first:
+      213: -6712286986280963496
+    second: Indoors_46
+  - first:
+      213: 7088845472365655184
+    second: Indoors_47
+  - first:
+      213: 939106657938157709
+    second: Indoors_48
+  - first:
+      213: -3135446192190425459
+    second: Indoors_49
+  - first:
+      213: 600120524846351941
+    second: Indoors_50
+  - first:
+      213: -6774338520947179574
+    second: Indoors_51
+  - first:
+      213: -8440941397318311545
+    second: Indoors_52
+  - first:
+      213: 6388556586501457611
+    second: Indoors_53
+  - first:
+      213: 167224113329312149
+    second: Indoors_54
+  - first:
+      213: 7793918763797948747
+    second: Indoors_55
+  - first:
+      213: -7101403053655483721
+    second: Indoors_56
+  - first:
+      213: 1693770237786844774
+    second: Indoors_57
+  - first:
+      213: -3369274517673977150
+    second: Indoors_58
+  - first:
+      213: 728028726290822913
+    second: Indoors_59
+  - first:
+      213: 1544448285385191646
+    second: Indoors_60
+  - first:
+      213: 8827664776865412857
+    second: Indoors_61
+  - first:
+      213: -8873507544810854543
+    second: Indoors_62
+  - first:
+      213: -8518734720313529092
+    second: Indoors_63
+  - first:
+      213: -1411368689590223210
+    second: Indoors_64
+  - first:
+      213: 1156125955784588097
+    second: Indoors_65
+  - first:
+      213: 8443172849581981457
+    second: Indoors_66
+  - first:
+      213: 1476974422255770633
+    second: Indoors_67
+  - first:
+      213: -7732836400542122644
+    second: Indoors_68
+  - first:
+      213: -869593364432503548
+    second: Indoors_69
+  - first:
+      213: 1370286369394198910
+    second: Indoors_70
+  - first:
+      213: 6080441080105967388
+    second: Indoors_71
+  - first:
+      213: 1544614176554422257
+    second: Indoors_72
+  - first:
+      213: 8513245813335580125
+    second: Indoors_73
+  - first:
+      213: -3797518842705627701
+    second: Indoors_74
+  - first:
+      213: -4574101927258525963
+    second: Indoors_75
+  - first:
+      213: -8883969444037809634
+    second: Indoors_76
+  - first:
+      213: 7967687579796871500
+    second: Indoors_77
+  - first:
+      213: -3640973610095334426
+    second: Indoors_78
+  - first:
+      213: 650410963048681682
+    second: Indoors_79
+  - first:
+      213: -916882335639523234
+    second: Indoors_80
+  - first:
+      213: 3148806166782717085
+    second: Indoors_81
+  - first:
+      213: 7170885792513933378
+    second: Indoors_82
+  - first:
+      213: 2787322312661072071
+    second: Indoors_83
+  - first:
+      213: -5137317362137094674
+    second: Indoors_84
+  - first:
+      213: 734233072784922100
+    second: Indoors_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Indoors_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174539bc664617850800000000000000
+      internalID: 6372985340370834545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9f84e8efd6174f0800000000000000
+      internalID: -832763516010563140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed03e1ef7238a530800000000000000
+      internalID: 3866395804929560043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d979ad7a3b4f393b0800000000000000
+      internalID: -5506788866891540579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a881d3abf8ac900b0800000000000000
+      internalID: -5761851529590138742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c82db37a9ca29880800000000000000
+      internalID: -8605626158584878908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77cd71adcc7a753c0800000000000000
+      internalID: -4370840415065613193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1153996769f4ea60800000000000000
+      internalID: 7702555485258600732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e830f65444e7170800000000000000
+      internalID: 8178049038357335633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cbef04ab9905230800000000000000
+      internalID: 3625566725266652174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3edaaa905c955d0800000000000000
+      internalID: -3073208625394752547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42767d860ff135bd0800000000000000
+      internalID: -2642733438924789980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5487c3115d18a08c0800000000000000
+      internalID: -4032267764239665083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73874dd8860451d70800000000000000
+      internalID: 9013181047052204087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe42aa72a753dfe10800000000000000
+      internalID: 2232999789013378287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dccc79179793b80800000000000000
+      internalID: -8414560899980014185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2403677188087250800000000000000
+      internalID: 5942509060462150699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a868ca83c9b4c7c80800000000000000
+      internalID: -8323694876949707126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_18
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fae62c2fd149ac70800000000000000
+      internalID: 8982783358541425397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_19
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec18585d44403b70800000000000000
+      internalID: 8876669964532587744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_20
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a010e2af4df8a50800000000000000
+      internalID: 6525668556061870656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a552301e233254970800000000000000
+      internalID: 8738429353412732250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb16e51124334c8b0800000000000000
+      internalID: -5132921316443266628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a83b2942831cc820800000000000000
+      internalID: 2939746107060336803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b090a5faff008d5b0800000000000000
+      internalID: -5343519859716519669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e90e0da8e5548d0800000000000000
+      internalID: -2862778037821202787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3c2cfc73cf54ca0800000000000000
+      internalID: -6033138809153862688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eace51b90cc7ff580800000000000000
+      internalID: -8791170780926448466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d8be4ea10d2c270800000000000000
+      internalID: 8269400679734021443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_29
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65be87024de7f9240800000000000000
+      internalID: 4800695177343200086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_30
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33956ab4bca67d10800000000000000
+      internalID: 2123074166573077309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c4476ce834ddb60800000000000000
+      internalID: 7772442812405271675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_32
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae544d97e22c2f60800000000000000
+      internalID: 8010816215356563117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_33
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98deef59c8b5dea10800000000000000
+      internalID: 1940307673836613001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ae6c744ae1eef80800000000000000
+      internalID: -8075483390901032302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_35
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81c68b578c9f9580800000000000000
+      internalID: -8818157440198065779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_36
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e46916f5fdff0ab0800000000000000
+      internalID: -5039530225166621468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_37
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134b3469609f8d9f0800000000000000
+      internalID: -443330756609854415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_38
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5862eaedbe0005510800000000000000
+      internalID: 1535728485986608773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_39
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3eba6e5b3e2494d0800000000000000
+      internalID: -3128825008593650114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_40
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f457781f5f0d2340800000000000000
+      internalID: 4840542075599934705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_41
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a92735184647c120800000000000000
+      internalID: 2433991399024568740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_42
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7617f5af2c15fc70800000000000000
+      internalID: 9004134020970649215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_43
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd68b117b6efebb0800000000000000
+      internalID: -4904447795232477741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_44
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67f5c597e80e3a70800000000000000
+      internalID: 8808487711926515565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_45
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b127b7ef8543b510800000000000000
+      internalID: 1563669979997872566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_46
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852fe389c8a29d2a0800000000000000
+      internalID: -6712286986280963496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_47
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094bdf71663a06260800000000000000
+      internalID: 7088845472365655184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80bb90a780680d00800000000000000
+      internalID: 939106657938157709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86732eec48ac74d0800000000000000
+      internalID: -3135446192190425459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54643e1107e045800800000000000000
+      internalID: 600120524846351941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfb2b6d107bcf1a0800000000000000
+      internalID: -6774338520947179574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781e3fa6580cbda80800000000000000
+      internalID: -8440941397318311545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6c6ed0e56b8a850800000000000000
+      internalID: 6388556586501457611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5919fd0f179125200800000000000000
+      internalID: 167224113329312149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49ad6c52df892c60800000000000000
+      internalID: 7793918763797948747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_56
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba9dfb2c8fb27d90800000000000000
+      internalID: -7101403053655483721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ee96aae0b718710800000000000000
+      internalID: 1693770237786844774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_58
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca54476daeed31d0800000000000000
+      internalID: -3369274517673977150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10738d0f44a7a1a00800000000000000
+      internalID: 728028726290822913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_60
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed07850688bfe6510800000000000000
+      internalID: 1544448285385191646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_61
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f67a45f75a228a70800000000000000
+      internalID: 8827664776865412857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_62
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177eccfd6e7fad480800000000000000
+      internalID: -8873507544810854543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_63
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcece3f7ef57c980800000000000000
+      internalID: -8518734720313529092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ebdd197afc96ce0800000000000000
+      internalID: -1411368689590223210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_65
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b362e6e626b0010800000000000000
+      internalID: 1156125955784588097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f7e8c09fc2c2570800000000000000
+      internalID: 8443172849581981457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_67
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c94e469644f7410800000000000000
+      internalID: 1476974422255770633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6df97793427fa490800000000000000
+      internalID: -7732836400542122644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_69
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40db6fd31759ee3f0800000000000000
+      internalID: -869593364432503548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_70
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e790d40613c340310800000000000000
+      internalID: 1370286369394198910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_71
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f986162f0126450800000000000000
+      internalID: 6080441080105967388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_72
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff0f8ce8629f6510800000000000000
+      internalID: 1544614176554422257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_73
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddd27d46ff152670800000000000000
+      internalID: 8513245813335580125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5bda09bb08c4bc0800000000000000
+      internalID: -3797518842705627701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe635328868580c0800000000000000
+      internalID: -4574101927258525963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_76
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1aa3b42cdcc5b480800000000000000
+      internalID: -8883969444037809634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_77
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c499513a3a9e29e60800000000000000
+      internalID: 7967687579796871500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb22b5dac9a87dc0800000000000000
+      internalID: -3640973610095334426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0598a2359b60900800000000000000
+      internalID: 650410963048681682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e503063af549643f0800000000000000
+      internalID: -916882335639523234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ca4ad868ec2bb20800000000000000
+      internalID: 3148806166782717085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_82
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24040b3a2aa148360800000000000000
+      internalID: 7170885792513933378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_83
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8fea020ee8ea620800000000000000
+      internalID: 2787322312661072071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_84
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee52f5be31594b8b0800000000000000
+      internalID: -5137317362137094674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_85
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f550bde615803a00800000000000000
+      internalID: 734233072784922100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_86
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c84a0ebd297954429456301bd643b88
+      internalID: -44290823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_87
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b13146ab69c0bed8fde394fadc9ab5
+      internalID: -1733963696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_88
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e63e97aaedd8a8258fa7d7956cc6028
+      internalID: 1994935207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbe974d63b305abeb001d095e390042
+      internalID: 1831545171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_90
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abac3f3afeae8405ac844c133babfc3
+      internalID: -1714306568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_91
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a66046ebedf8c7939863dfa9ace09e4
+      internalID: -586821554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_92
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ec00baca957fb71b7325f469f6e668
+      internalID: -1225311531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_93
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705d7bb24e3dc4ae3a89b7435a35c91c
+      internalID: 462906997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_94
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79b61459e39948d380b9103edccb331
+      internalID: -1921381340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_95
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a4702fee955466d84612b9b0611b65
+      internalID: -974003936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_96
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5ea2e99e55ce2d5b649724f3106ac9
+      internalID: -78198144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfaaa6554aef995ec84495d61af1a51c
+      internalID: -1767068176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_98
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5387761c362d12befa499fc46cd2f4d5
+      internalID: 946837639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_99
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a805317a1cc34424a868a92c202af96e
+      internalID: 813162379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_100
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59253bd8c4a4f8ba8bcc4ea3f3e8d5b
+      internalID: -2133782754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_101
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb75d7c4355a1ad6a5c2c216bb77706
+      internalID: 151774886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_102
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136111c02715aa404bd4740010c263bd
+      internalID: 1662155914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_103
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9021f5992e5690ca2237337665f495
+      internalID: 1476408186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_104
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc84cd697a10b80b897334a1996ac993
+      internalID: -1575329851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_105
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b027d456dbc15a9a3a2e6a2c1769a7
+      internalID: 1297002091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_106
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665f367aa7384d7e2898a9452bafb4d9
+      internalID: 892642492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_107
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4eb35263c77b66bbf31e6eff7ddb42
+      internalID: 223991350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_108
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9e95ed5c862d303a1932ce7f1abe62
+      internalID: 1218713409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79afce73fe828e7a8bb16b7502ce92c2
+      internalID: -2073562628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_110
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073914c7743680a95a4c08d799f6bae1
+      internalID: -451724209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_111
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25a10e63f1eac7b38cb61ccfb5d4898
+      internalID: -64579320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_112
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d713fcaeea09aea0493c5637aa9c3ecd
+      internalID: -101068615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_113
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f443f4a39c5011da7d72c4a99eb4e8
+      internalID: -487710333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_114
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f6ee360463d9c518c117e2c2727aff
+      internalID: 2142568687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_115
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951312febc53bba5989be8cf33f76da3
+      internalID: 1916060736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_116
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca2b9cdcf94d0f55a3f4c6d921226f5
+      internalID: -921450375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_117
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e658aaa5e656ddf6baee17e95eff450d
+      internalID: -1222166286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_118
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4719bded4d969aa5c96dabb4913a66c3
+      internalID: -217058843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_119
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5c43e3b0ce2cf2997d752b1a4d02bb
+      internalID: 846836655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_120
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c92a32b9e883b1ab97fd71cf227eaa
+      internalID: 1948400845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_121
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb609d939263024087dbfea1e0f89d3
+      internalID: 1713589542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_122
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3394325bad70a72a1443a0d77a1d0f
+      internalID: 1738113507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_123
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946ff6a93c549fedfa23c6670999bfb0
+      internalID: -2051369843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_124
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bf3ceee5c600afbb6c8edef05f80a3
+      internalID: 2052638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_125
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62d2ebc3d5397239b4fb099a1ac6d4e
+      internalID: 748758837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d1a7936006652c98aee340e467ae65
+      internalID: -785170866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_127
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169439fb5c854bec8bb8f2d3592d2783
+      internalID: 672278757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_128
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc4f8d1fbd41917ebc74a03546ecee9
+      internalID: -619738461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_129
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb8169f19dd6620fa0143112420318e
+      internalID: 1153347291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_130
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c01add1bbcc469209216689c421718e
+      internalID: -67611077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_131
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3668525a2788a26b316d28214f302d
+      internalID: 1974930347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_132
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56ce84c5399afdaf92658f99d6bbe25
+      internalID: -408470336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_133
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce15e0e9d00fa999ae1c8d2f383ed22
+      internalID: 94153206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_134
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9350ae2e54d4b04bf6d7644c8b1b59
+      internalID: 1104000069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_135
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063cab6500ef9b73c85361a92d9c9728
+      internalID: 289458990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_136
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bb8520b8c09eaff8efa71dbea810d9
+      internalID: -1265088795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_137
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33574a59a18878efa296fee88b013f7
+      internalID: -1278609420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_138
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f97f8f1266c6d33d9f49e96364637e9
+      internalID: 502052959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_139
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6d75af14af73f7d97c18c5210e4d95
+      internalID: 799368697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_140
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7227d14a3375ddcbab8bf892f02917
+      internalID: 634795028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_141
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41a15df0576ff9998348d3dc95f2d23
+      internalID: 618351712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_142
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24169f24aab4e5023a08b813b9de0549
+      internalID: -937659796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_143
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d7a2d16366bffc2bd6c12af907331b
+      internalID: -1764581815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8cebff1ebc06be28c565aaf567bc08
+      internalID: -1956127742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_145
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7eb398dca09e46e9cf74c774405e7a
+      internalID: -1138201996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_146
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2b6b1fd41752ddbb1c1ce985929811
+      internalID: 943618094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_147
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa91de55645a4b3a2966ae33e1a417b6
+      internalID: 1602093769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_148
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb60c6650a704f05a972840373ab881d
+      internalID: -1969497613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_149
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f07e7e51dded7138c5bd66d6b0612f
+      internalID: 556826073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_150
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17f45d24d1b38cc383d0007d83ff023
+      internalID: -1870603880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_151
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de1968bd1515b963af4f5f1e9441825
+      internalID: 576580973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_152
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da76ee2a0139233628ce3f686bdee0ed
+      internalID: 1454925549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_153
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da2c0f07329158f380e9d1e352c3184
+      internalID: -751574502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_154
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60317262fddf39256b2d06c737687baa
+      internalID: 1318326940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_155
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f0614b85166a978bbfb2300f169b51
+      internalID: -1706922192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_156
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84203d11b8d053b5ea9cd970cce95f9d
+      internalID: 659828377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_157
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f60db051300713a4897a2a43bd8c5f3
+      internalID: 522333294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_158
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666ce678238436c93a6ee958632d47e5
+      internalID: -462384075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_159
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86278dfa97d9c792b89c1ab5ba54cb3a
+      internalID: -895487147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_160
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6882b9fc953f1c20b9f8977524909a61
+      internalID: 1232012466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_161
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cc060076ca63d0d8bfca693031118c
+      internalID: 76811576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_162
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e871ecdb65af67cbbbb778b9922b7c
+      internalID: -1392758074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_163
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cb3a5b8bb584116b2a2bb4aa4aa1d1
+      internalID: 935699423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_164
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c021f5bf583736edb19e483a6d59b0f
+      internalID: -1758588762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_165
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84827cce98a8d391a4035fdc204b35e
+      internalID: -1033508716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_166
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6f53db8952ffbea824eccafdd4bc39
+      internalID: 1651229405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_167
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86beb518e3dca939591189d4cc804f48
+      internalID: -88538333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_168
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193baaad7c66c1f988cd1821c7407163
+      internalID: 171529070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_169
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f0ea9b8bc68f5c39d8189dbb64b375
+      internalID: 306918056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_170
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5342e97371fb896a8f38d43b16000c
+      internalID: -201467327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_171
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ff43f7729525f13a0d24d41cd2c8e8
+      internalID: 571847428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_172
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75ca965be53c8bd1b524108792f91f6
+      internalID: -2106565201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_173
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b782fec5821b556b0bfa47e797284d
+      internalID: -1250231313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_174
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2511fd87dd520f4a5bf17dda83ac95a6
+      internalID: -569643106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_175
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a31c8ae1ed177fcd8f9e4ad6b682ee7
+      internalID: 772476278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_176
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db8974f2a816938aaf488d2bdba5374
+      internalID: 1336825798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_177
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7ca2f78e39a4c449272d3264e6359c
+      internalID: -629906623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_178
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f9d60e20580a8f09e06584248752a1
+      internalID: 749588132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Indoors_179
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00dd369d5fd94a6a88759292b5e343a
+      internalID: -1394620124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fea4986144c5384ec9f5110c2bd3fb33
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Indoors_0: 6372985340370834545
+      Indoors_1: -832763516010563140
+      Indoors_10: -3073208625394752547
+      Indoors_100: -2133782754
+      Indoors_101: 151774886
+      Indoors_102: 1662155914
+      Indoors_103: 1476408186
+      Indoors_104: -1575329851
+      Indoors_105: 1297002091
+      Indoors_106: 892642492
+      Indoors_107: 223991350
+      Indoors_108: 1218713409
+      Indoors_109: -2073562628
+      Indoors_11: -2642733438924789980
+      Indoors_110: -451724209
+      Indoors_111: -64579320
+      Indoors_112: -101068615
+      Indoors_113: -487710333
+      Indoors_114: 2142568687
+      Indoors_115: 1916060736
+      Indoors_116: -921450375
+      Indoors_117: -1222166286
+      Indoors_118: -217058843
+      Indoors_119: 846836655
+      Indoors_12: -4032267764239665083
+      Indoors_120: 1948400845
+      Indoors_121: 1713589542
+      Indoors_122: 1738113507
+      Indoors_123: -2051369843
+      Indoors_124: 2052638
+      Indoors_125: 748758837
+      Indoors_126: -785170866
+      Indoors_127: 672278757
+      Indoors_128: -619738461
+      Indoors_129: 1153347291
+      Indoors_13: 9013181047052204087
+      Indoors_130: -67611077
+      Indoors_131: 1974930347
+      Indoors_132: -408470336
+      Indoors_133: 94153206
+      Indoors_134: 1104000069
+      Indoors_135: 289458990
+      Indoors_136: -1265088795
+      Indoors_137: -1278609420
+      Indoors_138: 502052959
+      Indoors_139: 799368697
+      Indoors_14: 2232999789013378287
+      Indoors_140: 634795028
+      Indoors_141: 618351712
+      Indoors_142: -937659796
+      Indoors_143: -1764581815
+      Indoors_144: -1956127742
+      Indoors_145: -1138201996
+      Indoors_146: 943618094
+      Indoors_147: 1602093769
+      Indoors_148: -1969497613
+      Indoors_149: 556826073
+      Indoors_15: -8414560899980014185
+      Indoors_150: -1870603880
+      Indoors_151: 576580973
+      Indoors_152: 1454925549
+      Indoors_153: -751574502
+      Indoors_154: 1318326940
+      Indoors_155: -1706922192
+      Indoors_156: 659828377
+      Indoors_157: 522333294
+      Indoors_158: -462384075
+      Indoors_159: -895487147
+      Indoors_16: 5942509060462150699
+      Indoors_160: 1232012466
+      Indoors_161: 76811576
+      Indoors_162: -1392758074
+      Indoors_163: 935699423
+      Indoors_164: -1758588762
+      Indoors_165: -1033508716
+      Indoors_166: 1651229405
+      Indoors_167: -88538333
+      Indoors_168: 171529070
+      Indoors_169: 306918056
+      Indoors_17: -8323694876949707126
+      Indoors_170: -201467327
+      Indoors_171: 571847428
+      Indoors_172: -2106565201
+      Indoors_173: -1250231313
+      Indoors_174: -569643106
+      Indoors_175: 772476278
+      Indoors_176: 1336825798
+      Indoors_177: -629906623
+      Indoors_178: 749588132
+      Indoors_179: -1394620124
+      Indoors_18: 8982783358541425397
+      Indoors_19: 8876669964532587744
+      Indoors_2: 3866395804929560043
+      Indoors_20: 6525668556061870656
+      Indoors_21: 8738429353412732250
+      Indoors_22: -5132921316443266628
+      Indoors_23: 2939746107060336803
+      Indoors_24: -5343519859716519669
+      Indoors_25: -2862778037821202787
+      Indoors_26: -6033138809153862688
+      Indoors_27: -8791170780926448466
+      Indoors_28: 8269400679734021443
+      Indoors_29: 4800695177343200086
+      Indoors_3: -5506788866891540579
+      Indoors_30: 2123074166573077309
+      Indoors_31: 7772442812405271675
+      Indoors_32: 8010816215356563117
+      Indoors_33: 1940307673836613001
+      Indoors_34: -8075483390901032302
+      Indoors_35: -8818157440198065779
+      Indoors_36: -5039530225166621468
+      Indoors_37: -443330756609854415
+      Indoors_38: 1535728485986608773
+      Indoors_39: -3128825008593650114
+      Indoors_4: -5761851529590138742
+      Indoors_40: 4840542075599934705
+      Indoors_41: 2433991399024568740
+      Indoors_42: 9004134020970649215
+      Indoors_43: -4904447795232477741
+      Indoors_44: 8808487711926515565
+      Indoors_45: 1563669979997872566
+      Indoors_46: -6712286986280963496
+      Indoors_47: 7088845472365655184
+      Indoors_48: 939106657938157709
+      Indoors_49: -3135446192190425459
+      Indoors_5: -8605626158584878908
+      Indoors_50: 600120524846351941
+      Indoors_51: -6774338520947179574
+      Indoors_52: -8440941397318311545
+      Indoors_53: 6388556586501457611
+      Indoors_54: 167224113329312149
+      Indoors_55: 7793918763797948747
+      Indoors_56: -7101403053655483721
+      Indoors_57: 1693770237786844774
+      Indoors_58: -3369274517673977150
+      Indoors_59: 728028726290822913
+      Indoors_6: -4370840415065613193
+      Indoors_60: 1544448285385191646
+      Indoors_61: 8827664776865412857
+      Indoors_62: -8873507544810854543
+      Indoors_63: -8518734720313529092
+      Indoors_64: -1411368689590223210
+      Indoors_65: 1156125955784588097
+      Indoors_66: 8443172849581981457
+      Indoors_67: 1476974422255770633
+      Indoors_68: -7732836400542122644
+      Indoors_69: -869593364432503548
+      Indoors_7: 7702555485258600732
+      Indoors_70: 1370286369394198910
+      Indoors_71: 6080441080105967388
+      Indoors_72: 1544614176554422257
+      Indoors_73: 8513245813335580125
+      Indoors_74: -3797518842705627701
+      Indoors_75: -4574101927258525963
+      Indoors_76: -8883969444037809634
+      Indoors_77: 7967687579796871500
+      Indoors_78: -3640973610095334426
+      Indoors_79: 650410963048681682
+      Indoors_8: 8178049038357335633
+      Indoors_80: -916882335639523234
+      Indoors_81: 3148806166782717085
+      Indoors_82: 7170885792513933378
+      Indoors_83: 2787322312661072071
+      Indoors_84: -5137317362137094674
+      Indoors_85: 734233072784922100
+      Indoors_86: -44290823
+      Indoors_87: -1733963696
+      Indoors_88: 1994935207
+      Indoors_89: 1831545171
+      Indoors_9: 3625566725266652174
+      Indoors_90: -1714306568
+      Indoors_91: -586821554
+      Indoors_92: -1225311531
+      Indoors_93: 462906997
+      Indoors_94: -1921381340
+      Indoors_95: -974003936
+      Indoors_96: -78198144
+      Indoors_97: -1767068176
+      Indoors_98: 946837639
+      Indoors_99: 813162379
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

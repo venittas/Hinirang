@@ -113,7 +113,8 @@ public class DialogueSystem : MonoBehaviour
         {
             Player.Instance.currentState = Player.PlayerState.Interacting;
             GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
-
+            GameManager.Instance.MoveDialogueToDay2();
+            Player.Instance.eventNameTrigger = "Day3";
             // Optional: Palitan ang event name ng player para di mag-teleport paulit-ulit
             // Player.Instance.eventNameTrigger = "NextEventKoNa"; 
         }

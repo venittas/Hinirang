@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -45,19 +46,24 @@ public class GameManager : MonoBehaviour
 
     private void PlayIntro()
     {
-        Narrator.Instance.Interact("");
+        Narrator.Instance.Interact("NarratorDay1");
         Debug.Log("Playing intro...");
         Player.Instance.SetAnimationBools(false, false, false, true);
-        Invoke("IntroHelper", 0.01f);
 
     }
 
     public void IntroHelper()
     {
         Player.Instance.SetAnimationBools(false, false, false, false);
-        MangJuan.Instance.MoveOne();
-        MangJuan.Instance.Interact("IntroHelper1");
+        StartCoroutine(IntroHelperRoutine());
     }
+    private IEnumerator IntroHelperRoutine()
+    {
+        Player.Instance.SetAnimationBools(false, false, true, false);
+        yield return StartCoroutine(MangJuan.Instance.MoveOne()); 
+        MangJuan.Instance.Interact("IntroHelper1");               
+    }
+
 
     public void IntroHelper2()
     {

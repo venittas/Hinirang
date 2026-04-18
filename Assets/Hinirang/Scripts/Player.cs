@@ -38,6 +38,9 @@ public class Player : MonoBehaviour
     private float invulnerabilityDuration = 1f;
     private float flashInterval = 0.1f;
 
+    public bool IsAttacking = false;
+    public float attackDuration = 2f;
+
     public Vector2 GetLastLookDirection()
     {
         return lastLookDirection;
@@ -61,7 +64,7 @@ public class Player : MonoBehaviour
     {
         float haxis = Input.GetAxisRaw("Horizontal");
         float vaxis = Input.GetAxisRaw("Vertical");
-        if (currentState == PlayerState.Moving)
+        if (currentState == PlayerState.Moving && IsAttacking == false)
         {
             Vector2 currentInput = touchInput;
 
@@ -94,7 +97,24 @@ public class Player : MonoBehaviour
         {
             Interact();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(AttackRoutine());
+        }
+
     }
+
+    IEnumerator AttackRoutine()
+    {
+        IsAttacking = true;
+        animator.SetTrigger("TestTrigger");
+
+        // wait for animation to finish
+        yield return new WaitForSeconds(attackDuration);
+
+        IsAttacking = false;
+    }
+
 
     public void Interact()
     {

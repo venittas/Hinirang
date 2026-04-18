@@ -81,6 +81,29 @@ public class GameManager : MonoBehaviour
         Player.Instance.currentState = Player.PlayerState.Moving;
     }
 
+    public void Day3Intro()
+    {
+        Player.Instance.currentState = Player.PlayerState.Interacting;
+        StartCoroutine(Day3IntroHelper());
+    }
+    public IEnumerator Day3IntroHelper()
+    {
+        yield return new WaitForSeconds(1f);
+        Narrator.Instance.Interact("");
+    }
+    public void Day7Intro()
+    {
+        Player.Instance.currentState = Player.PlayerState.Interacting;
+        StartCoroutine(Day7IntroHelper());
+    }
+    public IEnumerator Day7IntroHelper()
+    {
+        yield return new WaitForSeconds(1f);
+        Narrator.Instance.Interact("Day7");
+    }
+
+
+
     public void UpdateQuestUI()
     {
         QuestSystem.Instance.UpdateQuestUI();
@@ -94,11 +117,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void MoveDialogueToDay2()
+    public void MoveDialogueToDay3()
     {
         AlingNena.Instance.MoveDialogue();
         MangEnko.Instance.MoveDialogue();
         Joba.Instance.MoveDialogue();
+        Narrator.Instance.MoveDialogue();
+    }
+    public void MoveDialogueToDay7()
+    {
+        AlingNena.Instance.MoveDialogue();
+        MangEnko.Instance.MoveDialogue();
+        Joba.Instance.MoveDialogue();
+        Narrator.Instance.MoveDialogue();
     }
 
     public void TeleportPlayer(float x, float y)

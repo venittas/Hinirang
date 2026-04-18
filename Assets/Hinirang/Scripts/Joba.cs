@@ -12,4 +12,14 @@ public class Joba : NPCScript
         }
         Instance = this;
     }
+
+    public override void CheckEventTriggerName(string eventName)
+    {
+        string newEventName = eventName;
+
+        if (Player.Instance.eventNameTrigger == "Day3")
+        {
+            Player.Instance.eventNameTrigger = "EndOfDay3";
+        }
+    }
 }

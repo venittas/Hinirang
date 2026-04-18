@@ -16,11 +16,9 @@ public class MangJuan : NPCScript
         }
         Instance = this;
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         base.Start();
-        //Scene3();
     }
 
     public override void CheckEventTriggerName(string eventName)

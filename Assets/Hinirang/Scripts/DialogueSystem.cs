@@ -15,7 +15,6 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private AudioClip textBlipSFX;
     [SerializeField] private string InteractingTarget;
     private bool skipRequested = false;
-    private bool isTyping = false;
 
     private void Start()
     {
@@ -61,7 +60,6 @@ public class DialogueSystem : MonoBehaviour
             characterNameUI.text = line.characterName;
             lineUI.text = "";
             skipRequested = false;
-            isTyping = true;
 
             foreach (char letter in line.line)
             {
@@ -76,16 +74,13 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(typingSpeed);
             }
 
-            isTyping = false;
             skipRequested = false;
 
-            // Wait for click instead of key
             yield return new WaitUntil(() => skipRequested);
         }
 
         dialoguePanel.gameObject.SetActive(false);
         Player.Instance.currentState = Player.PlayerState.Moving;
-        Debug.Log("CHECKINGGGGGGGGGGGGGGG: " + eventName);
         EventChecker(eventName);
 
         yield return new WaitForSeconds(1f);
@@ -95,9 +90,8 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    public void EventChecker(string eventName) // O kaya gamitin ang string eventName
+    public void EventChecker(string eventName)
     {
-        // Pwede mong i-check pareho yung ipinasang eventName o yung laman ng Player
         string currentEventName = eventName;
 
         Debug.Log("EVENT NAME na pumasok: " + currentEventName);
@@ -108,20 +102,27 @@ public class DialogueSystem : MonoBehaviour
             Player.Instance.currentState = Player.PlayerState.Interacting;
             GameManager.Instance.IntroHelper2();
         }
-        // Kung gusto mo na pumasa basta Albularyo1Quest1 ang current na hawak ng Player:
         else if (currentEventName == "EndOfDay1" || Player.Instance.eventNameTrigger == "EndOfDay1")
         {
             Player.Instance.currentState = Player.PlayerState.Interacting;
             GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
-            GameManager.Instance.MoveDialogueToDay2();
+            GameManager.Instance.MoveDialogueToDay3();
             Player.Instance.eventNameTrigger = "Day3";
-            // Optional: Palitan ang event name ng player para di mag-teleport paulit-ulit
-            // Player.Instance.eventNameTrigger = "NextEventKoNa"; 
+            GameManager.Instance.Day3Intro();
         }
         else if (currentEventName == "NarratorDay1" || Player.Instance.eventNameTrigger == "NarratorDay1")
         {
             GameManager.Instance.IntroHelper();
-        }
+        } 
+        else if (currentEventName == "EndOfDay3" || Player.Instance.eventNameTrigger == "EndOfDay3")
+        {
+            Player.Instance.currentState = Player.PlayerState.Interacting;
+            GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
+            GameManager.Instance.MoveDialogueToDay7();
+            Player.Instance.eventNameTrigger = "Day7";
+            MangEnko.Instance.enabled = false;
+            GameManager.Instance.Day7Intro();
+        } 
     }
 
 

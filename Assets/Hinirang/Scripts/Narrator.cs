@@ -6,7 +6,7 @@ public class Narrator : NPCScript
 
     public override void CheckEventTriggerName(string eventName)
     {
-        throw new System.NotImplementedException();
+
     }
 
     private void Awake()

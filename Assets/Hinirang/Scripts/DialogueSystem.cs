@@ -49,9 +49,7 @@ public class DialogueSystem : MonoBehaviour
         Player.Instance.currentState = Player.PlayerState.Interacting;
         dialoguePanel.gameObject.SetActive(true);
         StopAllCoroutines();
-        Debug.Log("CHECKERSSSSSSSSSSSSSSSSS: " + eventName);
         StartCoroutine(TypeDialogue(dialogueLines, eventName));
-        Debug.Log("Tapos na");
     }
 
     private IEnumerator TypeDialogue(DialogueLine[] dialogueLines, string eventName)

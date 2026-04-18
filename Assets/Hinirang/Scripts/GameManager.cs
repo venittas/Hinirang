@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
 
     private void PlayIntro()
     {
+        Narrator.Instance.Interact("");
         Debug.Log("Playing intro...");
         Player.Instance.SetAnimationBools(false, false, false, true);
         Invoke("IntroHelper", 0.01f);
@@ -85,6 +86,13 @@ public class GameManager : MonoBehaviour
         {
             DeathCanvas.SetActive(true);
         }
+    }
+
+    public void MoveDialogueToDay2()
+    {
+        AlingNena.Instance.MoveDialogue();
+        MangEnko.Instance.MoveDialogue();
+        Joba.Instance.MoveDialogue();
     }
 
     public void TeleportPlayer(float x, float y)

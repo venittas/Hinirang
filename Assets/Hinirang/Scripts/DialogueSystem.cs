@@ -117,6 +117,10 @@ public class DialogueSystem : MonoBehaviour
             // Optional: Palitan ang event name ng player para di mag-teleport paulit-ulit
             // Player.Instance.eventNameTrigger = "NextEventKoNa"; 
         }
+        else if (currentEventName == "NarratorDay1" || Player.Instance.eventNameTrigger == "NarratorDay1")
+        {
+            GameManager.Instance.IntroHelper();
+        }
     }
 
 

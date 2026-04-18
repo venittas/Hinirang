@@ -1971,6 +1971,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2351648159945080924, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
+      propertyPath: attackDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351648159945080924, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
       propertyPath: interactableLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}

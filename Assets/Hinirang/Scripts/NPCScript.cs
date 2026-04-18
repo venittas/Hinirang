@@ -22,6 +22,14 @@ public class NPCScript : Interactable
         base.Start();
         
     }
+
+    public void MoveDialogue()
+    {
+        if (dialogues != null && dialogues.Length > 0 && dialogueIndex+1 < dialogues.Length)
+        {
+            dialogueIndex++;
+        }
+    }
     
 
     public override void Interact(string eventName)
@@ -32,10 +40,6 @@ public class NPCScript : Interactable
             DialogueSystem.Instance.StartDialogue(dialogues[dialogueIndex].dialogueLines, eventName);
             Debug.Log("Interacted with " + gameObject.name);
             DialogueSystem.Instance.SetInteractingTarget(gameObject.name);
-            if (dialogueIndex+1 < dialogues.Length)
-            {
-                dialogueIndex++;
-            }
         }
         CheckEventTriggerName(eventName);
     }

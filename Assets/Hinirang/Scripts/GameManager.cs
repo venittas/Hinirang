@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
     }
     public IEnumerator Day3IntroHelper()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(4f);
         Narrator.Instance.Interact("");
     }
     public void Day7Intro()
@@ -136,18 +136,24 @@ public class GameManager : MonoBehaviour
     {
         teleportPoint = new Vector2(x, y);
         tempFadeIn = Instantiate(FadeInCanvas);
-        Invoke("TeleportPlayerHelper", 1f);
-        tempFadeOut = Instantiate(FadeOutCanvas);
+        Invoke("TeleportPlayerHelper", 1.5f);
     }
 
     private void TeleportPlayerHelper()
     {
-        Destroy(tempFadeIn);
         Player.Instance.transform.position = teleportPoint;
+        Player.Instance.SetAnimationBools(true, false, false, false, false);
+        Player.Instance.SetAnimationBools(false, false, false, false, false);
         Invoke("TeleportPlayerHelper2", 1f);
     }
 
     private void TeleportPlayerHelper2()
+    {
+        tempFadeOut = Instantiate(FadeOutCanvas);
+        Invoke("TeleportPlayerHelper3", 0.5f);
+        Destroy(tempFadeIn);
+    }
+    private void TeleportPlayerHelper3()
     {
         Destroy(tempFadeOut);
         Player.Instance.currentState = Player.PlayerState.Moving;

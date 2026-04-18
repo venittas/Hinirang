@@ -3189,7 +3189,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1364778975
-  m_SortingLayer: 4
+  m_SortingLayer: 10
   m_SortingOrder: -2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -4886,7 +4886,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -267760305
-  m_SortingLayer: 7
+  m_SortingLayer: 12
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -5841,7 +5841,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1227760807
-  m_SortingLayer: 5
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -25552,7 +25552,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1227760807
-  m_SortingLayer: 5
+  m_SortingLayer: 9
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -69494,7 +69494,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1364778975
-  m_SortingLayer: 4
+  m_SortingLayer: 10
   m_SortingOrder: -2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -261001,7 +261001,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -267760305
-  m_SortingLayer: 7
+  m_SortingLayer: 12
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}

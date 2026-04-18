@@ -36,9 +36,9 @@ public class InventoryItem : Interactable
 
     public void PickUp()
     {
-        gameObject.transform.SetParent(Player.Instance.transform);
-        isPickedUp = true;
-        stickCollider.enabled = false;
+        //gameObject.transform.SetParent(Player.Instance.transform);
+        //isPickedUp = true;
+        //stickCollider.enabled = false;
     }
 
     public new void ShowIndicator()//pwede pala yon, gagamit ng new pag override
@@ -63,7 +63,7 @@ public class InventoryItem : Interactable
         Equip();
     }
 
-    public void Equip()
+    public virtual void Equip()
     {
         Debug.Log("Equipping item: " + itemName);
         gameObject.transform.SetParent(Player.Instance.transform);

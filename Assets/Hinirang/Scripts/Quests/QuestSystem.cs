@@ -58,20 +58,18 @@ public class QuestSystem : MonoBehaviour
 
     public void UpdateQuestUI()
     {
-        // 1. Check for null BEFORE accessing .gameObject
         if (QuestBG == null)
         {
             Debug.LogError("QuestBG is NOT assigned in the Inspector!");
             return;
         }
 
-        // 2. Cancel any pending 'Hide' calls so they don't flicker the UI
         CancelInvoke("HideQuestUI");
 
         if (activeQuestIndex < 0 || activeQuestIndex >= quests.Count)
         {
             QuestTitle.text = "No active quest";
-            QuestBG.gameObject.SetActive(true); // Show the "No active quest" state
+            QuestBG.gameObject.SetActive(true); 
             Debug.LogWarning("NOTHING");
         }
         else
@@ -81,7 +79,6 @@ public class QuestSystem : MonoBehaviour
             QuestTitle.text = activeQuest.questObjectives[activeQuest.currentObjectiveIndex].objectiveTitle;
 
             QuestBG.gameObject.SetActive(true);
-            // Only hide it if you actually want it to disappear after 3 seconds
             Invoke("HideQuestUI", 3f);
         }
     }

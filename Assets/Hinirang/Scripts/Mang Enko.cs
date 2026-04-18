@@ -19,7 +19,7 @@ public class MangEnko : NPCScript
         if (Player.Instance.eventNameTrigger == "Albularyo1Quest1")
         {
             Player.Instance.eventNameTrigger = "EndOfDay1";
-            newEventName = "Albularyo1Quest1"; // Gamitin itong event name na ito para sa dialogue system
+            newEventName = "Albularyo1Quest1"; 
             Debug.Log("TANGINA MO BINAGO KO NA: " + Player.Instance.eventNameTrigger);
         }
     }

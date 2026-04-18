@@ -113,7 +113,16 @@ public class DialogueSystem : MonoBehaviour
         else if (currentEventName == "NarratorDay1" || Player.Instance.eventNameTrigger == "NarratorDay1")
         {
             GameManager.Instance.IntroHelper();
-        }
+        } 
+        else if (currentEventName == "EndOfDay3" || Player.Instance.eventNameTrigger == "EndOfDay3")
+        {
+            Player.Instance.currentState = Player.PlayerState.Interacting;
+            GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
+            GameManager.Instance.MoveDialogueToDay7();
+            Player.Instance.eventNameTrigger = "Day7";
+            MangEnko.Instance.enabled = false;
+            GameManager.Instance.Day7Intro();
+        } 
     }
 
 

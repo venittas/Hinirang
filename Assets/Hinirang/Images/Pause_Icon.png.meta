@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 1a2ce7860b3e6adc5b4b5f149edafaa8
+guid: 0290f7518b7e41ebdb442259f6231b64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5081554105113574781
-    second: Scene_1_Title 1_0
+      213: -6980106149008492115
+    second: Pause_Icon_0
+  - first:
+      213: -7308641695895019717
+    second: Pause_Icon_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scene_1_Title 1_0
+      name: Pause_Icon_0
       rect:
         serializedVersion: 2
-        x: 674
-        y: 44
-        width: 857
-        height: 687
+        x: 29
+        y: 19
+        width: 42
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38207c1f671ba79b0800000000000000
-      internalID: -5081554105113574781
+      spriteID: da934dd807ea12f90800000000000000
+      internalID: -6980106149008492115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pause_Icon_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 19
+        width: 42
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f9195b91d729a90800000000000000
+      internalID: -7308641695895019717
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Scene_1_Title 1_0: -5081554105113574781
+      Pause_Icon_0: -6980106149008492115
+      Pause_Icon_1: -7308641695895019717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -48,18 +48,18 @@ public class GameManager : MonoBehaviour
     {
         Narrator.Instance.Interact("NarratorDay1");
         Debug.Log("Playing intro...");
-        Player.Instance.SetAnimationBools(false, false, false, true);
+        Player.Instance.SetAnimationBools(false, false, false, false);
 
     }
 
     public void IntroHelper()
     {
-        Player.Instance.SetAnimationBools(false, false, false, false);
+        Player.Instance.SetAnimationBools(false, false, false, true);
         StartCoroutine(IntroHelperRoutine());
     }
     private IEnumerator IntroHelperRoutine()
     {
-        Player.Instance.SetAnimationBools(false, false, true, false);
+        Player.Instance.SetAnimationBools(false, false, false, true);
         yield return StartCoroutine(MangJuan.Instance.MoveOne()); 
         MangJuan.Instance.Interact("IntroHelper1");               
     }

@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector2 spawnPoint;
     public string eventNameTrigger = string.Empty;
-    public CircleCollider2D attackCollider;
+    public GameObject attackCollider;
 
     public enum PlayerState
     {
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask interactableLayer;
 
     private Vector2 lastLookDirection = Vector2.down;
-    
+
     private float Health = 100f;
     private bool isInvulnerable = false;
 
@@ -64,6 +64,7 @@ public class Player : MonoBehaviour
         animator.runtimeAnimatorController = defaultController;
         spriteRenderer = GetComponent<SpriteRenderer>();
         spawnPoint = transform.position;
+        attackCollider.SetActive(false);
     }
 
     void Update()
@@ -103,7 +104,7 @@ public class Player : MonoBehaviour
         {
             Interact();
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && InventorySystem.Instance.IsItemEquippedWeapon())
         {
             rb.linearVelocity = Vector2.zero;
             StopMove();
@@ -114,6 +115,10 @@ public class Player : MonoBehaviour
 
     IEnumerator AttackRoutine()
     {
+        // right Vector3(0.12,0.117,0)
+        // up Vector3(0, 0.259,0)
+        // left Vector3(-0.12,0.117,0)
+        // down Vector3(0.002,0.02,0)
         IsAttacking = true;
         rb.linearVelocity = Vector2.zero; // guarantee stop regardless of Update order
         SetAnimationBools(false, false, false, false, false);
@@ -136,8 +141,18 @@ public class Player : MonoBehaviour
                 animator.SetTrigger("TestTrigger");
                 break;
         }
+        attackCollider.SetActive(true);
         yield return new WaitForSeconds(attackDuration);
         IsAttacking = false;
+        attackCollider.SetActive(false);
+    }
+
+    public float GetWeaponDamage()
+    {
+        if (InventorySystem.Instance.GetEquippedItem().isWeapon)
+        {
+            return InventorySystem.Instance.GetEquippedItem().damage;
+        }else return 0f;
     }
 
 
@@ -290,5 +305,6 @@ public class Player : MonoBehaviour
         isInvulnerable = false;
         spriteRenderer.enabled = true;
         gameObject.SetActive(true);
+        currentState = PlayerState.Moving;
     }
 }

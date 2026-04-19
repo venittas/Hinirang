@@ -120,6 +120,8 @@ public class DialogueSystem : MonoBehaviour
         else if (currentEventName == "Day3OldMan" || Player.Instance.eventNameTrigger == "Day3OldMan")
         {
             Player.Instance.eventNameTrigger = "Day3Tiyanak";
+            GameManager.Instance.GiveWhip();
+            GameManager.Instance.Day3Tiyanak();
         } 
         else if (currentEventName == "EndOfDay3" || Player.Instance.eventNameTrigger == "EndOfDay3")
         {

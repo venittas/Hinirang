@@ -7,9 +7,8 @@ public class SceneSystem : MonoBehaviour
     {
         StartScreen = 0,
         Island = 1,
-        TestScene = 2,
-        PlayerHouse = 3,
-        PlayerRoom = 4,
+        PlayerHouse = 2,
+        PlayerRoom = 3,
     }
     public static void LoadScene(int sceneIndex, float x, float y)
     {

@@ -49,12 +49,14 @@ public class Quest
             currentObjective.UpdateProgress(targetName);
             if (currentObjective.IsComplete())
             {
+                Debug.Log("EVENT: "+Player.Instance.eventNameTrigger);
                 if (Player.Instance.eventNameTrigger == "Day1Tiyanak" && currentObjective.targetName == "Tiyanak") 
                 {
                     Debug.Log("StartDay3 triggered by: " + targetName);
                     GameManager.Instance.StartDay3();
-                }else if (Player.Instance.eventNameTrigger == "Day3Tiyanak" && currentObjective.targetName == "Day3Tiyanak")
+                }else if (Player.Instance.eventNameTrigger == "Day3Tiyanak" && currentObjective.targetName == "Tiyanak")
                 {
+                    Debug.Log("EndDay3 triggered by: " + targetName);
                     Player.Instance.currentState = Player.PlayerState.Interacting;
                     GameManager.Instance.TeleportPlayer(13.56f, 3.94f);
                     GameManager.Instance.MoveDialogueToDay7();

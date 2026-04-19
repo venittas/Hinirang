@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d91e902849d431ff985ad3c93173f0da
+guid: a30a9594071e8224e8aa8c2fb5dab013
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639122537164497847
+  platformSettingsDirtyTick: 639122566623106065
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -802,8 +802,8 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Player_Whip_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.58666587, y: 0.30240294}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -886,8 +886,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5235237, y: 0.16466522}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -992,7 +992,7 @@ ScriptedImporter:
   - name: Player_Whip_9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1033,8 +1033,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_11
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.53466636, y: 0.59056586}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1117,8 +1117,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_15
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.44802666, y: 0.6979933}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1159,8 +1159,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_17
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.3682681, y: 0.6481987}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1243,8 +1243,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_21
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.3489311, y: 0.33431184}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1264,8 +1264,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_22
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.36571652, y: 0.6812827}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1285,8 +1285,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_23
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.6582624, y: 0.24262336}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1390,8 +1390,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_28
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.78928053, y: 0.25381416}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1411,8 +1411,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_29
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.23643315, y: 0.29857528}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1432,8 +1432,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_30
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.82128906, y: 0.33368525}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -1453,8 +1453,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Player_Whip_31
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.17241149, y: 0.33368525}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:

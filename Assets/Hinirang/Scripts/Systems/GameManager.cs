@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     Vector2 teleportPoint;
     public Tiyanak tiyanakPrefab;
     public GameObject stickPrefab;
+    public GameObject WhipPrefab;
 
     public enum GameState
     {
@@ -100,6 +101,7 @@ public class GameManager : MonoBehaviour
     {
         Player.Instance.currentState = Player.PlayerState.Interacting;
         GameManager.Instance.TeleportPlayer(13.56f, 3.94f);
+        Player.Instance.ResetPlayer();
         GameManager.Instance.MoveDialogueToDay3();
         Player.Instance.eventNameTrigger = "Day3";
         GameManager.Instance.Day3Intro();
@@ -115,6 +117,22 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(4f);
         Narrator.Instance.Interact("StartDay3");
     }
+
+    public void GiveWhip()
+    {
+        GameObject whip = Instantiate(WhipPrefab, new Vector2(-21.59f, -17.05f), Quaternion.identity);
+        SampleWhip weapon = whip.GetComponent<SampleWhip>();
+        InventorySystem.Instance.AddItem(weapon, 1);
+    }
+
+    public void Day3Tiyanak()
+    {
+        Instantiate(tiyanakPrefab, new Vector2(26.1f, 2.6f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(30f, 2.9f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(29.1f, 7.2f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(29f, 15.6f), Quaternion.identity);
+    }
+
     public void Day7Intro()
     {
         Player.Instance.currentState = Player.PlayerState.Interacting;
@@ -124,6 +142,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         Narrator.Instance.Interact("Day7");
+        Player.Instance.ResetPlayer();
     }
 
 

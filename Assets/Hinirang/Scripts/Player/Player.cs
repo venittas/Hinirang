@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     private Vector2 spawnPoint;
     public string eventNameTrigger = string.Empty;
     public GameObject attackCollider;
+    public GameObject whipCollider;
 
     public enum PlayerState
     {
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
 
     public RuntimeAnimatorController defaultController;
     public RuntimeAnimatorController stickController;
+    public RuntimeAnimatorController whipController;
 
     public Vector2 GetLastLookDirection()
     {
@@ -65,6 +67,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         spawnPoint = transform.position;
         attackCollider.SetActive(false);
+        whipCollider.SetActive(false);
         DontDestroyOnLoad(gameObject); 
     }
 
@@ -122,7 +125,7 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Attacking");
         IsAttacking = true;
-        rb.linearVelocity = Vector2.zero; // guarantee stop regardless of Update order
+        rb.linearVelocity = Vector2.zero;
         SetAnimationBools(false, false, false, false, false);
         lastLookDirection = GetLastLookDirection();
         switch (lastLookDirection)
@@ -139,14 +142,28 @@ public class Player : MonoBehaviour
             case Vector2 v when v == Vector2.right:
                 animator.SetTrigger("AttackRight");
                 break;
-            default:
-                animator.SetTrigger("TestTrigger");
-                break;
+            //default:
+            //    animator.SetTrigger("TestTrigger");
+            //    break;
         }
-        attackCollider.SetActive(true);
+        if (InventorySystem.Instance.GetEquippedItem().itemName == "Stick")
+        {
+            attackCollider.SetActive(true);
+        }else if (InventorySystem.Instance.GetEquippedItem().itemName == "Whip")
+        {
+            whipCollider.SetActive(true);
+        }
         yield return new WaitForSeconds(attackDuration);
         IsAttacking = false;
-        attackCollider.SetActive(false);
+        if (InventorySystem.Instance.GetEquippedItem().itemName == "Stick")
+        {
+            attackCollider.SetActive(false);
+        }
+        else if (InventorySystem.Instance.GetEquippedItem().itemName == "Whip")
+        {
+            whipCollider.SetActive(false);
+        }
+        
     }
 
     public float GetWeaponDamage()
@@ -282,6 +299,12 @@ public class Player : MonoBehaviour
                 GameManager.Instance.ShowDeathUI();
             }
         }
+    }
+
+    public void ResetPlayer()
+    {
+        Health = 100f;
+        spawnPoint = transform.position;
     }
 
     private IEnumerator BecomeInvulnerable()

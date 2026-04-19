@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class SampleWeapon : InventoryItem
+public class SampleWhip: InventoryItem
 {
-    public static SampleWeapon Instance;
+    public static SampleWhip Instance;
     Renderer weaponRenderer;
-    public float attackDuration = 0.5f;
+    public float attackDuration = 1f;
 
     private void Start()
     {
@@ -22,9 +22,9 @@ public class SampleWeapon : InventoryItem
         Instance = this;
         weaponRenderer = GetComponent<Renderer>();
         base.stickCollider.enabled = false;
-        damage = 2f;
+        damage = 10f;
         isWeapon = true;
-        itemName = "Stick";
+        itemName = "Whip";
     }
 
     private void Update()
@@ -62,7 +62,7 @@ public class SampleWeapon : InventoryItem
             transform.localPosition = new Vector3(0.0399999991f, -0.0520000011f, 0.730000019f);
             transform.localRotation = Quaternion.Euler(0, 0, -90f);
             weaponRenderer.sortingLayerName = "Player";
-            
+
         }
         else if (playerDirection == Vector2.up)
         {
@@ -97,10 +97,11 @@ public class SampleWeapon : InventoryItem
 
     public override void Equip()
     {
+
         isPickedUp = true;
         stickCollider.enabled = false;
         gameObject.SetActive(false);
-        Player.Instance.animator.runtimeAnimatorController = Player.Instance.stickController;
+        Player.Instance.animator.runtimeAnimatorController = Player.Instance.whipController;
         Player.Instance.attackDuration = attackDuration;
     }
     public override void Unequip()

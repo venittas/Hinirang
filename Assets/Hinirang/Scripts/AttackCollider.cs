@@ -35,10 +35,15 @@ public class AttackCollider : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         if (enemy != null)
         {
             enemy.TakeDamage(Player.Instance.GetWeaponDamage());
         }
+        
     }
 }

@@ -22,6 +22,7 @@ public class SampleWeapon : InventoryItem
         weaponRenderer = GetComponent<Renderer>();
         base.stickCollider.enabled = false;
         damage = 2f;
+        isWeapon = true;
     }
 
     private void Update()
@@ -103,6 +104,7 @@ public class SampleWeapon : InventoryItem
     public override void Unequip()
     {
         isPickedUp = false;
+        stickCollider.enabled = true;
         gameObject.SetActive(false);
         Player.Instance.animator.runtimeAnimatorController = Player.Instance.defaultController;
     }

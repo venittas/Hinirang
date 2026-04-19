@@ -41,7 +41,7 @@ public class Tiyanak : Enemy
         attackCooldown = 2f;
         chaseRange = 15f;
         roamRange = 10f;
-        roamOrigin = transform.position; // lock the roam center to spawn point
+        roamOrigin = transform.position; 
         UpdateRoamCoordinates();
     }
 
@@ -50,7 +50,6 @@ public class Tiyanak : Enemy
     public void FixedUpdate()
     {
         if (!Move) return;
-        // Keep timers running
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
         if (jumpChaseTimer > 0) jumpChaseTimer -= Time.deltaTime;
         if (roamTimer > 0) roamTimer -= Time.deltaTime;
@@ -81,7 +80,6 @@ public class Tiyanak : Enemy
     {
         if (Mathf.Abs(haxis) > Mathf.Abs(vaxis))
         {
-            // horizontal is dominant
             if (haxis > 0)
             {
                 SetAnimationBools(false, false, true);
@@ -95,7 +93,6 @@ public class Tiyanak : Enemy
         }
         else if (vaxis != 0)
         {
-            // vertical is dominant
             SetAnimationBools(true, false, false);
             lastLookDirection = vaxis > 0 ? Vector2.up : Vector2.down;
         }
@@ -132,14 +129,6 @@ public class Tiyanak : Enemy
 
     public IEnumerator AttackRoutine()
     {
-        //attackCollider.enabled = true;
-        //StartCoroutine(StopAttack(attackDuration));
-        //rb.linearDamping = 0;
-        //rb.AddForce((Player.Instance.transform.position - transform.position).normalized * speed * 1.5f, ForceMode2D.Impulse);
-        //attackTimer = attackCooldown;
-        //speed = 2f;
-        //StartCoroutine(ApplyDrag(0.25f, 5f));
-        //StartCoroutine(NormalSpeed(1f));
 
         attackTimer = attackCooldown;
         rb.linearVelocity = Vector2.zero; 
@@ -185,7 +174,6 @@ public class Tiyanak : Enemy
     {
         Vector2 direction = (Player.Instance.transform.position - transform.position).normalized;
         rb.linearVelocity = direction * speed;
-        Debug.Log($"Chase dir: {direction}, haxis: {direction.x}, vaxis: {direction.y}");
         DirectionAnimation(direction.x, direction.y);
 
         /*
@@ -236,7 +224,7 @@ public class Tiyanak : Enemy
     public void Knockback()
     {
         Vector2 knockbackDir = (transform.position - Player.Instance.transform.position).normalized;
-        rb.linearVelocity = Vector2.zero; // clear existing velocity first
+        rb.linearVelocity = Vector2.zero; 
         rb.AddForce(knockbackDir * 20f, ForceMode2D.Impulse);
         StartCoroutine(KnockbackRoutine());
     }
@@ -244,7 +232,7 @@ public class Tiyanak : Enemy
     private IEnumerator KnockbackRoutine()
     {
         isKnockedBack = true;
-        yield return new WaitForSeconds(0.3f); // let the force play out
+        yield return new WaitForSeconds(0.3f); 
         isKnockedBack = false;
     }
 
@@ -257,7 +245,7 @@ public class Tiyanak : Enemy
         StartCoroutine(Flash());
         if (health <= 0)
         {
-            QuestSystem.Instance.CheckObjective("Tiyanak");
+            QuestSystem.Instance.CheckActiveObjective("Tiyanak");
             Destroy(gameObject);
         }
     }

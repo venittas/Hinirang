@@ -104,17 +104,22 @@ public class Player : MonoBehaviour
         {
             Interact();
         }
-        if (Input.GetKeyDown(KeyCode.Space) && InventorySystem.Instance.IsItemEquippedWeapon())
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.linearVelocity = Vector2.zero;
-            StopMove();
-            StartCoroutine(AttackRoutine());
+            Debug.Log("Space pressed. State: " + currentState + " | IsWeapon: " + InventorySystem.Instance.IsItemEquippedWeapon());
+            if (InventorySystem.Instance.IsItemEquippedWeapon())
+            {
+                rb.linearVelocity = Vector2.zero;
+                StopMove();
+                StartCoroutine(AttackRoutine());
+            }
         }
 
     }
 
     IEnumerator AttackRoutine()
     {
+        Debug.Log("Attacking");
         IsAttacking = true;
         rb.linearVelocity = Vector2.zero; // guarantee stop regardless of Update order
         SetAnimationBools(false, false, false, false, false);

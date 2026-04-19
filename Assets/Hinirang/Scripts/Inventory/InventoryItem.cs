@@ -38,9 +38,9 @@ public class InventoryItem : Interactable
 
     public void PickUp()
     {
-        //gameObject.transform.SetParent(Player.Instance.transform);
-        //isPickedUp = true;
-        //stickCollider.enabled = false;
+        gameObject.transform.SetParent(Player.Instance.transform);
+        isPickedUp = true;
+        stickCollider.enabled = false;
     }
 
     public new void ShowIndicator()//pwede pala yon, gagamit ng new pag override
@@ -77,12 +77,14 @@ public class InventoryItem : Interactable
     public virtual void Unequip()
     {
         gameObject.transform.SetParent(null);
+        stickCollider.enabled = true;  
         isPickedUp = false;
         gameObject.SetActive(false);  
     }
 
     private void UpdatePosition()
     {
+        if (isWeapon) return;
         Vector2 playerDirection = Player.Instance.GetLastLookDirection();
         if (playerDirection == Vector2.down)
         {

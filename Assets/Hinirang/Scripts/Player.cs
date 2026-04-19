@@ -115,10 +115,6 @@ public class Player : MonoBehaviour
 
     IEnumerator AttackRoutine()
     {
-        // right Vector3(0.12,0.117,0)
-        // up Vector3(0, 0.259,0)
-        // left Vector3(-0.12,0.117,0)
-        // down Vector3(0.002,0.02,0)
         IsAttacking = true;
         rb.linearVelocity = Vector2.zero; // guarantee stop regardless of Update order
         SetAnimationBools(false, false, false, false, false);

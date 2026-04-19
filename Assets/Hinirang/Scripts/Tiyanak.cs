@@ -1,6 +1,6 @@
-using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting; // Needed for Coroutines
+using UnityEngine;
 
 public class Tiyanak : Enemy
 {
@@ -9,7 +9,7 @@ public class Tiyanak : Enemy
     public float jumpChaseCooldown = 5f;
 
     public float roamTimer = 0;
-    public float roamInterval = 2f; // How often it chooses a new spot
+    public float roamInterval = 2f; 
     public CircleCollider2D attackCollider;
 
     public Vector2 topRight;
@@ -17,13 +17,23 @@ public class Tiyanak : Enemy
     public Vector2 bottomRight;
     public Vector2 bottomLeft;
 
+    public Animator animator;
+
+    private Vector2 lastLookDirection = Vector2.down;
+
+    private Vector2 roamTarget;
+    private bool hasRoamTarget = false;
+    private Vector2 roamOrigin;
+
     public bool Move = true;
+    public bool isKnockedBack = false;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         attackCollider = GetComponent<CircleCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         health = 10f;
         speed = 3.5f;
         damage = 20f;
@@ -31,6 +41,8 @@ public class Tiyanak : Enemy
         attackCooldown = 2f;
         chaseRange = 15f;
         roamRange = 10f;
+        roamOrigin = transform.position; // lock the roam center to spawn point
+        UpdateRoamCoordinates();
     }
 
 
@@ -54,17 +66,53 @@ public class Tiyanak : Enemy
                 Attack();
             }
         }
-        else if (distanceToPlayer <= chaseRange 
-            //&& jumpChaseTimer <= 0
-            )
+        else if (distanceToPlayer <= chaseRange && jumpChaseTimer <= 0 && distanceToPlayer >= attackRange)
         {
-            Chase();
+            if (!isKnockedBack) Chase();
         }
         else if (roamTimer <= 0)
         {
             Roam();
         }
+
     }
+
+    private void DirectionAnimation(float haxis, float vaxis)
+    {
+        if (Mathf.Abs(haxis) > Mathf.Abs(vaxis))
+        {
+            // horizontal is dominant
+            if (haxis > 0)
+            {
+                SetAnimationBools(false, false, true);
+                lastLookDirection = Vector2.right;
+            }
+            else
+            {
+                SetAnimationBools(false, true, false);
+                lastLookDirection = Vector2.left;
+            }
+        }
+        else if (vaxis != 0)
+        {
+            // vertical is dominant
+            SetAnimationBools(true, false, false);
+            lastLookDirection = vaxis > 0 ? Vector2.up : Vector2.down;
+        }
+        else
+        {
+            SetAnimationBools(false, false, false);
+        }
+    }
+
+    public void SetAnimationBools(bool upDown, bool left, bool right)
+    {
+        animator.SetBool("isUpDown", upDown);
+        animator.SetBool("isLeft", left);
+        animator.SetBool("isRight", right);
+    }
+
+
 
     public void UpdateRoamCoordinates()
     {
@@ -79,20 +127,46 @@ public class Tiyanak : Enemy
 
     public override void Attack()
     {
-        attackCollider.enabled = true;
-        StartCoroutine(StopAttack(attackDuration));
+        StartCoroutine(AttackRoutine());
+    }
+
+    public IEnumerator AttackRoutine()
+    {
+        //attackCollider.enabled = true;
+        //StartCoroutine(StopAttack(attackDuration));
+        //rb.linearDamping = 0;
+        //rb.AddForce((Player.Instance.transform.position - transform.position).normalized * speed * 1.5f, ForceMode2D.Impulse);
+        //attackTimer = attackCooldown;
+        //speed = 2f;
+        //StartCoroutine(ApplyDrag(0.25f, 5f));
+        //StartCoroutine(NormalSpeed(1f));
+
+        attackTimer = attackCooldown;
+        rb.linearVelocity = Vector2.zero; 
+        SetAnimationBools(false, false, false); 
+
+        switch (lastLookDirection)
+        {
+            case Vector2 v when v == Vector2.down:
+                animator.SetTrigger("AttackUpDown");
+                break;
+            case Vector2 v when v == Vector2.up:
+                animator.SetTrigger("AttackUpDown");
+                break;
+            case Vector2 v when v == Vector2.left:
+                animator.SetTrigger("AttackLeft");
+                break;
+            case Vector2 v when v == Vector2.right:
+                animator.SetTrigger("AttackRight");
+                break;
+        }
+
         rb.linearDamping = 0;
         rb.AddForce((Player.Instance.transform.position - transform.position).normalized * speed * 1.5f, ForceMode2D.Impulse);
-        attackTimer = attackCooldown;
-        speed = 2f;
         StartCoroutine(ApplyDrag(0.25f, 5f));
         StartCoroutine(NormalSpeed(1f));
 
-        /*
-        //alternative for attack
-
-        
-        */
+        yield return new WaitForSeconds(attackDuration);
     }
 
     public IEnumerator NormalSpeed(float delay)
@@ -109,7 +183,10 @@ public class Tiyanak : Enemy
 
     public override void Chase()
     {
-        transform.position = Vector2.MoveTowards(transform.position, Player.Instance.transform.position, speed * Time.deltaTime);
+        Vector2 direction = (Player.Instance.transform.position - transform.position).normalized;
+        rb.linearVelocity = direction * speed;
+        Debug.Log($"Chase dir: {direction}, haxis: {direction.x}, vaxis: {direction.y}");
+        DirectionAnimation(direction.x, direction.y);
 
         /*
         //alternative for moving
@@ -124,17 +201,23 @@ public class Tiyanak : Enemy
 
     public override void Roam()
     {
+        if (!hasRoamTarget || Vector2.Distance(transform.position, roamTarget) < 0.2f)
+        {
+            float randomX = Random.Range(roamOrigin.x - roamRange, roamOrigin.x + roamRange);
+            float randomY = Random.Range(roamOrigin.y - roamRange, roamOrigin.y + roamRange);
+            roamTarget = new Vector2(randomX, randomY);
+            hasRoamTarget = true;
+            roamTimer = roamInterval; 
+            rb.linearVelocity = Vector2.zero; 
+            SetAnimationBools(false, false, false); 
+            return; 
+        }
 
-        float randomX = Random.Range(bottomLeft.x, bottomRight.x);
-        float randomY = Random.Range(bottomLeft.y, topLeft.y);
-        Vector2 targetPosition = new Vector2(randomX, randomY);
-
-        Vector2 moveDir = (targetPosition - (Vector2)transform.position).normalized;
-        rb.MovePosition(rb.position + moveDir * (speed * 0.5f) * Time.fixedDeltaTime);
-
-        roamTimer = roamInterval;
-
+        Vector2 moveDir = (roamTarget - (Vector2)transform.position).normalized;
+        rb.linearVelocity = moveDir * (speed * 0.5f);
+        DirectionAnimation(moveDir.x, moveDir.y);
     }
+
 
     private IEnumerator ApplyDrag(float delay, float dragValue)
     {
@@ -144,7 +227,7 @@ public class Tiyanak : Enemy
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == Player.Instance)
+        if (collision.gameObject == Player.Instance.gameObject)
         {
             Player.Instance.TakeDamage(damage);
         }
@@ -153,8 +236,18 @@ public class Tiyanak : Enemy
     public void Knockback()
     {
         Vector2 knockbackDir = (transform.position - Player.Instance.transform.position).normalized;
+        rb.linearVelocity = Vector2.zero; // clear existing velocity first
         rb.AddForce(knockbackDir * 20f, ForceMode2D.Impulse);
+        StartCoroutine(KnockbackRoutine());
     }
+
+    private IEnumerator KnockbackRoutine()
+    {
+        isKnockedBack = true;
+        yield return new WaitForSeconds(0.3f); // let the force play out
+        isKnockedBack = false;
+    }
+
 
     public override void TakeDamage(float damage)
     {

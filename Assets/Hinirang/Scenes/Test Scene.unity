@@ -463,7 +463,9 @@ MonoBehaviour:
   topLeft: {x: 0, y: 0}
   bottomRight: {x: 0, y: 0}
   bottomLeft: {x: 0, y: 0}
+  animator: {fileID: 0}
   Move: 1
+  isKnockedBack: 0
 --- !u!95 &121380126
 Animator:
   serializedVersion: 7
@@ -3374,6 +3376,10 @@ PrefabInstance:
     - target: {fileID: 7849552629276713441, guid: f4f9823b348dfee43809c3d94889844c, type: 3}
       propertyPath: m_Name
       value: Tiyanak
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849552629276713441, guid: f4f9823b348dfee43809c3d94889844c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

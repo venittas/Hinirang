@@ -28,7 +28,7 @@ public class InventorySystem : MonoBehaviour
         inventoryUI.Add(InventorySlot3);
         inventoryUI.Add(InventorySlot4);
         inventoryUI.Add(InventorySlot5);
-        EventSystem.current.SetSelectedGameObject(null);
+        DontDestroyOnLoad(gameObject);
     }
     public bool AddItem(InventoryItem item, int amount)
     {
@@ -103,7 +103,6 @@ public class InventorySystem : MonoBehaviour
             slots[index].item.Unequip();
             selectedSlotIndex = -1;
             SelectedItemIndicator.SetActive(false);
-            EventSystem.current.SetSelectedGameObject(null);
             return;
         }
 

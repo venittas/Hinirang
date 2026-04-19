@@ -20,7 +20,7 @@ public class QuestSystem : MonoBehaviour
             return;
         }
         Instance = this;
-        
+        DontDestroyOnLoad(gameObject);
     }
 
     public bool CheckActiveObjective(string targetName)

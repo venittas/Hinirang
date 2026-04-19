@@ -23,12 +23,12 @@ public class StartScreen : MonoBehaviour
         newGameButton.onClick.AddListener(() =>
         {
             Instantiate(FadeInCanvas);
-            SceneSystem.LoadScene(1);
+            SceneSystem.LoadScene(1, 0f, 0f);
         });
         continueButton.onClick.AddListener(() =>
         {
             Instantiate(FadeInCanvas);
-            SceneSystem.LoadScene(1);
+            SceneSystem.LoadScene(1, 0f, 0f);
         });
         modeLeftButton.onClick.AddListener(() =>
         {

@@ -982,6 +982,7 @@ GameObject:
   - component: {fileID: 8559812461096579461}
   - component: {fileID: 3415786114200660502}
   - component: {fileID: 3444129492451040867}
+  - component: {fileID: 673843795865627885}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Enemy
@@ -1076,6 +1077,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &673843795865627885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4370567540823296923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7842c0701f16c4ca64eec32dca97be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Canvas
 --- !u!1 &4527785511571046207
 GameObject:
   m_ObjectHideFlags: 0

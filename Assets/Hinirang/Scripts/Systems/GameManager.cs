@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -91,7 +93,16 @@ public class GameManager : MonoBehaviour
 
     public void Day1Tiyanak()
     {
-        Instantiate(tiyanakPrefab, new Vector2(74.4f, 19.9f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(32.8f, -7.7f), Quaternion.identity);
+    }
+
+    public void StartDay3()
+    {
+        Player.Instance.currentState = Player.PlayerState.Interacting;
+        GameManager.Instance.TeleportPlayer(13.56f, 3.94f);
+        GameManager.Instance.MoveDialogueToDay3();
+        Player.Instance.eventNameTrigger = "Day3";
+        GameManager.Instance.Day3Intro();
     }
 
     public void Day3Intro()
@@ -102,7 +113,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator Day3IntroHelper()
     {
         yield return new WaitForSeconds(4f);
-        Narrator.Instance.Interact("");
+        Narrator.Instance.Interact("StartDay3");
     }
     public void Day7Intro()
     {
@@ -144,6 +155,34 @@ public class GameManager : MonoBehaviour
         Joba.Instance.MoveDialogue();
         Narrator.Instance.MoveDialogue();
     }
+
+    public void TransitionToScene(int sceneIndex, float x, float y)
+    {
+        Debug.Log($"Transitioning to scene {sceneIndex} with player position ({x}, {y})");
+        Player.Instance.currentState = Player.PlayerState.Interacting;
+        StartCoroutine(TransitionRoutine(sceneIndex, x, y));
+    }
+
+    private IEnumerator TransitionRoutine(int sceneIndex, float x, float y)
+    {
+        tempFadeIn = Instantiate(FadeInCanvas);
+        yield return new WaitForSeconds(1.5f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);
+        yield return null;
+        CinemachineCamera vcam = FindFirstObjectByType<CinemachineCamera>();
+        if (vcam != null)
+        {
+            vcam.Follow = Player.Instance.transform;
+        }
+        Player.Instance.transform.position = new Vector2(x, y);
+        Player.Instance.currentState = Player.PlayerState.Interacting;
+        Destroy(tempFadeIn);
+        tempFadeOut = Instantiate(FadeOutCanvas);
+        yield return new WaitForSeconds(1f);
+        Destroy(tempFadeOut);
+        Player.Instance.currentState = Player.PlayerState.Moving;
+    }
+
 
     public void TeleportPlayer(float x, float y)
     {

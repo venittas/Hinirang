@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6775841261242841560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 308096263838801343}
+  - component: {fileID: 8093859262946116470}
+  m_Layer: 0
+  m_Name: Narrator (Island)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &308096263838801343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6775841261242841560}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.17253, y: -0.57285, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8093859262946116470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6775841261242841560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3931ac6aa2fa049938b736ae2ee3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrator
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  dialogues:
+  - DialogueName: Unang Araw (Intro)
+    dialogueLines:
+    - characterName: 
+      line: "Sa gitna ng isang liblib na isla, ang katahimikan ay hindi kapayapaan\u2014ito
+        ay isang babala. "
+    - characterName: 
+      line: Pag-uwi mo, bumungad sa iyo ang isang bakanteng tahanan.
+    - characterName: 
+      line: Wala na ang iyong pamilya, at ang hangin ay nangsicisikip sa lansa ng
+        basang lupa at nanunuyong dugo.
+    - characterName: 
+      line: 'Ang tanging bakas na hawak mo? Isang pangalang ibinubulong sa takot:
+        ang Albularyo.'
+    - characterName: 
+      line: Sabi nila, alam niya kung bakit nagsisimulang magutom ang mga anino.
+    - characterName: 
+      line: ' Sabi nila, alam niya ang katotohanan sa likod ng mga nawawala.'
+    - characterName: 
+      line: Ngunit sa islang ito, ang katotohanan ay isang utang na binabayaran ng
+        dugo.
+  - DialogueName: Ikatlong Araw (Intro)
+    dialogueLines:
+    - characterName: 
+      line: Ang unang pagpaslang ay patikim pa lamang ng bangungot.
+    - characterName: 
+      line: Sa ikalawang araw, sinundan mo ang bakas ng mga alaala patungo sa lumang
+        pond.
+    - characterName: 
+      line: "Doon, nahanap mo ang ribbon ng iyong kapatid\u2014puno ng dugo\u2014at
+        isang sulat na tila isinulat sa gitna ng pagmamadali, na bumabanggit sa isang
+        pangalan: 'MAN'."
+    - characterName: 
+      line: Dahil sa pait ng iyong loob at paghahangad ng katarungan, itinuon mo
+        ang iyong galit sa misteryosong matandang naninirahan sa dulo ng kakahuyan.
+    - characterName: 
+      line: Hindi ka na lamang naghahanap ng sagot... naghahanap ka na ng mapaghihigantihan.
+  - DialogueName: Ikapitong Araw (Intro)
+    dialogueLines:
+    - characterName: 
+      line: Lumipas ang mga araw na tila isang masamang panaginip.
+    - characterName: 
+      line: 'Gamit ang Buntot Pagi na handog ng matanda, pinuntahan mo ang Albularyo
+        upang pandayin ang huling sandata: ang Spiked Kamagong.'
+    - characterName: 
+      line: Ngunit habang lumalakas ka, lalo namang lumalalim ang dilim.
+    - characterName: 
+      line: "Ang iyong kababata ay nananatili sa mga anino\u2014isang tahimik na
+        saksi sa iyong pakikipaglaban."
+    - characterName: 
+      line: Hanggang sa dumating ang huling dagok.
+    - characterName: 
+      line: "Nahanap mo ang Albularyong wala nang buhay\u2014pinaslang sa loob ng
+        sarili niyang tahanan."
+    - characterName: 
+      line: 'Sa kanyang huling testamento, nabunyag ang malupit na katotohanan: ang
+        ''MAN'' ay hindi kailanman naging tao.'
+    - characterName: 
+      line: Ito ay ang Manananggal. Ang ina ng mga Tiyanak. Ang halimaw na lumapa
+        sa iyong pamilya.
+    - characterName: 
+      line: Ngayon, dito magtatapos ang bakas.
+    - characterName: 
+      line: Sa rurok ng bundok, kung saan ang hangin ay tumataghoy at ang buwan ay
+        kasing-pula ng dugo. Oras na para tapusin ang laban.
+  dialogueIndex: 0
+  moves: []
+  moveSpeed: 5

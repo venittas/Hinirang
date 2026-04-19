@@ -112,4 +112,10 @@ public class SampleWeapon : InventoryItem
         gameObject.SetActive(false);
         Player.Instance.animator.runtimeAnimatorController = Player.Instance.stickController;
     }
+    public override void Unequip()
+    {
+        isPickedUp = false;
+        gameObject.SetActive(false);
+        Player.Instance.animator.runtimeAnimatorController = Player.Instance.defaultController;
+    }
 }

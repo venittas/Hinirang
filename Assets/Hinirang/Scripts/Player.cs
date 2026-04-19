@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector2 spawnPoint;
     public string eventNameTrigger = string.Empty;
+    public CircleCollider2D attackCollider;
 
     public enum PlayerState
     {
@@ -40,7 +41,7 @@ public class Player : MonoBehaviour
     private float flashInterval = 0.1f;
 
     public bool IsAttacking = false;
-    public float attackDuration = 2f;
+    public float attackDuration = 0.5f;
 
     public RuntimeAnimatorController defaultController;
     public RuntimeAnimatorController stickController;
@@ -104,6 +105,8 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            rb.linearVelocity = Vector2.zero;
+            StopMove();
             StartCoroutine(AttackRoutine());
         }
 
@@ -112,11 +115,28 @@ public class Player : MonoBehaviour
     IEnumerator AttackRoutine()
     {
         IsAttacking = true;
-        animator.SetTrigger("TestTrigger");
-
-        // wait for animation to finish
+        rb.linearVelocity = Vector2.zero; // guarantee stop regardless of Update order
+        SetAnimationBools(false, false, false, false, false);
+        lastLookDirection = GetLastLookDirection();
+        switch (lastLookDirection)
+        {
+            case Vector2 v when v == Vector2.down:
+                animator.SetTrigger("AttackDown");
+                break;
+            case Vector2 v when v == Vector2.up:
+                animator.SetTrigger("AttackUp");
+                break;
+            case Vector2 v when v == Vector2.left:
+                animator.SetTrigger("AttackLeft");
+                break;
+            case Vector2 v when v == Vector2.right:
+                animator.SetTrigger("AttackRight");
+                break;
+            default:
+                animator.SetTrigger("TestTrigger");
+                break;
+        }
         yield return new WaitForSeconds(attackDuration);
-
         IsAttacking = false;
     }
 

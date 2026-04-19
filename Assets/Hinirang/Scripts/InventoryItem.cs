@@ -72,7 +72,7 @@ public class InventoryItem : Interactable
         gameObject.SetActive(true);
     }
 
-    public void Unequip()
+    public virtual void Unequip()
     {
         gameObject.transform.SetParent(null);
         isPickedUp = false;

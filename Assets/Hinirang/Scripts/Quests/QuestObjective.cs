@@ -19,12 +19,15 @@ public class QuestObjective
 
     public void UpdateProgress(string targetName)
     {
+
         if (questState == QuestState.Completed)
-            return;
+        {
+             return;
+        }
         currentAmount ++;
         if (currentAmount >= targetAmount)
         {
-            currentAmount = targetAmount; // Ensure it doesn't exceed the target
+            currentAmount = targetAmount;
             Debug.Log($"Objective '{objectiveTitle}' completed!");
             questState = QuestState.Completed;
             return;

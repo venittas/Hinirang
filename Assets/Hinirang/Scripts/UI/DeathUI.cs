@@ -16,6 +16,6 @@ public class DeathUI : MonoBehaviour
 
     public void QuitToMainMenu()
     {
-        SceneSystem.LoadScene((int)SceneSystem.SceneIndex.StartScreen);
+        SceneSystem.LoadScene((int)SceneSystem.SceneIndex.StartScreen, 0f, 0f);
     }
 }

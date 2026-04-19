@@ -47,4 +47,6 @@ MonoBehaviour:
   FadeInCanvas: {fileID: 8544538974375523985, guid: db1900bfdb0ce9547820a5f2c56cfca9, type: 3}
   FadeOutCanvas: {fileID: 9019983643490653696, guid: d5a64c21198808d46ac867fb138cdda9, type: 3}
   DeathCanvas: {fileID: 8683755033968989348, guid: 68fba2299e5380944a0da272c69125f1, type: 3}
+  tiyanakPrefab: {fileID: 6047745345523912296, guid: ecc0e1a71a4cf9243aea04ef7394e9c0, type: 3}
+  stickPrefab: {fileID: 4776060684462420138, guid: b840099f8cad5c24c93c1f089b6dd3d8, type: 3}
   IsNewGame: 1

@@ -49,11 +49,25 @@ public class Quest
             currentObjective.UpdateProgress(targetName);
             if (currentObjective.IsComplete())
             {
-                if ((currentObjectiveIndex+1) >= questObjectives.Count)
+                if (Player.Instance.eventNameTrigger == "Day1Tiyanak" && currentObjective.targetName == "Tiyanak") 
+                {
+                    Debug.Log("StartDay3 triggered by: " + targetName);
+                    GameManager.Instance.StartDay3();
+                }else if (Player.Instance.eventNameTrigger == "Day3Tiyanak" && currentObjective.targetName == "Day3Tiyanak")
+                {
+                    Player.Instance.currentState = Player.PlayerState.Interacting;
+                    GameManager.Instance.TeleportPlayer(13.56f, 3.94f);
+                    GameManager.Instance.MoveDialogueToDay7();
+                    Player.Instance.eventNameTrigger = "Day7";
+                    MangEnko.Instance.enabled = false;
+                    GameManager.Instance.Day7Intro();
+                }
+                if ((currentObjectiveIndex + 1) >= questObjectives.Count)
                 {
                     return;
                 }
                 currentObjectiveIndex++;
+                QuestSystem.Instance.UpdateQuestUI();
                 if (currentObjectiveIndex >= questObjectives.Count)
                 {
                     questState = QuestState.Completed;

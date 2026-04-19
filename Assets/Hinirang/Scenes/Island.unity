@@ -241,6 +241,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 780159fa6d7bfe74b80ce1f29bff38a2, type: 3}
+--- !u!1001 &434405749
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1768934928945387026, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: x
+      value: 11.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768934928945387026, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: y
+      value: -0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768934928945387026, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: targetScene
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.923481
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.4803195
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678182422072725984, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197901154163142182, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
+      propertyPath: m_Name
+      value: Teleport Point
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93eea360d36a3814790803252d1ce1fc, type: 3}
 --- !u!1 &499286805
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +335,7 @@ Transform:
   m_GameObject: {fileID: 499286805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.59, y: -17.05, z: 0}
+  m_LocalPosition: {x: 30.75, y: 4.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -260131,6 +260200,40 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
+--- !u!1 &1925119437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4370567540823296923, guid: 75814ba25ec9db2419a777a2e1987908, type: 3}
+  m_PrefabInstance: {fileID: 655364117246612423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1925119442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925119437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7842c0701f16c4ca64eec32dca97be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Canvas
+--- !u!1 &2062558011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5864240169732820049, guid: 0e2b07e826f952f48bea279f9c0c6a01, type: 3}
+  m_PrefabInstance: {fileID: 4949624402386952598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2062558015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062558011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c236b6f1392b2044acf1cce34675f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventSystem
 --- !u!1 &2067567412
 GameObject:
   m_ObjectHideFlags: 0
@@ -284395,7 +284498,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4370567540823296923, guid: 75814ba25ec9db2419a777a2e1987908, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1925119442}
   m_SourcePrefab: {fileID: 100100000, guid: 75814ba25ec9db2419a777a2e1987908, type: 3}
 --- !u!1001 &1423636043160488273
 PrefabInstance:
@@ -284614,7 +284720,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5864240169732820049, guid: 0e2b07e826f952f48bea279f9c0c6a01, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2062558015}
   m_SourcePrefab: {fileID: 100100000, guid: 0e2b07e826f952f48bea279f9c0c6a01, type: 3}
 --- !u!1001 &5705937318161222802
 PrefabInstance:
@@ -284741,6 +284850,50 @@ PrefabInstance:
       propertyPath: QuestTitle
       value: 
       objectReference: {fileID: 6015666226641539395}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[3].questType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[2].targetName
+      value: Mang Engko
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[3].targetName
+      value: Tiyanak
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[4].targetName
+      value: Tiyanak
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[3].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[4].targetAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[3].objectiveTitle
+      value: Umuwi at Magpahinga
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[4].objectiveTitle
+      value: Umuwi at Magpahinga
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[3].objectiveDescription
+      value: Umuwi at Magpahinga
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[0].questObjectives.Array.data[4].objectiveDescription
+      value: Umuwi at Magpahinga
+      objectReference: {fileID: 0}
     - target: {fileID: 6348979407351145834, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
       propertyPath: m_Name
       value: QuestSystem
@@ -285030,3 +285183,4 @@ SceneRoots:
   - {fileID: 586948117476326102}
   - {fileID: 402124092}
   - {fileID: 1305042569}
+  - {fileID: 434405749}

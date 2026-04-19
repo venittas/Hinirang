@@ -42,6 +42,7 @@ public class DialogueSystem : MonoBehaviour
         {
             dialoguUIButton.onClick.AddListener(OnDialogueClicked);
         }
+        DontDestroyOnLoad(gameObject);
     }
     public void StartDialogue(DialogueLine[] dialogueLines, string eventName)
     {
@@ -106,15 +107,19 @@ public class DialogueSystem : MonoBehaviour
         {
             GameManager.Instance.GiveStick();
             GameManager.Instance.Day1Tiyanak();
-            //Player.Instance.currentState = Player.PlayerState.Interacting;
-            //GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
-            //GameManager.Instance.MoveDialogueToDay3();
-            //Player.Instance.eventNameTrigger = "Day3";
-            //GameManager.Instance.Day3Intro();
+            Player.Instance.eventNameTrigger = "Day1Tiyanak";
         }
         else if (currentEventName == "NarratorDay1" || Player.Instance.eventNameTrigger == "NarratorDay1")
         {
             GameManager.Instance.IntroHelper();
+        } 
+        else if (currentEventName == "StartDay3" || Player.Instance.eventNameTrigger == "StartDay3")
+        {
+            Player.Instance.eventNameTrigger = "Day3OldMan";
+        } 
+        else if (currentEventName == "Day3OldMan" || Player.Instance.eventNameTrigger == "Day3OldMan")
+        {
+            Player.Instance.eventNameTrigger = "Day3Tiyanak";
         } 
         else if (currentEventName == "EndOfDay3" || Player.Instance.eventNameTrigger == "EndOfDay3")
         {

@@ -55,14 +55,14 @@ TagManager:
   - name: Grass
     uniqueID: 3811107527
     locked: 0
-  - name: Upper Ground
-    uniqueID: 2582817859
+  - name: UpperLand
+    uniqueID: 3259577813
     locked: 0
-  - name: UpperGround2
-    uniqueID: 3423945953
+  - name: UpperLand2
+    uniqueID: 2040790529
     locked: 0
-  - name: UpperGround3
-    uniqueID: 1414306783
+  - name: UpperLand3
+    uniqueID: 3431155321
     locked: 0
   - name: Decor
     uniqueID: 1119988167
@@ -72,6 +72,12 @@ TagManager:
     locked: 0
   - name: Trees
     uniqueID: 2930188321
+    locked: 0
+  - name: UpperHouse
+    uniqueID: 4166783321
+    locked: 0
+  - name: UpperTree
+    uniqueID: 4021848579
     locked: 0
   - name: Player
     uniqueID: 2759577145

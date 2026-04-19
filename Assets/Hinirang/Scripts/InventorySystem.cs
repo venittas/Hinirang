@@ -123,4 +123,23 @@ public class InventorySystem : MonoBehaviour
         slots[index].item.Equip();
     }
 
+    public InventoryItem GetEquippedItem()
+    {
+        if (selectedSlotIndex >= 0 && selectedSlotIndex < slots.Count)
+        {
+            InventoryItem equippedItem = slots[selectedSlotIndex].item;
+            return equippedItem;
+        }
+        else
+        {
+            Debug.Log("No item currently equipped.");
+            return null;
+        }
+    }
+
+    public bool IsItemEquippedWeapon()
+    {
+        return GetEquippedItem() != null && GetEquippedItem().isWeapon;
+    }
+
 }

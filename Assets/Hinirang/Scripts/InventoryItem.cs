@@ -9,6 +9,8 @@ public class InventoryItem : Interactable
     public bool isPickedUp = false;
     public Renderer itemRenderer;
     public Collider2D stickCollider;
+    public bool isWeapon = false;
+    public float damage = 2f;
 
     public void Start()
     {

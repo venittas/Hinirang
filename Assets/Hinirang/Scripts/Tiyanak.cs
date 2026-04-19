@@ -1,5 +1,6 @@
 using UnityEngine;
-using System.Collections; // Needed for Coroutines
+using System.Collections;
+using Unity.VisualScripting; // Needed for Coroutines
 
 public class Tiyanak : Enemy
 {
@@ -16,11 +17,14 @@ public class Tiyanak : Enemy
     public Vector2 bottomRight;
     public Vector2 bottomLeft;
 
+    public bool Move = true;
+
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         attackCollider = GetComponent<CircleCollider2D>();
-        health = 100f;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        health = 10f;
         speed = 3.5f;
         damage = 20f;
         attackRange = 3f;
@@ -29,8 +33,11 @@ public class Tiyanak : Enemy
         roamRange = 10f;
     }
 
+
+
     public void FixedUpdate()
     {
+        if (!Move) return;
         // Keep timers running
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
         if (jumpChaseTimer > 0) jumpChaseTimer -= Time.deltaTime;
@@ -137,9 +144,28 @@ public class Tiyanak : Enemy
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject == Player.Instance)
         {
             Player.Instance.TakeDamage(damage);
+        }
+    }
+
+    public void Knockback()
+    {
+        Vector2 knockbackDir = (transform.position - Player.Instance.transform.position).normalized;
+        rb.AddForce(knockbackDir * 20f, ForceMode2D.Impulse);
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        Debug.Log("Tiyanak took damage: " + damage);
+        health -= damage;
+        Knockback();
+        StartCoroutine(Flash());
+        if (health <= 0)
+        {
+            QuestSystem.Instance.CheckObjective("Tiyanak");
+            Destroy(gameObject);
         }
     }
 }

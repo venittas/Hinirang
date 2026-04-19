@@ -7,7 +7,8 @@ public class SampleWeapon : InventoryItem
 
     private void Start()
     {
-        base.Start();   
+        base.Start();
+        isWeapon = true;
     }
     void Awake()
     {
@@ -20,6 +21,7 @@ public class SampleWeapon : InventoryItem
         Instance = this;
         weaponRenderer = GetComponent<Renderer>();
         base.stickCollider.enabled = false;
+        damage = 2f;
     }
 
     private void Update()
@@ -77,18 +79,6 @@ public class SampleWeapon : InventoryItem
 
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Enemy"))
-    //    {
-    //        Debug.Log("Stick hit an enemy!");
-    //        if (enemy != null)
-    //        {
-    //            enemy.TakeDamage(2);
-    //        }
-    //    }
-    //}
-
     public void Attack()
     {
         base.stickCollider.enabled = true;
@@ -105,8 +95,6 @@ public class SampleWeapon : InventoryItem
     public override void Equip()
     {
 
-        Debug.Log("EquippingGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG");
-        Debug.Log("Equipping item: " + itemName);
         isPickedUp = true;
         stickCollider.enabled = false;
         gameObject.SetActive(false);

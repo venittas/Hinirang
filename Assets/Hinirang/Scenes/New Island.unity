@@ -16569,6 +16569,10 @@ PrefabInstance:
       value: Game Manager
       objectReference: {fileID: 0}
     - target: {fileID: 5031013877749971060, guid: 3c8d528adb177bb46829f45fd10d72a0, type: 3}
+      propertyPath: WhipPrefab
+      value: 
+      objectReference: {fileID: 6970785225933389104, guid: a308c75894e74e34caf074eac6f851d2, type: 3}
+    - target: {fileID: 5031013877749971060, guid: 3c8d528adb177bb46829f45fd10d72a0, type: 3}
       propertyPath: DeathCanvas
       value: 
       objectReference: {fileID: 1944452112}

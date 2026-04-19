@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         spawnPoint = transform.position;
         attackCollider.SetActive(false);
+        DontDestroyOnLoad(gameObject); 
     }
 
     void Update()

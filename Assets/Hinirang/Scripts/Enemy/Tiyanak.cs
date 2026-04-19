@@ -245,7 +245,8 @@ public class Tiyanak : Enemy
         StartCoroutine(Flash());
         if (health <= 0)
         {
-            QuestSystem.Instance.CheckActiveObjective("Tiyanak");
+            bool check = QuestSystem.Instance.CheckActiveObjective("Tiyanak");
+            if (check) Debug.LogWarning("Tiyanak objective completed!");
             Destroy(gameObject);
         }
     }

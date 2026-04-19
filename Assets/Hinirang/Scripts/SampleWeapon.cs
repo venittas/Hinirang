@@ -101,4 +101,15 @@ public class SampleWeapon : InventoryItem
         base.stickCollider.enabled = false;
         transform.localScale = new Vector3(1, 1, 1);
     }
+
+    public override void Equip()
+    {
+
+        Debug.Log("EquippingGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG");
+        Debug.Log("Equipping item: " + itemName);
+        isPickedUp = true;
+        stickCollider.enabled = false;
+        gameObject.SetActive(false);
+        Player.Instance.animator.runtimeAnimatorController = Player.Instance.stickController;
+    }
 }

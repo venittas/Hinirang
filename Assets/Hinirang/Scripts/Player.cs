@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Animator animator;
+    public Animator animator;
     private SpriteRenderer spriteRenderer;
     private Vector2 spawnPoint;
     public string eventNameTrigger = string.Empty;
@@ -41,6 +42,9 @@ public class Player : MonoBehaviour
     public bool IsAttacking = false;
     public float attackDuration = 2f;
 
+    public RuntimeAnimatorController defaultController;
+    public RuntimeAnimatorController stickController;
+
     public Vector2 GetLastLookDirection()
     {
         return lastLookDirection;
@@ -56,6 +60,7 @@ public class Player : MonoBehaviour
         Instance = this;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.runtimeAnimatorController = defaultController;
         spriteRenderer = GetComponent<SpriteRenderer>();
         spawnPoint = transform.position;
     }
@@ -166,6 +171,13 @@ public class Player : MonoBehaviour
             animator.SetBool("isLeft", left);
             animator.SetBool("isRight", right);
         }
+    }
+    public void SetAnimationBools(bool down, bool up, bool left, bool right, bool keme)
+    {
+        animator.SetBool("isDown", down);
+        animator.SetBool("isUp", up);
+        animator.SetBool("isLeft", left);
+        animator.SetBool("isRight", right);
     }
 
     private void DetectInteraction()

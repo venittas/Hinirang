@@ -102,13 +102,15 @@ public class DialogueSystem : MonoBehaviour
             Player.Instance.currentState = Player.PlayerState.Interacting;
             GameManager.Instance.IntroHelper2();
         }
-        else if (currentEventName == "EndOfDay1" || Player.Instance.eventNameTrigger == "EndOfDay1")
+        else if (currentEventName == "GiveStick" || Player.Instance.eventNameTrigger == "GiveStick")
         {
-            Player.Instance.currentState = Player.PlayerState.Interacting;
-            GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
-            GameManager.Instance.MoveDialogueToDay3();
-            Player.Instance.eventNameTrigger = "Day3";
-            GameManager.Instance.Day3Intro();
+            GameManager.Instance.GiveStick();
+            GameManager.Instance.Day1Tiyanak();
+            //Player.Instance.currentState = Player.PlayerState.Interacting;
+            //GameManager.Instance.TeleportPlayer(30.54f, 3.95f);
+            //GameManager.Instance.MoveDialogueToDay3();
+            //Player.Instance.eventNameTrigger = "Day3";
+            //GameManager.Instance.Day3Intro();
         }
         else if (currentEventName == "NarratorDay1" || Player.Instance.eventNameTrigger == "NarratorDay1")
         {
@@ -141,6 +143,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void SetInteractingTarget(string targetName)
     {
+        Debug.Log("Setting InteractingTarget to: " + targetName);
         InteractingTarget = targetName;
     }
 

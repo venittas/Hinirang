@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     GameObject tempFadeIn;
     GameObject tempFadeOut;
     Vector2 teleportPoint;
-
+    public Tiyanak tiyanakPrefab;
+    public GameObject stickPrefab;
 
     public enum GameState
     {
@@ -79,6 +80,18 @@ public class GameManager : MonoBehaviour
     public void IntroFinished()
     {
         Player.Instance.currentState = Player.PlayerState.Moving;
+    }
+
+    public void GiveStick()
+    {
+        GameObject stick = Instantiate(stickPrefab, new Vector2(-21.59f, -17.05f), Quaternion.identity);
+        SampleWeapon weapon = stick.GetComponent<SampleWeapon>();
+        InventorySystem.Instance.AddItem(weapon, 1);
+    }
+
+    public void Day1Tiyanak()
+    {
+        Instantiate(tiyanakPrefab, new Vector2(74.4f, 19.9f), Quaternion.identity);
     }
 
     public void Day3Intro()

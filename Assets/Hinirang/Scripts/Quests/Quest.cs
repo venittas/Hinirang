@@ -66,10 +66,15 @@ public class Quest
                 }
                 if ((currentObjectiveIndex + 1) >= questObjectives.Count)
                 {
+                    questState = QuestState.Completed;
+                    Debug.Log($"Quest '{questTitle}' completed!");
+                    QuestSystem.Instance.CheckObjective(targetName);
                     return;
                 }
                 currentObjectiveIndex++;
                 QuestSystem.Instance.UpdateQuestUI();
+                questState = QuestState.InProgress;
+                Debug.Log($"Objective completed! Next: '{questObjectives[currentObjectiveIndex].objectiveTitle}'");
                 if (currentObjectiveIndex >= questObjectives.Count)
                 {
                     questState = QuestState.Completed;

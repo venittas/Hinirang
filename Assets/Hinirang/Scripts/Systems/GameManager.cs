@@ -127,6 +127,7 @@ public class GameManager : MonoBehaviour
 
     public void Day3Tiyanak()
     {
+        Player.Instance.eventNameTrigger = "Day3Tiyanak";
         Instantiate(tiyanakPrefab, new Vector2(26.1f, 2.6f), Quaternion.identity);
         Instantiate(tiyanakPrefab, new Vector2(30f, 2.9f), Quaternion.identity);
         Instantiate(tiyanakPrefab, new Vector2(29.1f, 7.2f), Quaternion.identity);

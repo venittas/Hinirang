@@ -35,7 +35,7 @@ public abstract class Enemy : MonoBehaviour
         spriteRenderer.enabled = true;
     }
 
-    private void OnDrawGizmos()
+    public void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);

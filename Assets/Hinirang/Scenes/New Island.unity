@@ -34339,6 +34339,10 @@ PrefabInstance:
       value: Tiyanak
       objectReference: {fileID: 0}
     - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
+      propertyPath: quests.Array.data[1].questObjectives.Array.data[0].targetName
+      value: Joba
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118402616247664110, guid: 569cdfb876939c74e951e1ea7df7cdc1, type: 3}
       propertyPath: quests.Array.data[1].questObjectives.Array.data[1].targetName
       value: Tiyanak
       objectReference: {fileID: 0}

@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -6,7 +7,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     public Animator animator;
     private SpriteRenderer spriteRenderer;
-    private Vector2 spawnPoint;
+    public Vector2 spawnPoint;
     public string eventNameTrigger = string.Empty;
     public GameObject attackCollider;
     public GameObject whipCollider;
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float interactionRange = 1.5f;
     [SerializeField] private LayerMask interactableLayer;
+    public TextMeshProUGUI healthText;
 
     private Vector2 lastLookDirection = Vector2.down;
 
@@ -48,6 +50,9 @@ public class Player : MonoBehaviour
     public RuntimeAnimatorController defaultController;
     public RuntimeAnimatorController stickController;
     public RuntimeAnimatorController whipController;
+
+    public float playerExitX;
+    public float playerExitY;
 
     public Vector2 GetLastLookDirection()
     {
@@ -322,7 +327,12 @@ public class Player : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 currentState = PlayerState.Dead;
+                healthText.text = "0";
                 GameManager.Instance.ShowDeathUI();
+            }
+            else
+            {
+                healthText.text = Health.ToString("F0");
             }
         }
     }
@@ -353,6 +363,7 @@ public class Player : MonoBehaviour
     {
         transform.position = spawnPoint;
         Health = 100f;
+        healthText.text = Health.ToString("F0");
         isInvulnerable = false;
         spriteRenderer.enabled = true;
         gameObject.SetActive(true);

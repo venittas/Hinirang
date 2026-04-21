@@ -14,6 +14,7 @@ public class StartScreen : MonoBehaviour
     private const float  SLIDE_SPEED = 10f;
     public GameObject FadeInCanvas;
     public GameObject FadeOutCanvas;
+    public bool isNewGame = false;
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -23,20 +24,42 @@ public class StartScreen : MonoBehaviour
         newGameButton.onClick.AddListener(() =>
         {
             Instantiate(FadeInCanvas);
-            SceneSystem.Instance.LoadScene(1);
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.ResetEverything(); 
+            }
+            else
+            {
+                SceneSystem.Instance.LoadScene(1);
+            }
         });
+
         continueButton.onClick.AddListener(() =>
         {
-            Instantiate(FadeInCanvas);
-            SceneSystem.Instance.LoadScene(1);
+            if (GameManager.Instance != null) 
+            {
+                Instantiate(FadeInCanvas);
+                SceneSystem.Instance.LoadScene(
+                    (int)SceneSystem.Instance.currentPlayerLocation);
+            }
+            else 
+            {
+                Instantiate(FadeInCanvas);
+                SceneSystem.Instance.LoadScene(1);
+            }
         });
-        quitButton.onClick.AddListener(() =>
-        {
-            Application.Quit();
-        });
+
+        continueButton.interactable = GameManager.Instance != null;
+
+        quitButton.onClick.AddListener(() => Application.Quit());
 
         targetPosition = rectTransform.anchoredPosition;
         rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 1000f);
+    }
+
+    public void ResetEverything()
+    {
+        GameManager.Instance.ResetEverything();
     }
     void Update()
     {

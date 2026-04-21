@@ -11,6 +11,7 @@ public class PauseManager : MonoBehaviour
     }
     public void PauseGame()
     {
+        if (Player.Instance.currentState == Player.PlayerState.Interacting) return;
         Instantiate(PauseUI);
         Time.timeScale = 0f;
     }
@@ -19,5 +20,8 @@ public class PauseManager : MonoBehaviour
     {
         SceneSystem.Instance.LoadScene(0, 0f, 0f);
         Time.timeScale = 1f;
+        Player.Instance.playerExitX = Player.Instance.transform.position.x; 
+        Player.Instance.playerExitY = Player.Instance.transform.position.y;
+        MangJuan.Instance.DisableBoat();
     }
 }

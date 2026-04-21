@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,16 +29,44 @@ public class SceneSystem : MonoBehaviour
     }
     public void LoadScene(int sceneIndex, float x, float y)
     {
+        if (sceneIndex == (int)SceneIndex.StartScreen)
+        {
+            LoadScene(sceneIndex);
+            return;
+        }
         Debug.Log($"Loading scene {sceneIndex} with player position ({x}, {y})");
         GameManager.Instance.TransitionToScene(sceneIndex, x, y);
         currentPlayerLocation = (SceneIndex)sceneIndex;
         Invoke("CheckNPCs", 1f);
+        CinemachineCamera vcam = FindFirstObjectByType<CinemachineCamera>();
+        if (vcam != null)
+        {
+            vcam.Follow = Player.Instance.transform;
+        }
     }
     public void LoadScene(int sceneIndex)
     {
+        if (sceneIndex == (int)SceneIndex.StartScreen)
+        {
+            SceneManager.LoadScene(sceneIndex);
+            return;
+        }
         currentPlayerLocation = (SceneIndex)sceneIndex;
         SceneManager.LoadScene(sceneIndex);
+        StartCoroutine(AssignCinemachineAfterLoad());
     }
+
+    private IEnumerator AssignCinemachineAfterLoad()
+    {
+        yield return null; 
+        CinemachineCamera vcam = FindFirstObjectByType<CinemachineCamera>();
+        if (vcam != null)
+        {
+            vcam.Follow = Player.Instance.transform;
+        }
+        CheckNPCs();
+    }
+
 
     public void CheckNPCs()
     {

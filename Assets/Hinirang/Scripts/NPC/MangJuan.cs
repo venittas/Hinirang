@@ -5,7 +5,6 @@ using UnityEngine;
 public class MangJuan : NPCScript
 {
     public static MangJuan Instance;
-    [SerializeField] private Boat Boat;
 
     private void Awake()
     {
@@ -53,15 +52,17 @@ public class MangJuan : NPCScript
 
     public IEnumerator MoveWithBoat()
     {
-        Boat.MoveBoat();
+        Boat.Instance.MoveBoat();
         yield return StartCoroutine(MoveNoAnim(4));
+        yield return new WaitForSeconds(5f);
+        DisableBoat();
     }
 
     public void DisableBoat()
     {
-        if (Boat != null)
+        if (Boat.Instance != null)
         {
-            Boat.gameObject.SetActive(false);
+            Boat.Instance.gameObject.SetActive(false);
         }
     }
 

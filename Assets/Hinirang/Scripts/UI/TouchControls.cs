@@ -9,6 +9,7 @@ public class TouchControls : MonoBehaviour
     public Button LeftButton;
     public Button RightButton;
     public Button InteractButton;
+    public Button AttackButton;
 
 
     void Start()
@@ -30,6 +31,7 @@ public class TouchControls : MonoBehaviour
         AddEventTrigger(RightButton, EventTriggerType.PointerUp, (e) => Player.Instance.StopMove());
 
         InteractButton.onClick.AddListener(() => Player.Instance.Interact());
+        AttackButton.onClick.AddListener(() => Player.Instance.Attack());
     }
     
     //tldr: helper method para pag hold ng mga button

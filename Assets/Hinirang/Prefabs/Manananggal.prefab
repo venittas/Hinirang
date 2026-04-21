@@ -180,7 +180,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07643922, y: 0.6382894}
+  m_Offset: {x: -0.099876314, y: 0.6148524}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.66346157, y: -0.421875}
@@ -190,7 +190,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.2975499, y: 0.54342115}
+  m_Size: {x: 0.46942085, y: 0.5902951}
   m_EdgeRadius: 0
 --- !u!114 &5867765923202528964
 MonoBehaviour:
@@ -231,7 +231,7 @@ MonoBehaviour:
   isKnockedBack: 0
   yOffset: 4
   audioSource: {fileID: 383122282351398876}
-  soarSound: {fileID: 8300000, guid: b614cddf4a6d02f42943cbcd16c8533f, type: 3}
+  soarSound: {fileID: 8300000, guid: 61f4ae20b165e1e45933de5c4591b25f, type: 3}
   scratchSound: {fileID: 8300000, guid: 7d733a060941a7f46abd45b2f851d9e9, type: 3}
 --- !u!58 &5210641762583118206
 CircleCollider2D:
@@ -282,7 +282,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

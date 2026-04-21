@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
     {
         Idle,
         Moving,
-        Interacting
+        Interacting,
+        Dead,
     }
 
     public static Player Instance;
@@ -296,6 +297,7 @@ public class Player : MonoBehaviour
             if (Health <= 0)
             {
                 gameObject.SetActive(false);
+                currentState = PlayerState.Dead;
                 GameManager.Instance.ShowDeathUI();
             }
         }
@@ -331,5 +333,6 @@ public class Player : MonoBehaviour
         spriteRenderer.enabled = true;
         gameObject.SetActive(true);
         currentState = PlayerState.Moving;
+        IsAttacking = false;
     }
 }

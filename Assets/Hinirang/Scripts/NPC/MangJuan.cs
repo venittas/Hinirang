@@ -15,6 +15,7 @@ public class MangJuan : NPCScript
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     void Start()
     {
@@ -56,4 +57,24 @@ public class MangJuan : NPCScript
         yield return StartCoroutine(MoveNoAnim(4));
     }
 
+    public void DisableBoat()
+    {
+        if (Boat != null)
+        {
+            Boat.gameObject.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+            //Debug.Log(SceneSystem.Instance.currentPlayerLocation);
+        if (SceneSystem.Instance.currentPlayerLocation != SceneSystem.SceneIndex.Island)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+    }
 }

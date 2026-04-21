@@ -27,6 +27,7 @@ public class Tiyanak : Enemy
 
     public bool Move = true;
     public bool isKnockedBack = false;
+    private bool isDead = false;
 
     public void Start()
     {
@@ -54,7 +55,8 @@ public class Tiyanak : Enemy
         if (jumpChaseTimer > 0) jumpChaseTimer -= Time.deltaTime;
         if (roamTimer > 0) roamTimer -= Time.deltaTime;
 
-        if (Player.Instance.currentState != Player.PlayerState.Moving) return;
+        if (Player.Instance.currentState != Player.PlayerState.Moving && 
+            Player.Instance.currentState == Player.PlayerState.Dead) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, Player.Instance.transform.position);
 
@@ -239,12 +241,14 @@ public class Tiyanak : Enemy
 
     public override void TakeDamage(float damage)
     {
+        if (isDead) return; 
         Debug.Log("Tiyanak took damage: " + damage);
         health -= damage;
         Knockback();
         StartCoroutine(Flash());
         if (health <= 0)
         {
+            isDead = true; 
             bool check = QuestSystem.Instance.CheckActiveObjective("Tiyanak");
             if (check) Debug.LogWarning("Tiyanak objective completed!");
             Destroy(gameObject);

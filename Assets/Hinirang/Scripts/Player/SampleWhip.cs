@@ -53,9 +53,8 @@ public class SampleWhip: InventoryItem
         Vector2 playerDirection = Player.Instance.GetLastLookDirection();
         if (playerDirection == Vector2.down)
         {
-
             transform.localPosition = new Vector3(-0.0551000014f, -0.0724000037f, 0.730000019f);
-            transform.localRotation = Quaternion.Euler(0, 0, -180f);
+            transform.localRotation = Quaternion.Euler(0, 0, 0f);
         }
         else if (playerDirection == Vector2.right)
         {

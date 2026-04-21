@@ -40,17 +40,48 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Instantiate(FadeOutCanvas);
-        Debug.Log("GameManager started. IsNewGame: " + IsNewGame);
-        if (IsNewGame)
-        {
-            Invoke("PlayIntro", 1f);
-        }
+        startGame();
     }
 
     public void startGame()
     {
-        
+        Instantiate(FadeOutCanvas);
+        if (IsNewGame)
+        {
+            Invoke("PlayIntro", 1f);
+            IsNewGame = false;
+        }
+    }
+
+    public void ResetEverything()
+    {
+        if (Player.Instance != null) Destroy(Player.Instance.gameObject);
+        if (DialogueSystem.Instance != null) Destroy(DialogueSystem.Instance.gameObject);
+        if (InventorySystem.Instance != null) Destroy(InventorySystem.Instance.gameObject);
+        if (QuestSystem.Instance != null) Destroy(QuestSystem.Instance.gameObject);
+        if (AlingNena.Instance != null) Destroy(AlingNena.Instance.gameObject);
+        if (Joba.Instance != null) Destroy(Joba.Instance.gameObject);
+        if (MangEnko.Instance != null) Destroy(MangEnko.Instance.gameObject);
+        if (MangJuan.Instance != null) Destroy(MangJuan.Instance.gameObject);
+        if (Narrator.Instance != null) Destroy(Narrator.Instance.gameObject);
+        if (Canvas.Instance != null) Destroy(Canvas.Instance.gameObject);
+        if (EventSystem.Instance != null) Destroy(EventSystem.Instance.gameObject);
+
+        Player.Instance = null;
+        DialogueSystem.Instance = null;
+        InventorySystem.Instance = null;
+        QuestSystem.Instance = null;
+        AlingNena.Instance = null;
+        Joba.Instance = null;
+        MangEnko.Instance = null;
+        MangJuan.Instance = null;
+        Narrator.Instance = null;
+        Canvas.Instance = null;
+        EventSystem.Instance = null;
+
+        Instance = null;
+        Destroy(gameObject);
+
     }
 
     private void PlayIntro()
@@ -214,6 +245,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Destroy(tempFadeOut);
         Player.Instance.currentState = Player.PlayerState.Moving;
+        Player.Instance.spawnPoint = new Vector2(x, y);
     }
 
 

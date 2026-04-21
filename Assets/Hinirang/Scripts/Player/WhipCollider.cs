@@ -14,6 +14,8 @@ public class WhipCollider : MonoBehaviour
         {
 
             transform.localPosition = new Vector3(0, 0, 0);
+            transform.localRotation = Quaternion.Euler(0, 0, 0f);
+
         }
         else if (playerDirection == Vector2.right)
         {
@@ -26,6 +28,7 @@ public class WhipCollider : MonoBehaviour
         {
 
             transform.localPosition = new Vector3(0, 0.43f, 0);
+            transform.localRotation = Quaternion.Euler(0, 0, 0f);
         }
         else if (playerDirection == Vector2.left)
         {

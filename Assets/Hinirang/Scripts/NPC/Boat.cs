@@ -3,7 +3,18 @@ using UnityEngine;
 public class Boat : MonoBehaviour
 {
     private static Rigidbody2D rb;
+    public static Boat Instance;
 
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();

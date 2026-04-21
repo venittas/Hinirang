@@ -45,7 +45,7 @@ public class Manananggal : Enemy
         speed = 2f;
         damage = 33f;
         attackRange = 10f;
-        attackCooldown = 2f;
+        attackCooldown = 5f;
         chaseRange = 15f;
         roamRange = 10f;
         roamOrigin = transform.position; 
@@ -74,7 +74,7 @@ public class Manananggal : Enemy
 
     public void FixedUpdate()
     {
-        Check();
+        //Check();
         if (!Move) return;
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
         if (jumpChaseTimer > 0) jumpChaseTimer -= Time.deltaTime;
@@ -173,49 +173,63 @@ public class Manananggal : Enemy
         Vector2 dirToPlayer = (Player.Instance.transform.position - transform.position).normalized;
         lastLookDirection = GetDominantDirection(dirToPlayer);
 
+        yield return StartCoroutine(SoarPhase());
+        yield return StartCoroutine(ClawPhase());
+    }
+
+    private IEnumerator SoarPhase()
+    {
         animator.SetTrigger("Soar");
         PlaySoar();
 
         float soarHeight = 3f;
-        Vector2 startPos = transform.position;
-        Vector2 soarTarget = startPos + Vector2.up * soarHeight;
+        float duration = 0.92f;
 
-        float soarDuration = 0.92f; 
+        Vector2 startPos = transform.position;
+        Vector2 targetPos = startPos + Vector2.up * soarHeight;
+
         float elapsed = 0f;
 
-        while (elapsed < soarDuration)
+        while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            float t = elapsed / soarDuration;
-            transform.position = Vector2.Lerp(startPos, soarTarget, Mathf.SmoothStep(0, 1, t));
+            float t = elapsed / duration;
+
+            transform.position = Vector2.Lerp(startPos, targetPos, Mathf.SmoothStep(0, 1, t));
             yield return null;
         }
 
         rb.linearVelocity = Vector2.zero;
-        yield return new WaitForSeconds(0.1f);
+    }
 
+    private IEnumerator ClawPhase()
+    {
         animator.SetTrigger("Claw");
-        PlayScratch();
+        Invoke("PlayScratch", 1f);
+
         attackCollider.enabled = true;
 
-        float clawMovementDuration = 0.8f; 
-        elapsed = 0f;
-        Vector2 diveStartPos = transform.position;
+        float duration = 0.8f;
+        float elapsed = 0f;
 
-        Vector2 diveTarget = Player.Instance.transform.position;
+        Vector2 startPos = transform.position;
+        Vector2 targetPos = Player.Instance.transform.position;
 
-        while (elapsed < clawMovementDuration)
+        while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            float t = elapsed / clawMovementDuration;
-            transform.position = Vector2.Lerp(diveStartPos, diveTarget, t);
+            float t = elapsed / duration;
+
+            transform.position = Vector2.Lerp(startPos, targetPos, t);
             yield return null;
         }
 
         attackCollider.enabled = false;
 
-        float remainingAnimation = 1.50f - clawMovementDuration;
-        if (remainingAnimation > 0) yield return new WaitForSeconds(remainingAnimation);
+        float remainingAnimation = 1.5f - duration;
+        if (remainingAnimation > 0)
+            yield return new WaitForSeconds(remainingAnimation);
+        yield return null;
     }
 
     private Vector2 GetDominantDirection(Vector2 dir)
@@ -243,17 +257,6 @@ public class Manananggal : Enemy
     {
         Vector2 direction = (Player.Instance.transform.position - transform.position).normalized;
         rb.linearVelocity = direction * speed;
-        //DirectionAnimation(direction.x, direction.y);
-
-        /*
-        //alternative for moving
-        Debug.Log("Hopping");
-        rb.linearDamping = 0;
-        rb.AddForce((Player.Instance.transform.position - transform.position).normalized * speed, ForceMode2D.Impulse);
-        jumpChaseTimer = jumpChaseCooldown;
-        StartCoroutine(ApplyDrag(0.3f, 5f));
-        
-        */
     }
 
     public override void Roam()
@@ -322,11 +325,4 @@ public class Manananggal : Enemy
         }
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y + yOffset), attackRange);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y + yOffset), chaseRange);
-    }
 }

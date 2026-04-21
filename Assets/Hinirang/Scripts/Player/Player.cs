@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using Unity.VisualScripting;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -116,10 +113,18 @@ public class Player : MonoBehaviour
         {
             if (InventorySystem.Instance.IsItemEquippedWeapon() && !IsAttacking) 
             {
-                rb.linearVelocity = Vector2.zero;
-                StopMove();
-                StartCoroutine(AttackRoutine());
+                Attack();
             }
+        }
+    }
+
+    public void Attack()
+    {
+        if (InventorySystem.Instance.IsItemEquippedWeapon() && !IsAttacking)
+        {
+            rb.linearVelocity = Vector2.zero;
+            StopMove();
+            StartCoroutine(AttackRoutine());
         }
     }
 

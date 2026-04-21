@@ -17,6 +17,7 @@ public class Narrator : NPCScript
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()

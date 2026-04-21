@@ -25,6 +25,7 @@ public class SampleWeapon : InventoryItem
         damage = 2f;
         isWeapon = true;
         itemName = "Stick";
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()

@@ -63,6 +63,13 @@ public class Quest
                     Player.Instance.eventNameTrigger = "Day7";
                     MangEnko.Instance.enabled = false;
                     GameManager.Instance.Day7Intro();
+                }else if (Player.Instance.eventNameTrigger == "Day7" && currentObjective.targetName == "Manananggal")
+                {
+                    Debug.Log("Day7 triggered by: " + targetName);
+                    Player.Instance.eventNameTrigger = "TheEnd";
+                    Player.Instance.currentState = Player.PlayerState.Interacting;
+                    GameManager.Instance.NarratorDeathMessage();
+                    Narrator.Instance.Interact("");
                 }
                 if ((currentObjectiveIndex + 1) >= questObjectives.Count)
                 {

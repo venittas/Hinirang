@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void startGame()
+    {
+        
+    }
+
     private void PlayIntro()
     {
         Narrator.Instance.Interact("NarratorDay1");
@@ -87,20 +92,22 @@ public class GameManager : MonoBehaviour
 
     public void GiveStick()
     {
-        GameObject stick = Instantiate(stickPrefab, new Vector2(-21.59f, -17.05f), Quaternion.identity);
+        GameObject stick = Instantiate(stickPrefab, new Vector2(18.06f, 18.4f), Quaternion.identity);
         SampleWeapon weapon = stick.GetComponent<SampleWeapon>();
         InventorySystem.Instance.AddItem(weapon, 1);
     }
 
     public void Day1Tiyanak()
     {
-        Instantiate(tiyanakPrefab, new Vector2(32.8f, -7.7f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(18.06f, 18.4f), Quaternion.identity);
     }
 
     public void StartDay3()
     {
         Player.Instance.currentState = Player.PlayerState.Interacting;
-        GameManager.Instance.TeleportPlayer(13.56f, 3.94f);
+        SceneSystem.Instance.LoadScene((int)SceneSystem.SceneIndex.Island, 13.56f, 3.94f);
+        Player.Instance.currentState = Player.PlayerState.Interacting;
+        //GameManager.Instance.TeleportPlayer(13.56f, 3.94f);
         Player.Instance.ResetPlayer();
         GameManager.Instance.MoveDialogueToDay3();
         Player.Instance.eventNameTrigger = "Day3";
@@ -174,6 +181,12 @@ public class GameManager : MonoBehaviour
         MangEnko.Instance.MoveDialogue();
         Joba.Instance.MoveDialogue();
         Narrator.Instance.MoveDialogue();
+    }
+
+    public void NarratorDeathMessage()
+    {
+        Narrator.Instance.MoveDialogue();
+
     }
 
     public void TransitionToScene(int sceneIndex, float x, float y)

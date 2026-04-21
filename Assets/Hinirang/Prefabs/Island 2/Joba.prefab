@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6197901154163142182
+--- !u!1 &760058038973025049
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4678182422072725984}
-  - component: {fileID: 4225124282548658378}
-  - component: {fileID: 1768934928945387026}
-  - component: {fileID: 4133864097174564463}
-  - component: {fileID: 5122848330197484495}
+  - component: {fileID: 1864186767576749229}
+  - component: {fileID: 1452329203238061609}
+  - component: {fileID: 4684246242137947538}
+  - component: {fileID: 4518421915508305467}
+  - component: {fileID: 3184585550575478806}
   m_Layer: 6
-  m_Name: Teleport Point
+  m_Name: Joba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4678182422072725984
+--- !u!4 &1864186767576749229
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6197901154163142182}
+  m_GameObject: {fileID: 760058038973025049}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.4, y: -0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 24.18, y: 13.62, z: 0}
+  m_LocalScale: {x: 0.71, y: 0.71, z: 0.71}
+  m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 7036950236722274624}
+  - {fileID: 2417971863760187803}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4225124282548658378
+--- !u!212 &1452329203238061609
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6197901154163142182}
+  m_GameObject: {fileID: 760058038973025049}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -81,12 +81,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1535390151
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Sprite: {fileID: -5743973931017420658, guid: 2650cfa796c66244b873eac8fd8404c4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95,32 +95,14 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1768934928945387026
-MonoBehaviour:
+--- !u!61 &4684246242137947538
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6197901154163142182}
+  m_GameObject: {fileID: 760058038973025049}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72355a3293e45964796900a61f129033, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TeleportPoint
-  rb: {fileID: 0}
-  animator: {fileID: 0}
-  teleportArea: {fileID: 0}
-  targetScene: 1
-  x: 0
-  y: 0
---- !u!58 &4133864097174564463
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6197901154163142182}
-  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -147,18 +129,34 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!70 &5122848330197484495
-CapsuleCollider2D:
+  m_Offset: {x: -0.0059512258, y: -0.017852902}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.42, y: 1.92}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.1224486, y: 1.717665}
+  m_EdgeRadius: 0
+--- !u!50 &4518421915508305467
+Rigidbody2D:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6197901154163142182}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
+  m_GameObject: {fileID: 760058038973025049}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -166,33 +164,83 @@ CapsuleCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
-  m_Direction: 0
---- !u!1001 &494610721444277880
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &3184585550575478806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760058038973025049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ef078c9103144d8dfda931be75c3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Joba
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  dialogues:
+  - DialogueName: Unang Araw (Filler)
+    dialogueLines:
+    - characterName: Old Man
+      line: Sino ka bang bata ka?
+  - DialogueName: Ikatlong Araw
+    dialogueLines:
+    - characterName: Ikaw
+      line: Walang Hiya kaaaa!
+    - characterName: Old Man
+      line: Huwag mong ituloy ang pag-atake, hindi mo ako kalaban at hindi kita kayang
+        labanan
+    - characterName: Old Man
+      line: Mahina na ako at naghihintay nalang ng aking kamatayan,
+    - characterName: Old Man
+      line: "Ngunit nais ko na bago ako mawala ay makatulong muna ako sa mismong
+        problema na kinaharap ko\u2026."
+    - characterName: Ikaw
+      line: Ha? Anong pinagsasasabi mo? Hindi bat ikaw ang ang halimaw na dahilan
+        ng mga kaguluhan at pagkawala dito?
+    - characterName: Old Man
+      line: Malaki ang pagkakamali at intindi mo iho.
+    - characterName: Old Man
+      line: Alam ko kung sino ka, alam ko rin na galing ka sa albularyo upang humingi
+        ng tulong, alam ko rin kung ano ang hinahanap mo.
+    - characterName: Ikaw
+      line: Kung alam ninyo, bakit ayaw ninyon ipaalam na saakin, ayaw ba ninyo akong
+        matulungan?
+    - characterName: Old Man
+      line: Hindi sa ganoon, ngunit malalaman mo sa iyong mga isip at kakaharapin
+        ng mas malinaw at detalyado.
+    - characterName: Old Man
+      line: Papalapit na ang gabi iho, mukang kakailanganin mo ng umalis, ngunit
+        Iyang patpat mo ay panggatong lang sa impyernong kakaharapin mo.
+    - characterName: Old Man
+      line: Matapang ka, pero ang tapang ay walang silbi kung wala kang tamang sandata.
+    - characterName: Old Man
+      line: Ang mga Tiyanak? Mga aso lang sila. May 'Ina' silang pinaglilingkuran.
+    - characterName: Old Man
+      line: Kunin mo 'tong Buntot Pagi. Masakit ito, ngunit mahirap kontrolin at
+        mabagal. hindi lang sa balat, kundi pati sa kaluluwa ng mga demonyo.
+    - characterName: Old Man
+      line: Takbo na, bago pa mag-Takipsilim.
+    - characterName: Ikaw
+      line: Ina? Anong ina? Sinong ina? May mas malaki pa kasya mga tiyanak?
+  - DialogueName: Ikapitong Araw (FIller)
+    dialogueLines:
+    - characterName: Old Man
+      line: Ang tapang ay hindi sapat para sa gabi na darating
+  dialogueIndex: 0
+  moves: []
+  moveSpeed: 5
+--- !u!1001 &5114732075348868771
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4678182422072725984}
+    m_TransformParent: {fileID: 1864186767576749229}
     m_Modifications:
     - target: {fileID: 929966900182100242, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
       propertyPath: m_Name
@@ -208,11 +256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.29
       objectReference: {fileID: 0}
     - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -245,54 +293,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 929966900182100242, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8831097735356703822}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
---- !u!1 &737132538202457962 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 929966900182100242, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
-  m_PrefabInstance: {fileID: 494610721444277880}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &8831097735356703822
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737132538202457962}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.55
---- !u!4 &7036950236722274624 stripped
+--- !u!4 &2417971863760187803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7454989141913603896, guid: 9616d71722344f7478fd5c099c495de6, type: 3}
-  m_PrefabInstance: {fileID: 494610721444277880}
+  m_PrefabInstance: {fileID: 5114732075348868771}
   m_PrefabAsset: {fileID: 0}

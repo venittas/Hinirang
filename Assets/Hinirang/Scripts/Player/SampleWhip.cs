@@ -25,6 +25,7 @@ public class SampleWhip: InventoryItem
         damage = 10f;
         isWeapon = true;
         itemName = "Whip";
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()

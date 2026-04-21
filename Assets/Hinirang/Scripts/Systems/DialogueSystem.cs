@@ -117,8 +117,9 @@ public class DialogueSystem : MonoBehaviour
         {
             Player.Instance.eventNameTrigger = "Day3OldMan";
         } 
-        else if (currentEventName == "Day3OldMan" || Player.Instance.eventNameTrigger == "Day3OldMan")
+        else if (currentEventName == "GiveWhip" || Player.Instance.eventNameTrigger == "GiveWhip")
         {
+            Player.Instance.eventNameTrigger = "Day3Tiyanak";
             GameManager.Instance.GiveWhip();
             GameManager.Instance.Day3Tiyanak();
         } 
@@ -130,6 +131,10 @@ public class DialogueSystem : MonoBehaviour
             Player.Instance.eventNameTrigger = "Day7";
             MangEnko.Instance.enabled = false;
             GameManager.Instance.Day7Intro();
+        } 
+        else if (currentEventName == "TheEnd" || Player.Instance.eventNameTrigger == "TheEnd")
+        {
+            SceneSystem.Instance.LoadScene((int)SceneSystem.SceneIndex.StartScreen);
         } 
     }
 

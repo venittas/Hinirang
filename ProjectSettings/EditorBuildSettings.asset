@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Hinirang/Scenes/Bedroom (Indoor 1).unity
     guid: b13441f258a1984448e2e0b21630fa76
   - enabled: 1
+    path: Assets/Hinirang/Scenes/Village.unity
+    guid: c22a27f682a4fcc0aa84f8922dcaed0d
+  - enabled: 1
+    path: Assets/Hinirang/Scenes/Mountain.unity
+    guid: 457242ea3cd74ed4b826bbc79117a0ab
+  - enabled: 1
     path: Assets/Hinirang/Scenes/Test Scene.unity
     guid: 9ab826abe0487514ebad02a4563ede2f
   - enabled: 1

@@ -18,4 +18,8 @@ public class Boat : MonoBehaviour
     {
         rb.linearVelocity = Vector3.zero;
     }
+    public void DisableBoat()
+    {
+        gameObject.SetActive(false);
+    }
 }

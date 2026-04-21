@@ -12,6 +12,7 @@ public class AlingNena : NPCScript
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     public override void CheckEventTriggerName(string eventName)
     {
@@ -21,6 +22,18 @@ public class AlingNena : NPCScript
         {
             Player.Instance.eventNameTrigger = "Albularyo1Quest1";
             newEventName = "Albularyo1Quest1";
+        }
+    }
+
+    private void Update()
+    {
+        if (SceneSystem.Instance.currentPlayerLocation != SceneSystem.SceneIndex.Island)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
         }
     }
 }

@@ -27,7 +27,10 @@ public class Manananggal : Enemy
 
     public bool Move = true;
     public bool isKnockedBack = false;
-    public float yOffset = 4f; 
+    public float yOffset = 4f;
+    private bool isDead = false;
+
+    public static Manananggal Instance;
 
     public void Start()
     {
@@ -47,16 +50,35 @@ public class Manananggal : Enemy
         
     }
 
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
+    private void Check()
+    {
+        if (Player.Instance.eventNameTrigger != "Day7")
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     public void FixedUpdate()
     {
+        Check();
         if (!Move) return;
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
         if (jumpChaseTimer > 0) jumpChaseTimer -= Time.deltaTime;
         if (roamTimer > 0) roamTimer -= Time.deltaTime;
 
-        if (Player.Instance.currentState != Player.PlayerState.Moving) return;
+        if (Player.Instance.currentState != Player.PlayerState.Moving && 
+            Player.Instance.currentState == Player.PlayerState.Dead) return;
 
         Vector2 adjustedPos = new Vector2(transform.position.x, transform.position.y + yOffset);
         float distanceToPlayer = Vector2.Distance(adjustedPos, Player.Instance.transform.position);
@@ -140,7 +162,7 @@ public class Manananggal : Enemy
         lastLookDirection = GetDominantDirection(dirToPlayer);
 
         animator.SetTrigger("Soar");
-        float soarHeight = 3f; // how high it goes before crashing down
+        float soarHeight = 3f; 
         Vector2 soarTarget = (Vector2)transform.position + Vector2.up * soarHeight;
 
         float soarDuration = 0.92f;
@@ -263,14 +285,16 @@ public class Manananggal : Enemy
 
     public override void TakeDamage(float damage)
     {
-        Debug.Log("Tiyanak took damage: " + damage);
+        if (isDead) return;
+        Debug.Log("Manananggal took damage: " + damage);
         health -= damage;
         Knockback();
         StartCoroutine(Flash());
         if (health <= 0)
         {
-            bool check = QuestSystem.Instance.CheckActiveObjective("Tiyanak");
-            if (check) Debug.LogWarning("Tiyanak objective completed!");
+            isDead = true;
+            bool check = QuestSystem.Instance.CheckActiveObjective("Manananggal");
+            if (check) Debug.LogWarning("Manananggal objective completed!");
             Destroy(gameObject);
         }
     }

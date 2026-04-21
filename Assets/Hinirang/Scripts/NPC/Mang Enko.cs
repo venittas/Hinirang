@@ -11,6 +11,7 @@ public class MangEnko : NPCScript
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     public override void CheckEventTriggerName(string eventName)
     {
@@ -20,6 +21,18 @@ public class MangEnko : NPCScript
         {
             Player.Instance.eventNameTrigger = "GiveStick";
             Debug.Log("TANGINA MO BINAGO KO NA: " + Player.Instance.eventNameTrigger);
+        }
+    }
+
+    private void Update()
+    {
+        if (SceneSystem.Instance.currentPlayerLocation != SceneSystem.SceneIndex.Village)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
         }
     }
 }

@@ -8,6 +8,6 @@ public class TeleportPoint : Interactable
     public float y;
     public override void Interact(string teleportLocation)
     {
-        SceneSystem.LoadScene((int)targetScene, x, y);
+        SceneSystem.Instance.LoadScene((int)targetScene, x, y);
     }
 }

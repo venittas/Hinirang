@@ -29,6 +29,9 @@ public class Manananggal : Enemy
     public bool isKnockedBack = false;
     public float yOffset = 4f;
     private bool isDead = false;
+    public AudioSource audioSource;
+    public AudioClip soarSound;
+    public AudioClip scratchSound;
 
     public static Manananggal Instance;
 
@@ -147,6 +150,16 @@ public class Manananggal : Enemy
 
     }
 
+    public void PlaySoar()
+    {
+        audioSource.PlayOneShot(soarSound);
+    }
+
+    public void PlayScratch()
+    {
+        audioSource.PlayOneShot(scratchSound);
+    }
+
     public override void Attack()
     {
         StartCoroutine(AttackRoutine());
@@ -154,7 +167,6 @@ public class Manananggal : Enemy
 
     public IEnumerator AttackRoutine()
     {
-
         attackTimer = attackCooldown;
         rb.linearVelocity = Vector2.zero;
 
@@ -162,37 +174,48 @@ public class Manananggal : Enemy
         lastLookDirection = GetDominantDirection(dirToPlayer);
 
         animator.SetTrigger("Soar");
-        float soarHeight = 3f; 
-        Vector2 soarTarget = (Vector2)transform.position + Vector2.up * soarHeight;
+        PlaySoar();
 
-        float soarDuration = 0.92f;
-        float elapsed = 0f;
+        float soarHeight = 3f;
         Vector2 startPos = transform.position;
+        Vector2 soarTarget = startPos + Vector2.up * soarHeight;
+
+        float soarDuration = 0.92f; 
+        float elapsed = 0f;
 
         while (elapsed < soarDuration)
         {
             elapsed += Time.deltaTime;
-            transform.position = Vector2.Lerp(startPos, soarTarget, elapsed / soarDuration);
+            float t = elapsed / soarDuration;
+            transform.position = Vector2.Lerp(startPos, soarTarget, Mathf.SmoothStep(0, 1, t));
             yield return null;
         }
 
+        rb.linearVelocity = Vector2.zero;
+        yield return new WaitForSeconds(0.1f);
+
         animator.SetTrigger("Claw");
+        PlayScratch();
         attackCollider.enabled = true;
 
-        float clawDuration = 1.50f - 0.92f; 
+        float clawMovementDuration = 0.8f; 
         elapsed = 0f;
-        startPos = transform.position;
-        Vector2 clawTarget = Player.Instance.transform.position; 
-        while (elapsed < clawDuration)
+        Vector2 diveStartPos = transform.position;
+
+        Vector2 diveTarget = Player.Instance.transform.position;
+
+        while (elapsed < clawMovementDuration)
         {
             elapsed += Time.deltaTime;
-            transform.position = Vector2.Lerp(startPos, clawTarget, elapsed / clawDuration);
+            float t = elapsed / clawMovementDuration;
+            transform.position = Vector2.Lerp(diveStartPos, diveTarget, t);
             yield return null;
         }
 
         attackCollider.enabled = false;
 
-
+        float remainingAnimation = 1.50f - clawMovementDuration;
+        if (remainingAnimation > 0) yield return new WaitForSeconds(remainingAnimation);
     }
 
     private Vector2 GetDominantDirection(Vector2 dir)

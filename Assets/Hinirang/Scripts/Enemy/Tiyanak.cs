@@ -28,6 +28,12 @@ public class Tiyanak : Enemy
     public bool Move = true;
     public bool isKnockedBack = false;
     private bool isDead = false;
+    public AudioSource audioSource;
+    public AudioClip[] tiyanakCries;
+    public AudioClip tiyanakAttack;
+    private float idleSoundTimer = 0f;
+    public float idleSoundInterval = 5f;
+    public bool isAttacking = false;
 
     public void Start()
     {
@@ -42,7 +48,8 @@ public class Tiyanak : Enemy
         attackCooldown = 2f;
         chaseRange = 15f;
         roamRange = 10f;
-        roamOrigin = transform.position; 
+        roamOrigin = transform.position;
+        idleSoundTimer = Random.Range(1f, idleSoundInterval);
         UpdateRoamCoordinates();
     }
 
@@ -57,6 +64,17 @@ public class Tiyanak : Enemy
 
         if (Player.Instance.currentState != Player.PlayerState.Moving && 
             Player.Instance.currentState == Player.PlayerState.Dead) return;
+
+        if (!isAttacking)
+        {
+            idleSoundTimer -= Time.deltaTime;
+            if (idleSoundTimer <= 0)
+            {
+                PlayRandomIdleSound();
+                idleSoundTimer = idleSoundInterval;
+            }
+        }
+
 
         float distanceToPlayer = Vector2.Distance(transform.position, Player.Instance.transform.position);
 
@@ -77,6 +95,20 @@ public class Tiyanak : Enemy
         }
 
     }
+
+    private void PlayRandomIdleSound()
+    {
+        if (tiyanakCries == null || tiyanakCries.Length == 0) return;
+        AudioClip clip = tiyanakCries[Random.Range(0, tiyanakCries.Length)];
+        audioSource.PlayOneShot(clip);
+    }
+
+    private void PlayAttackSound()
+    {
+        if (tiyanakAttack == null) return;
+        audioSource.PlayOneShot(tiyanakAttack);
+    }
+
 
     private void DirectionAnimation(float haxis, float vaxis)
     {
@@ -133,9 +165,10 @@ public class Tiyanak : Enemy
     {
 
         attackTimer = attackCooldown;
-        rb.linearVelocity = Vector2.zero; 
+        rb.linearVelocity = Vector2.zero;
+        PlayAttackSound();
         SetAnimationBools(false, false, false); 
-
+        isAttacking = true;
         switch (lastLookDirection)
         {
             case Vector2 v when v == Vector2.down:
@@ -158,6 +191,7 @@ public class Tiyanak : Enemy
         StartCoroutine(NormalSpeed(1f));
 
         yield return new WaitForSeconds(attackDuration);
+        isAttacking = false;
     }
 
     public IEnumerator NormalSpeed(float delay)

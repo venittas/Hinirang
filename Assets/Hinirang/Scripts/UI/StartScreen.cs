@@ -6,8 +6,8 @@ public class StartScreen : MonoBehaviour
 {
     [SerializeField] private Button newGameButton; 
     [SerializeField] private Button continueButton; 
-    [SerializeField] private Button modeLeftButton; 
-    [SerializeField] private Button modeRightButton;
+    [SerializeField] private Button quitButton;
+
     private RectTransform rectTransform;
     private Vector2 targetPosition;
     private bool isSlide = true;
@@ -30,18 +30,13 @@ public class StartScreen : MonoBehaviour
             Instantiate(FadeInCanvas);
             SceneSystem.Instance.LoadScene(1);
         });
-        modeLeftButton.onClick.AddListener(() =>
+        quitButton.onClick.AddListener(() =>
         {
-            Debug.Log("Mode Left button clicked");
-        });
-        modeRightButton.onClick.AddListener(() =>
-        {
-            Debug.Log("Mode Right button clicked");
+            Application.Quit();
         });
 
         targetPosition = rectTransform.anchoredPosition;
         rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 1000f);
-
     }
     void Update()
     {

@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     public string eventNameTrigger = string.Empty;
     public GameObject attackCollider;
     public GameObject whipCollider;
+    public AudioSource audioSource;
+    public AudioClip stickSwing;
+    public AudioClip whipAttack;
 
     public enum PlayerState
     {
@@ -111,15 +114,13 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Space pressed. State: " + currentState + " | IsWeapon: " + InventorySystem.Instance.IsItemEquippedWeapon());
-            if (InventorySystem.Instance.IsItemEquippedWeapon())
+            if (InventorySystem.Instance.IsItemEquippedWeapon() && !IsAttacking) 
             {
                 rb.linearVelocity = Vector2.zero;
                 StopMove();
                 StartCoroutine(AttackRoutine());
             }
         }
-
     }
 
     IEnumerator AttackRoutine()
@@ -147,6 +148,7 @@ public class Player : MonoBehaviour
             //    animator.SetTrigger("TestTrigger");
             //    break;
         }
+        PlayAttackSound();
         if (InventorySystem.Instance.GetEquippedItem().itemName == "Stick")
         {
             attackCollider.SetActive(true);
@@ -165,6 +167,23 @@ public class Player : MonoBehaviour
             whipCollider.SetActive(false);
         }
         
+    }
+
+    public void PlayAttackSound()
+    {
+        AudioClip attackSound = null;
+        if (InventorySystem.Instance.GetEquippedItem().itemName == "Stick")
+        {
+            attackSound = stickSwing;
+        }
+        else if (InventorySystem.Instance.GetEquippedItem().itemName == "Whip")
+        {
+            attackSound = whipAttack; 
+        }
+        if (attackSound != null)
+        {
+            audioSource.PlayOneShot(attackSound);
+        }
     }
 
     public float GetWeaponDamage()

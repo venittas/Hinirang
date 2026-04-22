@@ -55,7 +55,9 @@ public class MangJuan : NPCScript
         Boat.Instance.MoveBoat();
         yield return StartCoroutine(MoveNoAnim(4));
         yield return new WaitForSeconds(5f);
+        GameManager.Instance.boatCutscenePlayed = true;
         DisableBoat();
+
     }
 
     public void DisableBoat()
@@ -63,19 +65,6 @@ public class MangJuan : NPCScript
         if (Boat.Instance != null)
         {
             Boat.Instance.gameObject.SetActive(false);
-        }
-    }
-
-    private void Update()
-    {
-            //Debug.Log(SceneSystem.Instance.currentPlayerLocation);
-        if (SceneSystem.Instance.currentPlayerLocation != SceneSystem.SceneIndex.Island)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            gameObject.SetActive(true);
         }
     }
 }

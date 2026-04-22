@@ -24,16 +24,4 @@ public class AlingNena : NPCScript
             newEventName = "Albularyo1Quest1";
         }
     }
-
-    private void Update()
-    {
-        if (SceneSystem.Instance.currentPlayerLocation != SceneSystem.SceneIndex.Island)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            gameObject.SetActive(true);
-        }
-    }
 }

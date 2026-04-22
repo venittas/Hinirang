@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Tiyanak tiyanakPrefab;
     public GameObject stickPrefab;
     public GameObject WhipPrefab;
+    public bool boatCutscenePlayed = false;
 
     public enum GameState
     {
@@ -66,6 +67,8 @@ public class GameManager : MonoBehaviour
         if (Narrator.Instance != null) Destroy(Narrator.Instance.gameObject);
         if (Canvas.Instance != null) Destroy(Canvas.Instance.gameObject);
         if (EventSystem.Instance != null) Destroy(EventSystem.Instance.gameObject);
+        if (Boat.Instance != null) Destroy(Boat.Instance.gameObject);
+        if (MusicManager.Instance != null) Destroy(MusicManager.Instance.gameObject);
 
         Player.Instance = null;
         DialogueSystem.Instance = null;
@@ -78,6 +81,8 @@ public class GameManager : MonoBehaviour
         Narrator.Instance = null;
         Canvas.Instance = null;
         EventSystem.Instance = null;
+        Boat.Instance = null;
+        MusicManager.Instance = null;
 
         Instance = null;
         Destroy(gameObject);
@@ -86,6 +91,7 @@ public class GameManager : MonoBehaviour
 
     private void PlayIntro()
     {
+        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Intro);
         Narrator.Instance.Interact("NarratorDay1");
         Debug.Log("Playing intro...");
         Player.Instance.SetAnimationBools(false, false, false, false);
@@ -113,12 +119,13 @@ public class GameManager : MonoBehaviour
         Debug.Log("Helper 2");
         MangJuan.Instance.Scene3();
         IsNewGame = false;
-        Invoke("IntroFinished", 1f);
+        Invoke("IntroFinished", 2f);
     }
 
     public void IntroFinished()
     {
         Player.Instance.currentState = Player.PlayerState.Moving;
+        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
     }
 
     public void GiveStick()
@@ -246,6 +253,7 @@ public class GameManager : MonoBehaviour
         Destroy(tempFadeOut);
         Player.Instance.currentState = Player.PlayerState.Moving;
         Player.Instance.spawnPoint = new Vector2(x, y);
+        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
     }
 
 

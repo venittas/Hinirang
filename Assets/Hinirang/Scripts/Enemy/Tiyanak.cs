@@ -51,6 +51,7 @@ public class Tiyanak : Enemy
         roamOrigin = transform.position;
         idleSoundTimer = Random.Range(1f, idleSoundInterval);
         UpdateRoamCoordinates();
+        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Rush);
     }
 
 
@@ -282,6 +283,10 @@ public class Tiyanak : Enemy
         StartCoroutine(Flash());
         if (health <= 0)
         {
+            if (FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length <= 1)
+            {
+                MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
+            }
             isDead = true; 
             bool check = QuestSystem.Instance.CheckActiveObjective("Tiyanak");
             if (check) Debug.LogWarning("Tiyanak objective completed!");

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Interactable
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -73,14 +74,14 @@ TagManager:
   - name: Trees
     uniqueID: 2930188321
     locked: 0
-  - name: UpperHouse
-    uniqueID: 4166783321
+  - name: Player
+    uniqueID: 2759577145
     locked: 0
   - name: UpperTree
     uniqueID: 4021848579
     locked: 0
-  - name: Player
-    uniqueID: 2759577145
+  - name: UpperHouse
+    uniqueID: 4166783321
     locked: 0
   - name: Upper
     uniqueID: 4027206991

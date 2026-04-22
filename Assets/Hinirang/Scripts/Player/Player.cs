@@ -341,6 +341,7 @@ public class Player : MonoBehaviour
     {
         Health = 100f;
         spawnPoint = transform.position;
+        healthText.text = Health.ToString("F0");
     }
 
     private IEnumerator BecomeInvulnerable()

@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         if (Canvas.Instance != null) Destroy(Canvas.Instance.gameObject);
         if (EventSystem.Instance != null) Destroy(EventSystem.Instance.gameObject);
         if (Boat.Instance != null) Destroy(Boat.Instance.gameObject);
-        if (MusicManager.Instance != null) Destroy(MusicManager.Instance.gameObject);
+        //if (MusicManager.Instance != null) Destroy(MusicManager.Instance.gameObject);
 
         Player.Instance = null;
         DialogueSystem.Instance = null;
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
         Canvas.Instance = null;
         EventSystem.Instance = null;
         Boat.Instance = null;
-        MusicManager.Instance = null;
+        //MusicManager.Instance = null;
 
         Instance = null;
         Destroy(gameObject);
@@ -125,7 +125,6 @@ public class GameManager : MonoBehaviour
     public void IntroFinished()
     {
         Player.Instance.currentState = Player.PlayerState.Moving;
-        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
     }
 
     public void GiveStick()
@@ -253,7 +252,7 @@ public class GameManager : MonoBehaviour
         Destroy(tempFadeOut);
         Player.Instance.currentState = Player.PlayerState.Moving;
         Player.Instance.spawnPoint = new Vector2(x, y);
-        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
+        //MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
     }
 
 

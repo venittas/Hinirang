@@ -61,6 +61,7 @@ public class Quest
                     GameManager.Instance.TeleportPlayer(81.4f, 32.8f);
                     GameManager.Instance.MoveDialogueToDay7();
                     Player.Instance.eventNameTrigger = "Day7";
+                    Player.Instance.spawnPoint = new Vector3(42.2f, -11.8f, 0);
                     MangEnko.Instance.enabled = false;
                     GameManager.Instance.Day7Intro();
                 }else if (Player.Instance.eventNameTrigger == "Day7" && currentObjective.targetName == "Manananggal")

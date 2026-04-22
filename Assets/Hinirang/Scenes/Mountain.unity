@@ -202270,7 +202270,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414681111}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -420318,6 +420318,10 @@ PrefabInstance:
     - target: {fileID: 7905494441501702474, guid: 156c52d5c82b9bf4a96fb931c4fa1203, type: 3}
       propertyPath: m_Name
       value: Manananggal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905494441501702474, guid: 156c52d5c82b9bf4a96fb931c4fa1203, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

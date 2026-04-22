@@ -122,6 +122,7 @@ public class DialogueSystem : MonoBehaviour
             Player.Instance.eventNameTrigger = "Day3Tiyanak";
             GameManager.Instance.GiveWhip();
             GameManager.Instance.Day3Tiyanak();
+            Player.Instance.spawnPoint = new Vector3(25.1f, 53.59998f, 0);
         } 
         else if (currentEventName == "EndOfDay3" || Player.Instance.eventNameTrigger == "EndOfDay3")
         {

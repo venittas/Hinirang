@@ -51,6 +51,11 @@ public class Manananggal : Enemy
         roamOrigin = transform.position; 
         UpdateRoamCoordinates();
         MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Rush);
+        enabled = false;
+
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        rb.simulated = false;
     }
 
     private void Awake()
@@ -74,7 +79,7 @@ public class Manananggal : Enemy
 
     public void FixedUpdate()
     {
-        Check();
+        //Check();
         if (!Move) return;
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
         if (jumpChaseTimer > 0) jumpChaseTimer -= Time.deltaTime;

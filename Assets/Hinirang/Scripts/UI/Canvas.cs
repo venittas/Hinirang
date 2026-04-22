@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Canvas : MonoBehaviour
+public class CanvasKo : MonoBehaviour
 {
-    public static Canvas Instance;
+    public static CanvasKo Instance;
     private void Awake()
     {
         if (Instance != null && Instance != this)

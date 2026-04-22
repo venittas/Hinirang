@@ -24,6 +24,8 @@ public class QuestObjective
         {
              return;
         }
+        if (currentAmount >= targetAmount)
+            return;
         currentAmount ++;
         if (currentAmount >= targetAmount)
         {

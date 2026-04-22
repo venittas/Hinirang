@@ -33,7 +33,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float interactionRange = 1.5f;
     [SerializeField] private LayerMask interactableLayer;
-    public TextMeshProUGUI healthText;
+    public GameObject health;
+    private TextMeshProUGUI healthText;
 
     private Vector2 lastLookDirection = Vector2.down;
 
@@ -74,6 +75,8 @@ public class Player : MonoBehaviour
         spawnPoint = transform.position;
         attackCollider.SetActive(false);
         whipCollider.SetActive(false);
+        healthText = health.GetComponentInChildren<TextMeshProUGUI>();
+        Debug.Log("Health text: " + healthText);
         DontDestroyOnLoad(gameObject); 
     }
 
@@ -273,7 +276,7 @@ public class Player : MonoBehaviour
 
         if (hit.collider != null)
         {
-            //Debug.Log("Hit: " + hit.collider.name);
+            Debug.Log("Hit: " + hit.collider.name);
             newInteractable = hit.collider.GetComponent<Interactable>();
 
         }
@@ -328,11 +331,13 @@ public class Player : MonoBehaviour
                 gameObject.SetActive(false);
                 currentState = PlayerState.Dead;
                 healthText.text = "0";
+                GameManager.Instance.UpdateHealthUI(0);
                 GameManager.Instance.ShowDeathUI();
             }
             else
             {
                 healthText.text = Health.ToString("F0");
+                GameManager.Instance.UpdateHealthUI(Health); 
             }
         }
     }
@@ -342,6 +347,7 @@ public class Player : MonoBehaviour
         Health = 100f;
         spawnPoint = transform.position;
         healthText.text = Health.ToString("F0");
+        GameManager.Instance.UpdateHealthUI(Health);
     }
 
     private IEnumerator BecomeInvulnerable()
@@ -365,6 +371,7 @@ public class Player : MonoBehaviour
         transform.position = spawnPoint;
         Health = 100f;
         healthText.text = Health.ToString("F0");
+        GameManager.Instance.UpdateHealthUI(Health);
         isInvulnerable = false;
         spriteRenderer.enabled = true;
         gameObject.SetActive(true);

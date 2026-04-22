@@ -23,6 +23,9 @@ public class InventorySystem : MonoBehaviour
             return;
         }
         Instance = this;
+        slots.Clear();
+        selectedSlotIndex = -1;
+        inventoryUI.Clear();
         inventoryUI.Add(InventorySlot1);
         inventoryUI.Add(InventorySlot2);
         inventoryUI.Add(InventorySlot3);
@@ -52,6 +55,11 @@ public class InventorySystem : MonoBehaviour
         }
         if (slots.Count < maxSlots) //displaying item in inventory ui
         {
+            if (inventoryUI[slots.Count] == null)
+            {
+                Debug.LogError("InventoryUI slot is null! Canvas may have been destroyed.");
+                return false;
+            }
             slots.Add(new InventorySlot { item = item, quantity = amount });
             GameObject imgObj = new GameObject("InventoryItem");
             UnityEngine.UI.Image uiImage = imgObj.AddComponent<UnityEngine.UI.Image>();

@@ -61,10 +61,23 @@ public class Quest
                     GameManager.Instance.TeleportPlayer(81.4f, 32.8f);
                     GameManager.Instance.MoveDialogueToDay7();
                     Player.Instance.eventNameTrigger = "Day7";
-                    Player.Instance.spawnPoint = new Vector3(42.2f, -11.8f, 0);
                     MangEnko.Instance.enabled = false;
                     GameManager.Instance.Day7Intro();
-                }else if (Player.Instance.eventNameTrigger == "Day7" && currentObjective.targetName == "Manananggal")
+                    if (Manananggal.Instance != null)
+                    {
+                        Manananggal.Instance.enabled = true;
+
+                        Manananggal.Instance.GetComponent<SpriteRenderer>().enabled = true;
+                        Manananggal.Instance.GetComponent<Collider2D>().enabled = true;
+                        Manananggal.Instance.rb.simulated = true;
+                    }
+                    else
+                    {
+                        Debug.LogError("Manananggal instance missing!");
+                    }
+                    Player.Instance.spawnPoint = new Vector3(42.9f, -11.8f, 0);
+                }
+                else if (Player.Instance.eventNameTrigger == "Day7" && currentObjective.targetName == "Manananggal")
                 {
                     Debug.Log("Day7 triggered by: " + targetName);
                     Player.Instance.eventNameTrigger = "TheEnd";

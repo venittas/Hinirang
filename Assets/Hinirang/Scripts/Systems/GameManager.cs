@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using Unity.Cinemachine;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject stickPrefab;
     public GameObject WhipPrefab;
     public bool boatCutscenePlayed = false;
-
+    public TextMeshProUGUI health;
     public enum GameState
     {
         MainMenu,
@@ -58,18 +59,24 @@ public class GameManager : MonoBehaviour
     {
         if (Player.Instance != null) Destroy(Player.Instance.gameObject);
         if (DialogueSystem.Instance != null) Destroy(DialogueSystem.Instance.gameObject);
-        if (InventorySystem.Instance != null) Destroy(InventorySystem.Instance.gameObject);
         if (QuestSystem.Instance != null) Destroy(QuestSystem.Instance.gameObject);
         if (AlingNena.Instance != null) Destroy(AlingNena.Instance.gameObject);
         if (Joba.Instance != null) Destroy(Joba.Instance.gameObject);
         if (MangEnko.Instance != null) Destroy(MangEnko.Instance.gameObject);
         if (MangJuan.Instance != null) Destroy(MangJuan.Instance.gameObject);
         if (Narrator.Instance != null) Destroy(Narrator.Instance.gameObject);
-        if (Canvas.Instance != null) Destroy(Canvas.Instance.gameObject);
+        if (CanvasKo.Instance != null) Destroy(CanvasKo.Instance.gameObject);
         if (EventSystem.Instance != null) Destroy(EventSystem.Instance.gameObject);
         if (Boat.Instance != null) Destroy(Boat.Instance.gameObject);
         //if (MusicManager.Instance != null) Destroy(MusicManager.Instance.gameObject);
-
+        if (SampleWeapon.Instance != null) Destroy(SampleWeapon.Instance.gameObject);
+        if (SampleWhip.Instance != null) Destroy(SampleWhip.Instance.gameObject);
+        if (InventorySystem.Instance != null)
+        {
+            InventorySystem.Instance.slots.Clear();
+            InventorySystem.Instance.selectedSlotIndex = -1;
+            Destroy(InventorySystem.Instance.gameObject);
+        }
         Player.Instance = null;
         DialogueSystem.Instance = null;
         InventorySystem.Instance = null;
@@ -79,14 +86,21 @@ public class GameManager : MonoBehaviour
         MangEnko.Instance = null;
         MangJuan.Instance = null;
         Narrator.Instance = null;
-        Canvas.Instance = null;
+        CanvasKo.Instance = null;
         EventSystem.Instance = null;
         Boat.Instance = null;
+        SampleWhip.Instance = null;
+        SampleWeapon.Instance = null;
         //MusicManager.Instance = null;
 
         Instance = null;
         Destroy(gameObject);
 
+    }
+
+    public void UpdateHealthUI(float health)
+    {
+        this.health.text = health.ToString("F0");
     }
 
     private void PlayIntro()
@@ -172,10 +186,10 @@ public class GameManager : MonoBehaviour
     public void Day3Tiyanak()
     {
         Player.Instance.eventNameTrigger = "Day3Tiyanak";
-        Instantiate(tiyanakPrefab, new Vector2(26.1f, 2.6f), Quaternion.identity);
-        Instantiate(tiyanakPrefab, new Vector2(30f, 2.9f), Quaternion.identity);
-        Instantiate(tiyanakPrefab, new Vector2(29.1f, 7.2f), Quaternion.identity);
-        Instantiate(tiyanakPrefab, new Vector2(29f, 15.6f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(16.8f, 46.1f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(24.2f, 36.4f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(37.5f, 41.5f), Quaternion.identity);
+        Instantiate(tiyanakPrefab, new Vector2(39.8f, 50.1f), Quaternion.identity);
     }
 
     public void Day7Intro()

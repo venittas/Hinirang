@@ -288,9 +288,9 @@ public class Tiyanak : Enemy
                 MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
             }
             isDead = true; 
+            Destroy(gameObject);
             bool check = QuestSystem.Instance.CheckActiveObjective("Tiyanak");
             if (check) Debug.LogWarning("Tiyanak objective completed!");
-            Destroy(gameObject);
         }
     }
 }

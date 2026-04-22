@@ -74,7 +74,7 @@ public class Manananggal : Enemy
 
     public void FixedUpdate()
     {
-        //Check();
+        Check();
         if (!Move) return;
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
         if (jumpChaseTimer > 0) jumpChaseTimer -= Time.deltaTime;

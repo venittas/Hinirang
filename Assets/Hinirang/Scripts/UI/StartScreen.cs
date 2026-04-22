@@ -21,6 +21,7 @@ public class StartScreen : MonoBehaviour
     }
     void Start()
     {
+        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Title);
         newGameButton.onClick.AddListener(() =>
         {
             Instantiate(FadeInCanvas);

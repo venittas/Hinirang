@@ -50,7 +50,7 @@ public class Manananggal : Enemy
         roamRange = 10f;
         roamOrigin = transform.position; 
         UpdateRoamCoordinates();
-        
+        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Rush);
     }
 
     private void Awake()
@@ -318,6 +318,10 @@ public class Manananggal : Enemy
         StartCoroutine(Flash());
         if (health <= 0)
         {
+            if (FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length <= 1)
+            {
+                MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Hinirang);
+            }
             isDead = true;
             bool check = QuestSystem.Instance.CheckActiveObjective("Manananggal");
             if (check) Debug.LogWarning("Manananggal objective completed!");

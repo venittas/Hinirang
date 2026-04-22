@@ -92,6 +92,9 @@ public class SceneSystem : MonoBehaviour
 
             }
         }
+        if (Boat.Instance != null)
+            Boat.Instance.gameObject.SetActive(onIsland && !GameManager.Instance.boatCutscenePlayed);
+
 
 
         bool day7 = Player.Instance.eventNameTrigger == "Day7";

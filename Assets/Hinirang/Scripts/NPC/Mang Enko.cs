@@ -23,16 +23,4 @@ public class MangEnko : NPCScript
             Debug.Log("TANGINA MO BINAGO KO NA: " + Player.Instance.eventNameTrigger);
         }
     }
-
-    private void Update()
-    {
-        if (SceneSystem.Instance.currentPlayerLocation != SceneSystem.SceneIndex.Village)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            gameObject.SetActive(true);
-        }
-    }
 }

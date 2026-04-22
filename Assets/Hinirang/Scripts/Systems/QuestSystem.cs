@@ -79,7 +79,7 @@ public class QuestSystem : MonoBehaviour
             QuestTitle.text = activeQuest.questObjectives[activeQuest.currentObjectiveIndex].objectiveTitle;
 
             QuestBG.gameObject.SetActive(true);
-            Invoke("HideQuestUI", 3f);
+            Invoke("HideQuestUI", 8f);
         }
     }
 

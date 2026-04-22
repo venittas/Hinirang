@@ -18632,7 +18632,7 @@ Transform:
   m_GameObject: {fileID: 556441803}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8365946, y: -0.05605, z: -43.03336}
+  m_LocalPosition: {x: -3.117793, y: -0.05779, z: -43.03336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -129654,7 +129654,7 @@ GameObject:
   - component: {fileID: 1867174762}
   - component: {fileID: 1867174761}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Camera Confine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,6 +22,7 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f;
         Player.Instance.playerExitX = Player.Instance.transform.position.x; 
         Player.Instance.playerExitY = Player.Instance.transform.position.y;
-        MangJuan.Instance.DisableBoat();
+        MangJuan.Instance.DisableBoat(); 
+        MusicManager.Instance.PlayTrack(MusicManager.MusicTrack.Title);
     }
 }

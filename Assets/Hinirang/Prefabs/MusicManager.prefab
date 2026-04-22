@@ -46,10 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
   audioSource: {fileID: 8321639883831749919}
-  titleMusic: {fileID: 8300000, guid: 0b5e377c9bd653b43afaca63052a1260, type: 3}
-  introMusic: {fileID: 8300000, guid: 910fda3fb8f5abd4ca8492586b72c580, type: 3}
-  rushMusic: {fileID: 8300000, guid: 5f87c5a8180b86b40b90158c4f4b1af1, type: 3}
-  hinirangMusic: {fileID: 8300000, guid: cc986552c54a525448f096e20f2b193f, type: 3}
+  titleMusic: {fileID: 8300000, guid: c65816bd661d57047ae66e1c9bb8d03b, type: 3}
+  introMusic: {fileID: 8300000, guid: ff5c2b89305cfa747b1d40523d98c6e4, type: 3}
+  rushMusic: {fileID: 8300000, guid: 1cc08802c6002e043a2889332b88524f, type: 3}
+  hinirangMusic: {fileID: 8300000, guid: ff5c2b89305cfa747b1d40523d98c6e4, type: 3}
 --- !u!82 &8321639883831749919
 AudioSource:
   m_ObjectHideFlags: 0

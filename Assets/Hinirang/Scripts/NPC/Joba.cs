@@ -28,16 +28,4 @@ public class Joba : NPCScript
             Player.Instance.eventNameTrigger = "EndOfDay3";
         }
     }
-
-    private void Update()
-    {
-        if (SceneSystem.Instance.currentPlayerLocation != SceneSystem.SceneIndex.Island)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            gameObject.SetActive(true);
-        }
-    }
 }

@@ -58,7 +58,7 @@ public class Quest
                 {
                     Debug.Log("EndDay3 triggered by: " + targetName);
                     Player.Instance.currentState = Player.PlayerState.Interacting;
-                    GameManager.Instance.TeleportPlayer(13.56f, 3.94f);
+                    GameManager.Instance.TeleportPlayer(81.4f, 32.8f);
                     GameManager.Instance.MoveDialogueToDay7();
                     Player.Instance.eventNameTrigger = "Day7";
                     MangEnko.Instance.enabled = false;

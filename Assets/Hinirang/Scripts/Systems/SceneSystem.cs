@@ -70,36 +70,32 @@ public class SceneSystem : MonoBehaviour
 
     public void CheckNPCs()
     {
-        if (currentPlayerLocation != SceneSystem.SceneIndex.Island)
-        {
-            if (AlingNena.Instance != null) AlingNena.Instance.gameObject.SetActive(false);
-            if (MangJuan.Instance != null) MangJuan.Instance.gameObject.SetActive(false);
-            if (Joba.Instance != null) Joba.Instance.gameObject.SetActive(false);
-            if (MangJuan.Instance != null) MangJuan.Instance.DisableBoat();
-        }
-        else
-        {
-            if (AlingNena.Instance != null) AlingNena.Instance.gameObject.SetActive(true);
-            if (Joba.Instance != null) Joba.Instance.gameObject.SetActive(true);
+        bool onIsland = currentPlayerLocation == SceneIndex.Island;
+        if (AlingNena.Instance != null) AlingNena.Instance.gameObject.SetActive(onIsland);
+        if (MangJuan.Instance != null) MangJuan.Instance.gameObject.SetActive(onIsland);
+        if (MangJuan.Instance != null) MangJuan.Instance.DisableBoat();
 
-        }
-        if (currentPlayerLocation != SceneSystem.SceneIndex.Village)
+        bool onVillage = currentPlayerLocation == SceneIndex.Village;
+        if (MangEnko.Instance != null) MangEnko.Instance.gameObject.SetActive(onVillage);
+
+        bool onMountain = currentPlayerLocation == SceneIndex.Mountain;
+        if (Joba.Instance != null)
         {
-            if (MangEnko.Instance != null) MangEnko.Instance.gameObject.SetActive(false);
+            Joba.Instance.gameObject.SetActive(onMountain);
+            if (onMountain)
+            {
+                Joba.Instance.transform.position = new Vector2(25.15816f, 54.98137f); 
+            }
+            else
+            {
+                Joba.Instance.transform.position = new Vector2(1000f, 1000f); 
+
+            }
         }
-        else
-        {
-            if (MangEnko.Instance != null) MangEnko.Instance.gameObject.SetActive(true);
-        }
-        if (Player.Instance.eventNameTrigger != "Day7")
-        {
-            if (Manananggal.Instance != null) Manananggal.Instance.gameObject.SetActive(false);
-        }
-        else
-        {
-            if (Manananggal.Instance != null) Manananggal.Instance.gameObject.SetActive(true);
-        }
-        Debug.Log(Player.Instance.eventNameTrigger);
+
+
+        bool day7 = Player.Instance.eventNameTrigger == "Day7";
+        if (Manananggal.Instance != null) Manananggal.Instance.gameObject.SetActive(day7);
     }
 
 
